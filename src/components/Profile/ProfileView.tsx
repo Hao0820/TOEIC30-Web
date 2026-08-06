@@ -278,6 +278,12 @@ export const ProfileView: React.FC = () => {
           flex-direction: column;
           gap: 20px;
         }
+        @media (max-width: 768px) {
+          .profile-page-container {
+            padding: max(8px, env(safe-area-inset-top)) 12px 100px;
+            gap: 14px;
+          }
+        }
         .stats-card {
           padding: 28px;
           display: flex;

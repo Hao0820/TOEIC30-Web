@@ -86,6 +86,13 @@ export const Navbar: React.FC<{ onOpenSearch: () => void }> = ({ onOpenSearch })
           align-items: center;
           gap: 10px;
         }
+
+        /* 📱 手機端自動隱藏頂部桌面 Bar，釋放最大螢幕垂直空間 */
+        @media (max-width: 768px) {
+          .navbar-container {
+            display: none !important;
+          }
+        }
       `}</style>
     </header>
   );

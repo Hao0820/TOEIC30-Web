@@ -453,6 +453,12 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           flex-direction: column;
           gap: 16px;
         }
+        @media (max-width: 768px) {
+          .flashcard-page-container {
+            padding: max(8px, env(safe-area-inset-top)) 12px 100px;
+            gap: 12px;
+          }
+        }
         .unit-header-bar {
           display: flex;
           justify-content: space-between;
