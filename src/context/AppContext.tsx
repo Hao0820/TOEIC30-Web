@@ -1,14 +1,28 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import type { Word, WordTier, StudyMode, QuizQuestion } from '../types';
+import type { User } from '@supabase/supabase-js';
+import type { Word, WordTier, StudyMode, QuizQuestion, QuizRecord } from '../types';
 import { dataLoader } from '../services/DataLoader';
 import { storageService } from '../services/StorageService';
 import type { AppSettings } from '../services/StorageService';
 import { speechService } from '../services/SpeechService';
 import { quizEngine } from '../services/QuizEngine';
+import { supabaseService, type UserProfile } from '../services/SupabaseService';
 
 interface AppContextType {
   activeTab: 'vocabulary' | 'quiz' | 'profile' | 'favorites' | 'mistakes';
   setActiveTab: (tab: 'vocabulary' | 'quiz' | 'profile' | 'favorites' | 'mistakes') => void;
+
+  // Supabase User & Cloud Sync
+  user: User | null;
+  userProfile: UserProfile | null;
+  isAuthModalOpen: boolean;
+  setIsAuthModalOpen: (open: boolean) => void;
+  openAuthModal: () => void;
+  closeAuthModal: () => void;
+  signOut: () => Promise<void>;
+  isCloudSyncing: boolean;
+  lastSyncTime: Date | null;
+  syncCloudData: () => Promise<void>;
 
   studyMode: StudyMode;
   setStudyMode: (mode: StudyMode) => void;
@@ -37,6 +51,13 @@ interface AppContextType {
   toggleMastered: (word: Word) => void;
   isMastered: (wordId: string) => boolean;
 
+  mistakeWords: Word[];
+  removeMistake: (wordId: string) => void;
+  clearMistakes: () => void;
+
+  quizRecords: QuizRecord[];
+  addQuizRecord: (record: QuizRecord) => void;
+
   settings: AppSettings;
   updateSettings: (newSettings: Partial<AppSettings>) => void;
 
@@ -57,7 +78,14 @@ const AppContext = createContext<AppContextType | null>(null);
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [activeTab, setActiveTab] = useState<'vocabulary' | 'quiz' | 'profile' | 'favorites' | 'mistakes'>('vocabulary');
   const [settings, setSettings] = useState<AppSettings>(() => storageService.getSettings());
-  
+
+  // User & Cloud State
+  const [user, setUser] = useState<User | null>(null);
+  const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
+  const [isCloudSyncing, setIsCloudSyncing] = useState<boolean>(false);
+  const [lastSyncTime, setLastSyncTime] = useState<Date | null>(null);
+
   const [studyMode, setStudyModeState] = useState<StudyMode>(() => settings.studyMode || 'byDay');
   const [currentDay, setCurrentDayState] = useState<number>(() => settings.lastSelectedDay || 1);
   const [currentTier, setCurrentTierState] = useState<WordTier>(() => settings.lastSelectedTier || 'score_basic');
@@ -70,6 +98,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const [favorites, setFavorites] = useState<Word[]>(() => storageService.getFavorites());
   const [masteredWords, setMasteredWords] = useState<string[]>(() => storageService.getMasteredWords());
+  const [mistakeWords, setMistakeWords] = useState<Word[]>(() => storageService.getMistakeWords());
+  const [quizRecords, setQuizRecords] = useState<QuizRecord[]>(() => storageService.getQuizRecords());
+
   const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
   const [currentSpeakingText, setCurrentSpeakingText] = useState<string | null>(null);
 
@@ -97,6 +128,113 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       setAllWordsPool(pool);
     });
   }, []);
+
+  // MARK: - Supabase Auth & Cloud Sync Listener
+  const syncCloudData = useCallback(async () => {
+    if (!user) return;
+    setIsCloudSyncing(true);
+    try {
+      // 1. Fetch Profile
+      const profile = await supabaseService.fetchProfile(user.id);
+      if (profile) {
+        setUserProfile(profile);
+        if (profile.theme || profile.voice_accent) {
+          const updatedSettings: Partial<AppSettings> = {
+            ...(profile.theme && { theme: profile.theme }),
+            ...(profile.voice_accent && { voiceAccent: profile.voice_accent }),
+            ...(profile.voice_play_mode && { voicePlayMode: profile.voice_play_mode }),
+            ...(profile.speech_rate && { speechRate: profile.speech_rate }),
+            ...(profile.daily_goal && { dailyGoal: profile.daily_goal }),
+            ...(profile.enabled_tiers && { enabledTiers: profile.enabled_tiers }),
+            ...(profile.study_mode && { studyMode: profile.study_mode }),
+            ...(profile.last_selected_day && { lastSelectedDay: profile.last_selected_day }),
+            ...(profile.last_selected_tier && { lastSelectedTier: profile.last_selected_tier }),
+            ...(profile.quiz_timer_seconds && { quizTimerSeconds: profile.quiz_timer_seconds }),
+          };
+          storageService.saveSettings(updatedSettings);
+          setSettings(storageService.getSettings());
+          if (profile.study_mode) setStudyModeState(profile.study_mode);
+          if (profile.last_selected_day) setCurrentDayState(profile.last_selected_day);
+          if (profile.last_selected_tier) setCurrentTierState(profile.last_selected_tier);
+          if (profile.enabled_tiers) setEnabledTiers(profile.enabled_tiers);
+        }
+      }
+
+      // 2. Fetch Favorites
+      const cloudFavs = await supabaseService.fetchFavorites(user.id);
+      if (cloudFavs.length > 0) {
+        localStorage.setItem('toeic30_favorites', JSON.stringify(cloudFavs));
+        setFavorites(cloudFavs);
+      } else {
+        // Push local favorites to cloud
+        const localFavs = storageService.getFavorites();
+        for (const fav of localFavs) {
+          await supabaseService.addFavorite(user.id, fav);
+        }
+      }
+
+      // 3. Fetch Mastered Words
+      const cloudMastered = await supabaseService.fetchMasteredWords(user.id);
+      if (cloudMastered.length > 0) {
+        localStorage.setItem('toeic30_mastered_words', JSON.stringify(cloudMastered));
+        setMasteredWords(cloudMastered);
+      } else {
+        const localMastered = storageService.getMasteredWords();
+        for (const wId of localMastered) {
+          await supabaseService.toggleMasteredWord(user.id, wId, true);
+        }
+      }
+
+      // 4. Fetch Mistake Book
+      const cloudMistakes = await supabaseService.fetchMistakeBook(user.id);
+      if (cloudMistakes.length > 0) {
+        localStorage.setItem('toeic30_mistake_book', JSON.stringify(cloudMistakes));
+        setMistakeWords(cloudMistakes);
+      }
+
+      // 5. Fetch Quiz Records
+      const cloudQuiz = await supabaseService.fetchQuizRecords(user.id);
+      if (cloudQuiz.length > 0) {
+        localStorage.setItem('toeic30_quiz_records', JSON.stringify(cloudQuiz));
+        setQuizRecords(cloudQuiz);
+      }
+
+      setLastSyncTime(new Date());
+    } catch (e) {
+      console.warn('[AppContext] Cloud sync error:', e);
+    } finally {
+      setIsCloudSyncing(false);
+    }
+  }, [user]);
+
+  useEffect(() => {
+    supabaseService.getCurrentUser().then((u) => {
+      setUser(u);
+    });
+
+    const { data } = supabaseService.onAuthStateChange(async (_event, session) => {
+      setUser(session?.user || null);
+    });
+
+    return () => {
+      data?.subscription.unsubscribe();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (user) {
+      syncCloudData();
+    }
+  }, [user, syncCloudData]);
+
+  const openAuthModal = () => setIsAuthModalOpen(true);
+  const closeAuthModal = () => setIsAuthModalOpen(false);
+
+  const signOut = async () => {
+    await supabaseService.signOut();
+    setUser(null);
+    setUserProfile(null);
+  };
 
   const getUnitKey = useCallback(() => {
     if (studyMode === 'byDay') return `day_${currentDay}`;
@@ -142,6 +280,10 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     setCurrentIndexState(valid);
     storageService.saveWordProgress(studyMode, getUnitKey(), valid);
     storageService.recordStudyActivity(1);
+
+    if (user) {
+      supabaseService.saveWordProgress(user.id, studyMode, getUnitKey(), valid);
+    }
   };
 
   const nextWord = () => {
@@ -187,8 +329,17 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   };
 
   const toggleFavorite = (word: Word) => {
-    storageService.toggleFavorite(word);
-    setFavorites(storageService.getFavorites());
+    const isFav = storageService.toggleFavorite(word);
+    const updated = storageService.getFavorites();
+    setFavorites(updated);
+
+    if (user) {
+      if (isFav) {
+        supabaseService.addFavorite(user.id, word);
+      } else {
+        supabaseService.removeFavorite(user.id, word.id);
+      }
+    }
   };
 
   const isFavorite = (wordId: string) => {
@@ -196,17 +347,64 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   };
 
   const toggleMastered = (word: Word) => {
-    storageService.toggleMastered(word.id);
-    setMasteredWords(storageService.getMasteredWords());
+    const mastered = storageService.toggleMastered(word.id);
+    const updated = storageService.getMasteredWords();
+    setMasteredWords(updated);
+
+    if (user) {
+      supabaseService.toggleMasteredWord(user.id, word.id, mastered);
+    }
   };
 
   const isMastered = (wordId: string) => {
     return masteredWords.includes(wordId);
   };
 
+  const removeMistake = (wordId: string) => {
+    storageService.removeMistake(wordId);
+    setMistakeWords(storageService.getMistakeWords());
+    if (user) {
+      supabaseService.removeMistake(user.id, wordId);
+    }
+  };
+
+  const clearMistakes = () => {
+    storageService.clearMistakes();
+    setMistakeWords([]);
+  };
+
+  const addQuizRecord = (record: QuizRecord) => {
+    storageService.saveQuizRecord(record);
+    setQuizRecords(storageService.getQuizRecords());
+    setMistakeWords(storageService.getMistakeWords());
+
+    if (user) {
+      supabaseService.saveQuizRecord(user.id, record);
+      if (record.mistakeWords && record.mistakeWords.length > 0) {
+        supabaseService.saveMistakes(user.id, record.mistakeWords);
+      }
+    }
+  };
+
   const updateSettings = (newSettings: Partial<AppSettings>) => {
     storageService.saveSettings(newSettings);
-    setSettings(storageService.getSettings());
+    const updated = storageService.getSettings();
+    setSettings(updated);
+
+    if (user) {
+      supabaseService.saveProfile(user.id, {
+        theme: updated.theme,
+        voice_accent: updated.voiceAccent,
+        voice_play_mode: updated.voicePlayMode,
+        speech_rate: updated.speechRate,
+        daily_goal: updated.dailyGoal,
+        enabled_tiers: updated.enabledTiers,
+        study_mode: updated.studyMode,
+        last_selected_day: updated.lastSelectedDay,
+        last_selected_tier: updated.lastSelectedTier,
+        quiz_timer_seconds: updated.quizTimerSeconds,
+      });
+    }
   };
 
   const startQuiz = (questions: QuizQuestion[], title: string) => {
@@ -230,6 +428,16 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       value={{
         activeTab,
         setActiveTab,
+        user,
+        userProfile,
+        isAuthModalOpen,
+        setIsAuthModalOpen,
+        openAuthModal,
+        closeAuthModal,
+        signOut,
+        isCloudSyncing,
+        lastSyncTime,
+        syncCloudData,
         studyMode,
         setStudyMode,
         currentDay,
@@ -250,6 +458,11 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         masteredWords,
         toggleMastered,
         isMastered,
+        mistakeWords,
+        removeMistake,
+        clearMistakes,
+        quizRecords,
+        addQuizRecord,
         settings,
         updateSettings,
         isLoading,

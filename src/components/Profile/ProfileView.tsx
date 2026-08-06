@@ -19,10 +19,22 @@ import {
   CheckSquare,
   Square,
   RotateCw,
+  Cloud,
+  LogOut,
+  LogIn,
+  User as UserIcon,
+  RefreshCw,
 } from 'lucide-react';
 
 export const ProfileView: React.FC = () => {
   const {
+    user,
+    userProfile,
+    openAuthModal,
+    signOut,
+    isCloudSyncing,
+    syncCloudData,
+    lastSyncTime,
     studyMode,
     setStudyMode,
     enabledTiers,
@@ -70,6 +82,74 @@ export const ProfileView: React.FC = () => {
 
   return (
     <div className="profile-page-container">
+      {/* 0. 雲端會員帳號卡片 */}
+      <div className="glass-panel cloud-account-card fade-in">
+        {user ? (
+          <div className="account-logged-in">
+            <div className="account-user-info">
+              <div className="user-avatar">
+                <UserIcon size={22} color="white" />
+              </div>
+              <div className="user-details">
+                <div className="user-name-row">
+                  <span className="user-display-name">
+                    {userProfile?.display_name || user.email?.split('@')[0]}
+                  </span>
+                  <span className="cloud-badge active">
+                    <Cloud size={12} />
+                    <span>雲端已連線</span>
+                  </span>
+                </div>
+                <span className="user-email">{user.email}</span>
+                {lastSyncTime && (
+                  <span className="sync-time">
+                    最後同步：{lastSyncTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
+                  </span>
+                )}
+              </div>
+            </div>
+
+            <div className="account-actions">
+              <button
+                className="btn-sync"
+                onClick={syncCloudData}
+                disabled={isCloudSyncing}
+                title="立即同步雲端資料"
+              >
+                <RefreshCw size={14} className={isCloudSyncing ? 'spinning' : ''} />
+                <span>{isCloudSyncing ? '同步中...' : '立即同步'}</span>
+              </button>
+
+              <button
+                className="btn-signout"
+                onClick={signOut}
+                title="登出帳號"
+              >
+                <LogOut size={14} />
+                <span>登出</span>
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="account-guest-banner">
+            <div className="guest-left">
+              <div className="cloud-icon-box">
+                <Cloud size={24} color="var(--accent-primary)" />
+              </div>
+              <div>
+                <h4 className="guest-title">雲端多裝置同步</h4>
+                <p className="guest-subtitle">登入以跨手機、平板或電腦同步背單字、收藏與測驗進度</p>
+              </div>
+            </div>
+
+            <button className="btn-signin-cta" onClick={openAuthModal}>
+              <LogIn size={16} />
+              <span>登入 / 註冊</span>
+            </button>
+          </div>
+        )}
+      </div>
+
       {/* 1. 學習數據中心 */}
       <div className="glass-panel stats-card fade-in">
         <div className="stats-header">
@@ -146,92 +226,128 @@ export const ProfileView: React.FC = () => {
         </div>
       </div>
 
-      {/* 3. 啟用單字難度階級 (僅在選擇「30 天系統衝刺計劃」時顯示) */}
-      {studyMode === 'byDay' && (
-        <div className="glass-panel section-card fade-in">
-          <div className="section-title-group">
-            <h4 className="card-section-title">
-              <Bookmark size={18} color="var(--accent-secondary)" />
-              <span>30 天計劃單字難度階級 (可複選)</span>
-            </h4>
-            <p className="section-help-text">系統將為您的 30 天每日進度自動篩選勾選階級的單字，至少需啟用一個階級</p>
-          </div>
+      {/* 3. 分數階級篩選 (複選) */}
+      <div className="glass-panel section-card fade-in">
+        <div className="section-title-group">
+          <h4 className="card-section-title">
+            <Bookmark size={18} color="var(--accent-secondary)" />
+            <span>難度階級篩選 (多選)</span>
+          </h4>
+          <p className="section-help-text">
+            勾選欲背誦的單字階級（至少需保留一項）。在 30 天衝刺模式中，系統將僅出現有勾選的單字。
+          </p>
+        </div>
 
-          <div className="tier-checkboxes-list">
-            {tiersList.map((tier) => {
-              const isChecked = enabledTiers.includes(tier.id);
-              const meta = TIER_CONFIG[tier.id];
-              return (
-                <div
-                  key={tier.id}
-                  className={`tier-checkbox-row ${isChecked ? 'checked' : ''}`}
-                  onClick={() => toggleTier(tier.id)}
-                >
-                  <div className="tier-row-left">
-                    <span
-                      className="tier-badge-pill"
-                      style={{
-                        background: `var(--tier-${tier.id.replace('score_', '')}-bg)`,
-                        color: meta.color,
-                        borderColor: meta.color,
-                      }}
-                    >
-                      {meta.badge}
-                    </span>
-                    <div>
-                      <span className="tier-row-name">{tier.name}</span>
-                      <p className="tier-row-sub">{tier.subtitle}</p>
-                    </div>
-                  </div>
-
-                  <div className="checkbox-icon-box">
-                    {isChecked ? (
-                      <CheckSquare size={22} color={meta.color} />
-                    ) : (
-                      <Square size={22} color="var(--text-muted)" />
-                    )}
+        <div className="tiers-checkbox-list">
+          {tiersList.map((t) => {
+            const isChecked = enabledTiers.includes(t.id);
+            const cfg = TIER_CONFIG[t.id];
+            return (
+              <div
+                key={t.id}
+                className={`tier-check-card ${isChecked ? 'checked' : ''}`}
+                onClick={() => toggleTier(t.id)}
+              >
+                <div className="tier-card-left">
+                  <span
+                    className="tier-pill-badge"
+                    style={{
+                      backgroundColor: isChecked ? `${cfg.color}25` : 'var(--bg-secondary)',
+                      color: isChecked ? cfg.color : 'var(--text-muted)',
+                      borderColor: isChecked ? cfg.color : 'var(--border-color)',
+                    }}
+                  >
+                    {cfg.badge}
+                  </span>
+                  <div className="tier-info">
+                    <span className="tier-name-label">{t.name}</span>
+                    <span className="tier-sub-desc">{t.subtitle}</span>
                   </div>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
 
-      {/* 4. 每日學習目標 */}
+                <div className="checkbox-icon">
+                  {isChecked ? (
+                    <CheckSquare size={22} color="var(--accent-primary)" />
+                  ) : (
+                    <Square size={22} color="var(--text-muted)" />
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* 4. 語音與系統偏好 */}
       <div className="glass-panel section-card fade-in">
         <div className="section-title-group">
           <h4 className="card-section-title">
             <Sliders size={18} color="var(--accent-gold)" />
-            <span>每日目標單字量 ({settings.dailyGoal} 字)</span>
+            <span>語音與外觀設定</span>
           </h4>
-          <p className="section-help-text">設定您每日希望完成背誦的單字數量</p>
         </div>
 
-        <div className="goal-slider-box">
-          <input
-            type="range"
-            min="10"
-            max="80"
-            step="5"
-            className="slider-input"
-            value={settings.dailyGoal}
-            onChange={e => updateSettings({ dailyGoal: parseInt(e.target.value, 10) })}
-          />
-          <div className="goal-labels">
-            <span>10 字/天</span>
-            <span>40 字/天</span>
-            <span>80 字/天</span>
+        <div className="setting-item-row">
+          <div>
+            <label className="setting-label">發音語速</label>
+            <p className="setting-desc">調整單字與例句的英聽朗讀速度</p>
+          </div>
+          <div className="speed-pills">
+            {[0.8, 1.0, 1.2].map((rate) => (
+              <button
+                key={rate}
+                className={`pill-btn ${settings.speechRate === rate ? 'active' : ''}`}
+                onClick={() => updateSettings({ speechRate: rate })}
+              >
+                {rate}x
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="setting-item-row">
+          <div>
+            <label className="setting-label">每日目標單字數</label>
+            <p className="setting-desc">設定每天預計複習與背熟的目標數量</p>
+          </div>
+          <div className="speed-pills">
+            {[10, 20, 30, 50].map((goal) => (
+              <button
+                key={goal}
+                className={`pill-btn ${settings.dailyGoal === goal ? 'active' : ''}`}
+                onClick={() => updateSettings({ dailyGoal: goal })}
+              >
+                {goal} 字
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="setting-item-row">
+          <div>
+            <label className="setting-label">外觀主題</label>
+            <p className="setting-desc">切換深色（暗黑夜間）或淺色（明亮極簡）視覺風格</p>
+          </div>
+          <div className="speed-pills">
+            {(['dark', 'light'] as const).map((t) => (
+              <button
+                key={t}
+                className={`pill-btn ${settings.theme === t ? 'active' : ''}`}
+                onClick={() => updateSettings({ theme: t })}
+              >
+                {t === 'dark' ? '深色夜間' : '淺色極簡'}
+              </button>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* 5. 版本更新與強制重整 (專為 iOS 加入主畫面 PWA 設計) */}
+      {/* 5. 系統快取維護與版本資訊 */}
       <div className="glass-panel section-card fade-in">
         <div className="section-title-group">
           <h4 className="card-section-title">
             <RotateCw size={18} color="var(--accent-primary)" />
-            <span>應用程式版本與更新</span>
+            <span>版本與快取管理</span>
           </h4>
           <p className="section-help-text">若加入 iPhone 主畫面後未即時顯示最新改版，可點擊下方按鈕強制清除快取</p>
         </div>
@@ -246,7 +362,7 @@ export const ProfileView: React.FC = () => {
             <span>🔄 強制清除快取並載入最新版本</span>
           </button>
           <p style={{ fontSize: '12px', color: 'var(--text-muted)', textAlign: 'center' }}>
-            當前發布版本：v1.2.2 (支援自動更新偵測)
+            當前發布版本：v1.3.0 (支援 Supabase 雲端多用戶同步)
           </p>
         </div>
       </div>
@@ -257,9 +373,9 @@ export const ProfileView: React.FC = () => {
         <div>
           <p><b>TOEIC® 商標法律宣告</b></p>
           <p>
-            TOEIC® is a registered trademark of Educational Testing Service (ETS). This web application is an independently developed study tool and is not endorsed, sponsored, or affiliated with ETS.
+            TOEIC® 是美國教育測驗服務社（ETS）在美國和其他國家的註冊商標。本 Web 應用程式純屬個人學習與研究輔助用途，非經
+            ETS 授權、認可或贊助。
           </p>
-          <p style={{ marginTop: 4 }}>資料庫版本：v1.2.1 (收錄 6,800+ 筆單字) · 版權所有 © Wesley Li</p>
         </div>
       </div>
 
@@ -278,6 +394,170 @@ export const ProfileView: React.FC = () => {
             gap: 14px;
           }
         }
+
+        /* 雲端會員卡片 */
+        .cloud-account-card {
+          padding: 18px 22px;
+        }
+        .account-logged-in {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 14px;
+        }
+        .account-user-info {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+        .user-avatar {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+          flex-shrink: 0;
+        }
+        .user-details {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+        .user-name-row {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .user-display-name {
+          font-weight: 800;
+          font-size: 16px;
+          color: var(--text-primary);
+        }
+        .cloud-badge {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          font-size: 11px;
+          font-weight: 700;
+          padding: 2px 8px;
+          border-radius: 9999px;
+          background: rgba(16, 185, 129, 0.12);
+          border: 1px solid rgba(16, 185, 129, 0.25);
+          color: var(--accent-success);
+        }
+        .user-email {
+          font-size: 12px;
+          color: var(--text-muted);
+          font-family: var(--font-mono);
+        }
+        .sync-time {
+          font-size: 11px;
+          color: var(--text-muted);
+          margin-top: 2px;
+        }
+        .account-actions {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .btn-sync {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 7px 14px;
+          border-radius: var(--radius-md);
+          background: var(--bg-secondary);
+          border: 1px solid var(--border-color);
+          color: var(--text-primary);
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .btn-sync:hover:not(:disabled) {
+          border-color: var(--accent-primary);
+          color: var(--accent-primary);
+        }
+        .btn-signout {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 7px 12px;
+          border-radius: var(--radius-md);
+          background: rgba(239, 68, 68, 0.08);
+          border: 1px solid rgba(239, 68, 68, 0.2);
+          color: var(--accent-error);
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .btn-signout:hover {
+          background: rgba(239, 68, 68, 0.16);
+        }
+        .spinning {
+          animation: spin 1s linear infinite;
+        }
+
+        /* 訪客登入推廣 Banner */
+        .account-guest-banner {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+        .guest-left {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+        .cloud-icon-box {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: rgba(37, 99, 235, 0.12);
+          border: 1px solid rgba(37, 99, 235, 0.25);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+        }
+        .guest-title {
+          font-size: 15px;
+          font-weight: 800;
+          color: var(--text-primary);
+        }
+        .guest-subtitle {
+          font-size: 12px;
+          color: var(--text-muted);
+          line-height: 1.4;
+        }
+        .btn-signin-cta {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 18px;
+          border-radius: var(--radius-md);
+          background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+          border: none;
+          color: white;
+          font-size: 14px;
+          font-weight: 800;
+          cursor: pointer;
+          box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+          transition: all 0.2s;
+          white-space: nowrap;
+        }
+        .btn-signin-cta:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+        }
+
         .stats-card {
           padding: 28px;
           display: flex;
@@ -347,16 +627,17 @@ export const ProfileView: React.FC = () => {
           gap: 4px;
         }
         .card-section-title {
-          display: flex;
-          align-items: center;
-          gap: 10px;
           font-size: 16px;
           font-weight: 800;
           color: var(--text-primary);
+          display: flex;
+          align-items: center;
+          gap: 8px;
         }
         .section-help-text {
           font-size: 12px;
           color: var(--text-muted);
+          line-height: 1.5;
         }
         .study-modes-list {
           display: flex;
@@ -364,25 +645,23 @@ export const ProfileView: React.FC = () => {
           gap: 10px;
         }
         .mode-select-card {
-          background: var(--bg-secondary);
-          border: 1.5px solid var(--border-color);
-          border-radius: var(--radius-md);
-          padding: 14px 18px;
           display: flex;
-          align-items: center;
           justify-content: space-between;
-          gap: 14px;
+          align-items: center;
+          padding: 14px 18px;
+          background: var(--bg-secondary);
+          border: 1px solid var(--border-color);
+          border-radius: var(--radius-md);
           cursor: pointer;
-          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: all 0.2s;
         }
         .mode-select-card:hover {
-          border-color: var(--accent-primary);
-          background: var(--bg-card);
+          border-color: var(--border-glow);
+          background: var(--bg-card-hover);
         }
         .mode-select-card.selected {
           border-color: var(--accent-primary);
-          background: var(--bg-card);
-          box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+          background: rgba(37, 99, 235, 0.06);
         }
         .mode-card-left {
           display: flex;
@@ -392,23 +671,23 @@ export const ProfileView: React.FC = () => {
         .mode-icon-box {
           width: 40px;
           height: 40px;
-          border-radius: 10px;
+          border-radius: var(--radius-sm);
           background: var(--bg-card);
           border: 1px solid var(--border-color);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--text-secondary);
-          flex-shrink: 0;
+          color: var(--text-muted);
+          transition: all 0.2s;
         }
         .mode-icon-box.selected {
           background: var(--accent-primary);
           color: white;
-          border-color: transparent;
+          border-color: var(--accent-primary);
         }
         .mode-item-title {
           font-size: 15px;
-          font-weight: 800;
+          font-weight: 700;
           color: var(--text-primary);
         }
         .mode-item-sub {
@@ -427,81 +706,106 @@ export const ProfileView: React.FC = () => {
           border-radius: 50%;
           border: 2px solid var(--border-color);
         }
-        .tier-checkboxes-list {
+        .tiers-checkbox-list {
           display: flex;
           flex-direction: column;
           gap: 10px;
         }
-        .tier-checkbox-row {
-          background: var(--bg-secondary);
-          border: 1.5px solid var(--border-color);
-          border-radius: var(--radius-md);
-          padding: 12px 18px;
+        .tier-check-card {
           display: flex;
-          align-items: center;
           justify-content: space-between;
-          gap: 14px;
+          align-items: center;
+          padding: 14px 18px;
+          background: var(--bg-secondary);
+          border: 1px solid var(--border-color);
+          border-radius: var(--radius-md);
           cursor: pointer;
           transition: all 0.2s;
         }
-        .tier-checkbox-row:hover {
-          border-color: var(--accent-primary);
-          background: var(--bg-card);
-        }
-        .tier-checkbox-row.checked {
-          background: var(--bg-card);
+        .tier-check-card:hover {
           border-color: var(--border-glow);
+          background: var(--bg-card-hover);
         }
-        .tier-row-left {
+        .tier-check-card.checked {
+          border-color: var(--accent-primary);
+          background: rgba(37, 99, 235, 0.06);
+        }
+        .tier-card-left {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 14px;
         }
-        .tier-badge-pill {
-          font-size: 11px;
-          font-weight: 800;
-          padding: 3px 8px;
-          border-radius: 6px;
-          border: 1px solid transparent;
-          flex-shrink: 0;
-        }
-        .tier-row-name {
-          font-size: 14px;
-          font-weight: 800;
-          color: var(--text-primary);
-        }
-        .tier-row-sub {
+        .tier-pill-badge {
           font-size: 12px;
-          color: var(--text-muted);
-          margin-top: 1px;
+          font-weight: 800;
+          padding: 4px 10px;
+          border-radius: 9999px;
+          border: 1px solid transparent;
         }
-        .goal-slider-box {
+        .tier-info {
           display: flex;
           flex-direction: column;
-          gap: 8px;
+          gap: 2px;
         }
-        .slider-input {
-          width: 100%;
-          accent-color: var(--accent-primary);
-          cursor: pointer;
+        .tier-name-label {
+          font-size: 14px;
+          font-weight: 700;
+          color: var(--text-primary);
         }
-        .goal-labels {
+        .tier-sub-desc {
+          font-size: 12px;
+          color: var(--text-muted);
+        }
+        .setting-item-row {
           display: flex;
           justify-content: space-between;
-          font-size: 11px;
+          align-items: center;
+          padding: 12px 0;
+          border-bottom: 1px solid var(--border-color);
+        }
+        .setting-item-row:last-child {
+          border-bottom: none;
+        }
+        .setting-label {
+          font-size: 14px;
+          font-weight: 700;
+          color: var(--text-primary);
+        }
+        .setting-desc {
+          font-size: 12px;
           color: var(--text-muted);
+          margin-top: 2px;
+        }
+        .speed-pills {
+          display: flex;
+          gap: 6px;
+        }
+        .pill-btn {
+          padding: 6px 14px;
+          border-radius: 9999px;
+          border: 1px solid var(--border-color);
+          background: var(--bg-secondary);
+          color: var(--text-secondary);
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .pill-btn.active {
+          background: var(--accent-primary);
+          color: white;
+          border-color: var(--accent-primary);
         }
         .disclaimer-card {
           display: flex;
-          align-items: flex-start;
-          gap: 10px;
+          gap: 12px;
           padding: 16px 20px;
-          color: var(--text-muted);
-          font-size: 11px;
-          line-height: 1.5;
-          background: var(--bg-secondary);
           border-radius: var(--radius-md);
+          background: rgba(148, 163, 184, 0.08);
           border: 1px solid var(--border-color);
+          font-size: 12px;
+          color: var(--text-muted);
+          line-height: 1.5;
         }
       `}</style>
     </div>

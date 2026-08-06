@@ -1,9 +1,9 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
-import { Sparkles, Sun, Moon, Search } from 'lucide-react';
+import { Sparkles, Sun, Moon, Search, User as UserIcon, LogIn } from 'lucide-react';
 
 export const Navbar: React.FC<{ onOpenSearch: () => void }> = ({ onOpenSearch }) => {
-  const { settings, updateSettings } = useApp();
+  const { settings, updateSettings, user, openAuthModal, setActiveTab } = useApp();
 
   const toggleTheme = () => {
     updateSettings({ theme: settings.theme === 'dark' ? 'light' : 'dark' });
@@ -31,6 +31,24 @@ export const Navbar: React.FC<{ onOpenSearch: () => void }> = ({ onOpenSearch })
           <button className="btn-icon" onClick={toggleTheme} title="切換深淺外觀">
             {settings.theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
+          {user ? (
+            <button
+              className="btn-icon user-nav-btn"
+              onClick={() => setActiveTab('profile')}
+              title={`已登入: ${user.email}`}
+            >
+              <UserIcon size={18} color="var(--accent-primary)" />
+            </button>
+          ) : (
+            <button
+              className="btn-signin-nav"
+              onClick={openAuthModal}
+              title="登入同步雲端進度"
+            >
+              <LogIn size={14} />
+              <span>登入</span>
+            </button>
+          )}
         </div>
       </div>
 
@@ -85,6 +103,29 @@ export const Navbar: React.FC<{ onOpenSearch: () => void }> = ({ onOpenSearch })
           display: flex;
           align-items: center;
           gap: 10px;
+        }
+        .btn-signin-nav {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 6px 14px;
+          border-radius: var(--radius-md);
+          background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+          border: none;
+          color: white;
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s;
+          box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+        }
+        .btn-signin-nav:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+        }
+        .user-nav-btn {
+          border-color: rgba(37, 99, 235, 0.4);
+          background: rgba(37, 99, 235, 0.08);
         }
 
         /* 📱 手機端自動隱藏頂部桌面 Bar，釋放最大螢幕垂直空間 */

@@ -9,9 +9,10 @@ import { FullScreenQuizView } from './components/Quiz/FullScreenQuizView';
 import { FavoritesView } from './components/Profile/FavoritesView';
 import { MistakeBookView } from './components/Profile/MistakeBookView';
 import { ProfileView } from './components/Profile/ProfileView';
+import { AuthModal } from './components/Auth/AuthModal';
 
 const MainContent: React.FC = () => {
-  const { activeTab, activeQuizQuestions } = useApp();
+  const { activeTab, activeQuizQuestions, isAuthModalOpen, closeAuthModal } = useApp();
   const [isWordListOpen, setIsWordListOpen] = useState(false);
 
   return (
@@ -37,6 +38,12 @@ const MainContent: React.FC = () => {
       <WordListModal
         isOpen={isWordListOpen}
         onClose={() => setIsWordListOpen(false)}
+      />
+
+      {/* Authentication Modal */}
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={closeAuthModal}
       />
 
       {/* Fullscreen Quiz Overlay */}
