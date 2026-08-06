@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useApp } from '../../context/AppContext';
 import { speechService } from '../../services/SpeechService';
+import { spacedRepetitionService } from '../../services/SpacedRepetitionService';
 import { TIER_CONFIG, DAY_TITLES } from '../../services/DataLoader';
 import type { VoiceAccent } from '../../types';
 import {
@@ -13,6 +14,9 @@ import {
   CheckCircle2,
   Gauge,
   Check,
+  Play,
+  Pause,
+  Brain,
 } from 'lucide-react';
 import { DynamicPickerHeader } from './DynamicPickerHeader';
 
@@ -39,10 +43,20 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
   } = useApp();
 
   const [activeAccent, setActiveAccent] = useState<VoiceAccent | null>(null);
-  
+
   // Voice selection states: All vs Custom multi-select
   const [isAllAccents, setIsAllAccents] = useState<boolean>(true);
   const [selectedAccents, setSelectedAccents] = useState<VoiceAccent[]>(['us', 'uk', 'au']);
+
+  // 🎧 Auto-Play Mode State
+  const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(false);
+  const autoPlayCancelledRef = useRef<boolean>(false);
+
+  // 📱 Mobile Swipe Gesture State
+  const touchStartX = useRef<number>(0);
+  const touchStartY = useRef<number>(0);
+  const [swipeDeltaX, setSwipeDeltaX] = useState<number>(0);
+  const [isSwiping, setIsSwiping] = useState<boolean>(false);
 
   useEffect(() => {
     const unsubAccent = speechService.subscribeAccent((acc) => {
@@ -54,6 +68,130 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
   const currentWord = words[currentIndex] || null;
   const isStarred = currentWord ? isFavorite(currentWord.id) : false;
   const isWordMastered = currentWord ? isMastered(currentWord.id) : false;
+
+  // Track word in Ebbinghaus Spaced Repetition system when viewed
+  useEffect(() => {
+    if (currentWord) {
+      spacedRepetitionService.recordWordLearned(currentWord.id);
+    }
+  }, [currentWord]);
+
+  // 🎧 Auto-Play Commute Loop
+  useEffect(() => {
+    if (!isAutoPlaying || !currentWord) return;
+
+    autoPlayCancelledRef.current = false;
+
+    const runAutoPlayCycle = async () => {
+      try {
+        // 1. Short initial pause
+        await new Promise((r) => setTimeout(r, 350));
+        if (autoPlayCancelledRef.current) return;
+
+        // 2. Play word pronunciation (All accents or single selected)
+        const accentsToPlay = isAllAccents ? (['us', 'uk', 'au'] as VoiceAccent[]) : selectedAccents;
+        if (accentsToPlay.length > 1) {
+          await speechService.speakAllAccents(currentWord.word, currentWord.phonetic, settings.speechRate, accentsToPlay);
+        } else {
+          await speechService.speakAsync(currentWord.word, currentWord.phonetic, accentsToPlay[0] || 'us', settings.speechRate);
+        }
+
+        if (autoPlayCancelledRef.current) return;
+
+        // 3. Pause between word and example sentence
+        await new Promise((r) => setTimeout(r, 1200));
+        if (autoPlayCancelledRef.current) return;
+
+        // 4. Play example sentence if available
+        if (currentWord.example_en) {
+          if (accentsToPlay.length > 1) {
+            await speechService.speakSentenceAllAccents(
+              currentWord.example_en,
+              currentWord.word,
+              currentWord.phonetic,
+              settings.speechRate,
+              accentsToPlay
+            );
+          } else {
+            await speechService.speakSentenceAsync(
+              currentWord.example_en,
+              currentWord.word,
+              currentWord.phonetic,
+              accentsToPlay[0] || 'us',
+              settings.speechRate
+            );
+          }
+        }
+
+        if (autoPlayCancelledRef.current) return;
+
+        // 5. Pause before advancing to next card
+        await new Promise((r) => setTimeout(r, 1800));
+        if (autoPlayCancelledRef.current) return;
+
+        // 6. Advance to next word
+        if (currentIndex < words.length - 1) {
+          nextWord();
+        } else {
+          // Finished playlist
+          setIsAutoPlaying(false);
+        }
+      } catch {
+        setIsAutoPlaying(false);
+      }
+    };
+
+    runAutoPlayCycle();
+
+    return () => {
+      autoPlayCancelledRef.current = true;
+      speechService.stop();
+    };
+  }, [isAutoPlaying, currentIndex, currentWord]);
+
+  const toggleAutoPlay = () => {
+    if (isAutoPlaying) {
+      autoPlayCancelledRef.current = true;
+      speechService.stop();
+      setIsAutoPlaying(false);
+    } else {
+      setIsAutoPlaying(true);
+    }
+  };
+
+  // 📱 Touch Swipe Handlers
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    setIsSwiping(true);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isSwiping) return;
+    const currentX = e.touches[0].clientX;
+    const currentY = e.touches[0].clientY;
+    const diffX = currentX - touchStartX.current;
+    const diffY = currentY - touchStartY.current;
+
+    // Only swipe if horizontal movement is dominant
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+      setSwipeDeltaX(diffX);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    if (!isSwiping) return;
+    setIsSwiping(false);
+
+    if (swipeDeltaX < -50) {
+      // Swiped Left -> Next Word
+      nextWord();
+    } else if (swipeDeltaX > 50) {
+      // Swiped Right -> Prev Word
+      prevWord();
+    }
+    setSwipeDeltaX(0);
+  };
 
   // Toggle All accents mode
   const handleToggleAll = () => {
@@ -69,13 +207,12 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
   // Toggle individual accent
   const handleToggleAccent = (accent: VoiceAccent) => {
     if (isAllAccents) {
-      // Switching from All to single accent
       setIsAllAccents(false);
       setSelectedAccents([accent]);
     } else {
       if (selectedAccents.includes(accent)) {
         if (selectedAccents.length > 1) {
-          setSelectedAccents(selectedAccents.filter(a => a !== accent));
+          setSelectedAccents(selectedAccents.filter((a) => a !== accent));
         }
       } else {
         const next = [...selectedAccents, accent];
@@ -136,12 +273,15 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         if (currentWord) {
           toggleMastered(currentWord);
         }
+      } else if (e.key.toLowerCase() === 'p') {
+        e.preventDefault();
+        toggleAutoPlay();
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentWord, nextWord, prevWord, isAllAccents, selectedAccents, settings.speechRate, toggleFavorite, toggleMastered]);
+  }, [currentWord, nextWord, prevWord, isAllAccents, selectedAccents, settings.speechRate, toggleFavorite, toggleMastered, isAutoPlaying]);
 
   const getUnitTitle = () => {
     if (studyMode === 'byDay') {
@@ -154,9 +294,10 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
     return '全真隨機 6,800+ 題庫';
   };
 
-  const tierMeta = currentWord ? (TIER_CONFIG[currentWord.tier] || TIER_CONFIG.score_basic) : TIER_CONFIG.score_basic;
-  const isWordSpeaking = currentWord ? (isSpeaking && currentSpeakingText === currentWord.word) : false;
-  const isSentenceSpeaking = currentWord ? (isSpeaking && currentSpeakingText === currentWord.example_en) : false;
+  const tierMeta = currentWord ? TIER_CONFIG[currentWord.tier] || TIER_CONFIG.score_basic : TIER_CONFIG.score_basic;
+  const isWordSpeaking = currentWord ? isSpeaking && currentSpeakingText === currentWord.word : false;
+  const isSentenceSpeaking = currentWord ? isSpeaking && currentSpeakingText === currentWord.example_en : false;
+  const srsRecord = currentWord ? spacedRepetitionService.getRecord(currentWord.id) : null;
 
   const handleSpeakSentence = () => {
     if (!currentWord) return;
@@ -180,14 +321,6 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           accentsToPlay[0],
           settings.speechRate
         );
-      } else {
-        speechService.speakSentence(
-          currentWord.example_en,
-          currentWord.word,
-          currentWord.phonetic,
-          'us',
-          settings.speechRate
-        );
       }
     }
   };
@@ -196,10 +329,10 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
 
   return (
     <div className="flashcard-page-container">
-      {/* Top Dynamic Picker Header (Day 1~30 scroll or Level pills) */}
+      {/* 1. Dynamic Mode & Level Picker Header */}
       <DynamicPickerHeader />
 
-      {/* Unit Title & Words Count Row */}
+      {/* 2. Unit Title & Actions Row */}
       <div className="unit-header-bar">
         <div>
           <h2 className="unit-main-title">{getUnitTitle()}</h2>
@@ -208,10 +341,32 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           </p>
         </div>
 
-        <button className="btn-all-words" onClick={onOpenWordList}>
-          <List size={16} />
-          <span>All ({words.length})</span>
-        </button>
+        <div className="header-actions-group">
+          {/* 🎧 Auto-Play Commute Mode Button */}
+          <button
+            className={`btn-autoplay ${isAutoPlaying ? 'active-playing' : ''}`}
+            onClick={toggleAutoPlay}
+            title={isAutoPlaying ? '暫停自動輪播 (P)' : '開啟通勤免動手自動輪播 (P)'}
+          >
+            {isAutoPlaying ? (
+              <>
+                <Pause size={15} />
+                <span className="equalizer-bar" />
+                <span>輪播中</span>
+              </>
+            ) : (
+              <>
+                <Play size={15} />
+                <span>自動輪播</span>
+              </>
+            )}
+          </button>
+
+          <button className="btn-all-words" onClick={onOpenWordList}>
+            <List size={16} />
+            <span>All ({words.length})</span>
+          </button>
+        </div>
       </div>
 
       {/* Loading state */}
@@ -222,7 +377,7 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         </div>
       ) : !currentWord ? (
         <div className="flashcard-center-empty glass-panel">
-          <p>此篩選條件下無單字，請至上方或「設定」啟用更多分數階級。</p>
+          <p>此篩選條件下無單字，請至上方或「TOEIC 30」啟用更多分數階級。</p>
         </div>
       ) : (
         <>
@@ -239,17 +394,37 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
             </div>
           </div>
 
-          {/* Main Card */}
-          <div className="flashcard-wrapper fade-in" key={currentWord.id}>
+          {/* 📱 Main Card with Touch Swipe Physics */}
+          <div
+            className="flashcard-wrapper fade-in"
+            key={currentWord.id}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            style={{
+              transform: isSwiping ? `translateX(${swipeDeltaX}px) rotate(${swipeDeltaX * 0.035}deg)` : 'none',
+              transition: isSwiping ? 'none' : 'transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1)',
+            }}
+          >
             <div className="card-top-bar">
-              <div
-                className="tier-tag"
-                style={{
-                  background: `var(--tier-${currentWord.tier.replace('score_', '')}-bg)`,
-                  color: tierMeta.color,
-                }}
-              >
-                {tierMeta.badge}
+              <div className="tier-tag-group">
+                <div
+                  className="tier-tag"
+                  style={{
+                    background: `var(--tier-${currentWord.tier.replace('score_', '')}-bg)`,
+                    color: tierMeta.color,
+                  }}
+                >
+                  {tierMeta.badge}
+                </div>
+
+                {/* 🧠 Ebbinghaus SRS Stage Indicator */}
+                {srsRecord && (
+                  <div className="srs-stage-pill" title={`艾賓浩斯記憶階段: Stage ${srsRecord.stage + 1}`}>
+                    <Brain size={12} color="var(--accent-primary)" />
+                    <span>Lv.{srsRecord.stage + 1}</span>
+                  </div>
+                )}
               </div>
 
               {/* Action Buttons: Mastered Checkmark + Favorite Star */}
@@ -404,6 +579,11 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
             )}
           </div>
 
+          {/* 📱 Mobile Swipe Gesture Guidance Hint */}
+          <div className="swipe-hint-banner">
+            <span>👈 左右滑動切換單字 👉</span>
+          </div>
+
           {/* Navigation Controls with "測驗本單元" button */}
           <div className="card-nav-controls">
             <button
@@ -437,6 +617,7 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           {/* Keyboard Shortcuts Bar (Hidden on Mobile) */}
           <div className="keyboard-hints">
             <span className="hint-pill"><b>Space</b> 發音</span>
+            <span className="hint-pill"><b>P</b> 自動輪播</span>
             <span className="hint-pill"><b>← / →</b> 切換</span>
             <span className="hint-pill"><b>C</b> 標記背熟</span>
             <span className="hint-pill"><b>F</b> 收藏</span>
@@ -448,14 +629,14 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         .flashcard-page-container {
           max-width: 680px;
           margin: 0 auto;
-          padding: 8px 16px 120px;
+          padding: 24px 16px 120px;
           display: flex;
           flex-direction: column;
           gap: 16px;
         }
         @media (max-width: 768px) {
           .flashcard-page-container {
-            padding: max(8px, env(safe-area-inset-top)) 12px 100px;
+            padding: max(12px, env(safe-area-inset-top)) 12px 100px;
             gap: 12px;
           }
         }
@@ -464,6 +645,8 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           justify-content: space-between;
           align-items: center;
           padding: 4px 4px;
+          gap: 12px;
+          flex-wrap: wrap;
         }
         .unit-main-title {
           font-family: var(--font-display);
@@ -476,23 +659,57 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           color: var(--text-muted);
           margin-top: 2px;
         }
-        .btn-all-words {
+        .header-actions-group {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .btn-autoplay {
           display: flex;
           align-items: center;
           gap: 6px;
           padding: 6px 14px;
           border-radius: 9999px;
           background: rgba(37, 99, 235, 0.12);
-          border: 1px solid rgba(37, 99, 235, 0.25);
+          border: 1px solid rgba(37, 99, 235, 0.3);
           color: var(--accent-primary);
           font-size: 13px;
           font-weight: 700;
           cursor: pointer;
           transition: all 0.2s;
         }
-        .btn-all-words:hover {
+        .btn-autoplay:hover {
           background: var(--accent-primary);
           color: white;
+        }
+        .btn-autoplay.active-playing {
+          background: linear-gradient(135deg, #10B981, #059669);
+          border-color: #10B981;
+          color: white;
+          box-shadow: 0 0 16px rgba(16, 185, 129, 0.45);
+          animation: pulseGlow 2s infinite;
+        }
+        @keyframes pulseGlow {
+          0%, 100% { box-shadow: 0 0 12px rgba(16, 185, 129, 0.4); }
+          50% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.7); }
+        }
+        .btn-all-words {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 6px 14px;
+          border-radius: 9999px;
+          background: var(--bg-secondary);
+          border: 1px solid var(--border-color);
+          color: var(--text-primary);
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .btn-all-words:hover {
+          background: var(--bg-card-hover);
+          border-color: var(--border-glow);
         }
         .progress-section {
           display: flex;
@@ -503,51 +720,84 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           display: flex;
           justify-content: space-between;
           align-items: center;
-        }
-        .counter-text, .percent-text {
           font-size: 13px;
-          color: var(--text-secondary);
-          font-family: var(--font-mono);
+          color: var(--text-muted);
+        }
+        .counter-text b {
+          color: var(--text-primary);
+          font-size: 15px;
+        }
+        .percent-text {
+          font-weight: 700;
+          color: var(--accent-primary);
         }
         .progress-bar-bg {
+          width: 100%;
           height: 6px;
-          border-radius: 9999px;
           background: var(--bg-secondary);
+          border-radius: 9999px;
           overflow: hidden;
         }
         .progress-bar-fill {
           height: 100%;
           background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
           border-radius: 9999px;
-          transition: width 0.25s ease-out;
+          transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .flashcard-wrapper {
           background: var(--bg-card);
-          backdrop-filter: blur(24px);
-          -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
           border: 1px solid var(--border-color);
           border-radius: var(--radius-xl);
-          padding: 32px;
-          box-shadow: var(--shadow-lg);
+          padding: 32px 28px;
           display: flex;
           flex-direction: column;
           gap: 24px;
+          box-shadow: var(--shadow-lg);
+          user-select: none;
+          touch-action: pan-y;
+        }
+        @media (max-width: 768px) {
+          .flashcard-wrapper {
+            padding: 22px 18px;
+            gap: 18px;
+          }
         }
         .card-top-bar {
           display: flex;
           justify-content: space-between;
           align-items: center;
         }
+        .tier-tag-group {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
         .tier-tag {
           font-size: 12px;
           font-weight: 800;
           padding: 4px 12px;
           border-radius: 9999px;
+          border: 1px solid currentColor;
+          letter-spacing: 0.5px;
+        }
+        .srs-stage-pill {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          font-size: 11px;
+          font-weight: 700;
+          padding: 3px 8px;
+          border-radius: 9999px;
+          background: rgba(37, 99, 235, 0.1);
+          border: 1px solid rgba(37, 99, 235, 0.2);
+          color: var(--accent-primary);
         }
         .card-top-actions {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 12px;
         }
         .master-btn {
           display: flex;
@@ -555,38 +805,31 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           gap: 6px;
           padding: 5px 12px;
           border-radius: 9999px;
-          background: var(--bg-secondary);
           border: 1px solid var(--border-color);
+          background: var(--bg-secondary);
           color: var(--text-muted);
           font-size: 12px;
           font-weight: 700;
           cursor: pointer;
-          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: all 0.2s;
         }
         .master-btn:hover {
           border-color: var(--accent-success);
-          color: var(--accent-success);
+          color: var(--text-primary);
         }
         .master-btn.mastered {
           background: rgba(16, 185, 129, 0.15);
-          border-color: rgba(16, 185, 129, 0.4);
+          border-color: var(--accent-success);
           color: var(--accent-success);
-          box-shadow: 0 0 12px rgba(16, 185, 129, 0.25);
-        }
-        .master-btn.mastered:hover {
-          background: rgba(16, 185, 129, 0.25);
-        }
-        .master-btn-label {
-          font-weight: 800;
         }
         .star-btn {
           background: transparent;
           border: none;
           cursor: pointer;
-          padding: 4px;
           display: flex;
           align-items: center;
           justify-content: center;
+          padding: 4px;
           transition: transform 0.2s;
         }
         .star-btn:hover {
@@ -595,45 +838,49 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         .word-hero-box {
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 14px;
         }
         .word-title-row {
           display: flex;
-          align-items: center;
           justify-content: space-between;
-          gap: 16px;
+          align-items: center;
         }
         .word-text {
           font-family: var(--font-display);
           font-size: 40px;
           font-weight: 800;
-          letter-spacing: -0.5px;
+          letter-spacing: -1px;
           color: var(--text-primary);
+        }
+        @media (max-width: 768px) {
+          .word-text {
+            font-size: 32px;
+          }
         }
         .speaker-btn {
           width: 52px;
           height: 52px;
-          border-radius: var(--radius-full);
-          border: 1.5px solid var(--border-color);
+          border-radius: 50%;
+          border: 1px solid var(--border-color);
           background: var(--bg-secondary);
           color: var(--accent-primary);
+          cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
-          cursor: pointer;
+          transition: all 0.2s;
           flex-shrink: 0;
-          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .speaker-btn:hover {
           background: var(--accent-primary);
           color: white;
-          border-color: transparent;
-          transform: scale(1.06);
+          border-color: var(--accent-primary);
+          transform: scale(1.08);
         }
         .speaker-btn.speaking {
           background: var(--accent-primary);
           color: white;
-          box-shadow: 0 0 20px var(--border-glow);
+          box-shadow: 0 0 16px rgba(37, 99, 235, 0.5);
         }
         .phonetic-row {
           display: flex;
@@ -641,13 +888,13 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           gap: 10px;
         }
         .pos-badge {
-          background: var(--bg-secondary);
-          color: var(--accent-primary);
           font-size: 13px;
-          font-weight: 800;
-          font-style: italic;
+          font-weight: 700;
+          color: var(--accent-secondary);
+          background: rgba(124, 58, 237, 0.12);
           padding: 2px 8px;
           border-radius: 6px;
+          font-style: italic;
         }
         .phonetic-text {
           font-family: var(--font-mono);
@@ -658,68 +905,43 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 12px;
           flex-wrap: wrap;
-          margin-top: 6px;
-          padding-top: 6px;
-          border-top: 1px dashed var(--border-color);
+          gap: 10px;
+          padding: 10px 14px;
+          background: var(--bg-secondary);
+          border: 1px solid var(--border-color);
+          border-radius: var(--radius-md);
         }
         .accent-checkbox-group {
           display: flex;
           align-items: center;
-          gap: 6px;
-          flex-wrap: wrap;
+          gap: 8px;
         }
         .accent-chk-btn {
           display: flex;
           align-items: center;
           gap: 6px;
-          padding: 5px 12px;
+          padding: 5px 10px;
           border-radius: 9999px;
-          background: var(--bg-secondary);
-          border: 1.5px solid var(--border-color);
+          background: var(--bg-card);
+          border: 1px solid var(--border-color);
           color: var(--text-secondary);
-          font-size: 13px;
+          font-size: 12px;
           font-weight: 700;
           cursor: pointer;
-          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-          outline: none;
-          -webkit-tap-highlight-color: transparent;
-          user-select: none;
-        }
-        .accent-chk-btn:focus, .accent-chk-btn:focus-visible {
-          outline: none;
-        }
-        .accent-chk-btn:hover {
-          border-color: var(--accent-primary);
-          color: var(--text-primary);
+          transition: all 0.2s;
         }
         .accent-chk-btn.checked {
           border-color: var(--accent-primary);
-          background: rgba(37, 99, 235, 0.12);
           color: var(--accent-primary);
-        }
-        .accent-chk-btn.all-btn.checked {
-          background: var(--accent-primary);
-          color: white;
-          border-color: transparent;
+          background: rgba(37, 99, 235, 0.08);
         }
         .accent-chk-btn.dimmed {
-          opacity: 0.45;
-          filter: grayscale(0.5);
-        }
-        .accent-chk-btn.dimmed:hover {
-          opacity: 0.85;
-          filter: grayscale(0);
+          opacity: 0.7;
         }
         .accent-chk-btn.active-speaking {
-          background: var(--accent-primary) !important;
-          color: white !important;
-          border-color: transparent !important;
-          opacity: 1 !important;
-          filter: none !important;
-          box-shadow: 0 0 14px rgba(37, 99, 235, 0.55);
-          transform: scale(1.05);
+          border-color: var(--accent-success);
+          color: var(--accent-success);
         }
         .chk-box {
           width: 15px;
@@ -729,55 +951,35 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           display: flex;
           align-items: center;
           justify-content: center;
-          background: var(--bg-card);
-          transition: all 0.2s;
+          background: var(--bg-secondary);
         }
         .chk-box.checked {
           background: var(--accent-primary);
           border-color: var(--accent-primary);
         }
-        .all-btn .chk-box {
-          border-radius: 9999px;
-        }
-        .all-btn .chk-box.checked {
-          background: white;
-          border-color: white;
-        }
-        .all-btn .chk-box.checked svg {
-          stroke: var(--accent-primary);
-        }
         .speed-deck-group {
           display: flex;
           align-items: center;
           gap: 6px;
-          background: var(--bg-secondary);
-          padding: 3px 8px;
-          border-radius: 9999px;
-          border: 1px solid var(--border-color);
         }
         .speed-options {
           display: flex;
-          align-items: center;
-          gap: 3px;
+          gap: 4px;
         }
         .speed-option-btn {
-          border: none;
-          background: transparent;
-          color: var(--text-muted);
           font-size: 11px;
           font-weight: 700;
-          padding: 2px 7px;
+          padding: 3px 8px;
           border-radius: 9999px;
+          border: 1px solid var(--border-color);
+          background: var(--bg-card);
+          color: var(--text-muted);
           cursor: pointer;
-          transition: all 0.2s;
-        }
-        .speed-option-btn:hover {
-          color: var(--text-primary);
         }
         .speed-option-btn.active {
-          background: var(--bg-card);
-          color: var(--accent-primary);
-          box-shadow: var(--shadow-sm);
+          background: var(--accent-primary);
+          color: white;
+          border-color: var(--accent-primary);
         }
         .definition-box {
           padding: 16px 20px;
@@ -792,9 +994,9 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           line-height: 1.4;
         }
         .example-box {
+          padding: 16px 20px;
           background: var(--bg-secondary);
           border-radius: var(--radius-md);
-          padding: 20px;
           display: flex;
           flex-direction: column;
           gap: 10px;
@@ -838,6 +1040,18 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           font-size: 14px;
           color: var(--text-secondary);
           line-height: 1.4;
+        }
+        .swipe-hint-banner {
+          display: none;
+          text-align: center;
+          font-size: 11px;
+          color: var(--text-muted);
+          padding: 2px 0;
+        }
+        @media (max-width: 768px) {
+          .swipe-hint-banner {
+            display: block;
+          }
         }
         .card-nav-controls {
           display: flex;
@@ -902,7 +1116,6 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           border-radius: 9999px;
           border: 1px solid var(--border-color);
         }
-        /* Mobile: Hide keyboard shortcut hints bar */
         @media (max-width: 768px), (pointer: coarse) {
           .keyboard-hints {
             display: none !important;

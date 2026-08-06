@@ -1,0 +1,18 @@
+{
+  "name": "TOEIC 30 - 金色證書單字衝刺",
+  "short_name": "TOEIC 30",
+  "description": "30天衝刺金色證書，6,800+全真題庫、多國口音、艾賓浩斯智慧記憶",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

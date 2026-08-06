@@ -4,6 +4,7 @@ import type { QuizType, Word } from '../../types';
 import { quizEngine } from '../../services/QuizEngine';
 import { storageService } from '../../services/StorageService';
 import { DAY_TITLES } from '../../services/DataLoader';
+import { spacedRepetitionService } from '../../services/SpacedRepetitionService';
 import { Play, CheckCircle2, History, RotateCcw } from 'lucide-react';
 import { MistakeReviewModal } from './MistakeReviewModal';
 import { DynamicPickerHeader } from '../Flashcard/DynamicPickerHeader';
@@ -11,7 +12,7 @@ import { DynamicPickerHeader } from '../Flashcard/DynamicPickerHeader';
 export const QuizHomeView: React.FC = () => {
   const { words, allWordsPool, currentDay, currentTier, studyMode, enabledTiers, startQuiz, startRetest, settings, updateSettings } = useApp();
 
-  const [scope, setScope] = useState<'current' | 'all' | 'mistakes'>('current');
+  const [scope, setScope] = useState<'current' | 'srs' | 'all' | 'mistakes'>('current');
   const [questionCount, setQuestionCount] = useState<number>(20);
   const [enabledTypes, setEnabledTypes] = useState<QuizType[]>(['enToZh', 'zhToEn', 'listening', 'fillInBlank']);
   
@@ -27,6 +28,7 @@ export const QuizHomeView: React.FC = () => {
 
   const quizRecords = storageService.getQuizRecords();
   const mistakeWords = storageService.getMistakeWords();
+  const dueSrsWords = spacedRepetitionService.getDueWords(allWordsPool);
 
   const toggleType = (t: QuizType) => {
     if (enabledTypes.includes(t)) {
@@ -53,6 +55,9 @@ export const QuizHomeView: React.FC = () => {
       } else {
         title = '當前學習單元測驗';
       }
+    } else if (scope === 'srs') {
+      targetWords = dueSrsWords;
+      title = `🧠 艾賓浩斯遺忘曲線 · 今日到期複習 (${dueSrsWords.length} 字)`;
     } else if (scope === 'all') {
       targetWords = filteredGlobalPool.length > 0 ? filteredGlobalPool : allWordsPool;
       title = `全真題庫測驗 (${targetWords.length} 字)`;
@@ -62,7 +67,11 @@ export const QuizHomeView: React.FC = () => {
     }
 
     if (targetWords.length === 0) {
-      alert('所選範圍目前沒有單字可進行測驗！請至設定頁面確認已啟用的階級。');
+      if (scope === 'srs') {
+        alert('太棒了！今天沒有任何艾賓浩斯到期的複習單字！請多背新單字或做單元測驗。');
+      } else {
+        alert('所選範圍目前沒有單字可進行測驗！請至設定頁面確認已啟用的階級。');
+      }
       return;
     }
 
@@ -89,6 +98,13 @@ export const QuizHomeView: React.FC = () => {
             >
               <b>當前單元</b>
               <span>({words.length} 字)</span>
+            </button>
+            <button
+              className={`scope-btn ${scope === 'srs' ? 'active' : ''}`}
+              onClick={() => setScope('srs')}
+            >
+              <b>🧠 艾賓浩斯複習</b>
+              <span>({dueSrsWords.length} 字今日到期)</span>
             </button>
             <button
               className={`scope-btn ${scope === 'all' ? 'active' : ''}`}

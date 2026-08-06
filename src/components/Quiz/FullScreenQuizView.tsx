@@ -3,6 +3,7 @@ import type { QuizQuestion, Word, QuizRecord } from '../../types';
 import { useApp } from '../../context/AppContext';
 import { speechService } from '../../services/SpeechService';
 import { storageService } from '../../services/StorageService';
+import { spacedRepetitionService } from '../../services/SpacedRepetitionService';
 import { X, Volume2, Clock, CheckCircle2, XCircle } from 'lucide-react';
 import { QuizResultView } from './QuizResultView';
 
@@ -108,6 +109,11 @@ export const FullScreenQuizView: React.FC = () => {
     setTimeout(() => {
       // 確保切換下一題時重置按鈕焦點與狀態
       (document.activeElement as HTMLElement)?.blur();
+
+      // Record Ebbinghaus Spaced Repetition result
+      const isCorrect = optionIndex === currentQ.correctIndex;
+      spacedRepetitionService.recordReviewResult(currentQ.word.id, isCorrect);
+
       if (currentIndex < questions.length - 1) {
         setCurrentIndex(prev => prev + 1);
         setSelectedOption(null);
@@ -118,12 +124,16 @@ export const FullScreenQuizView: React.FC = () => {
     }, 850);
   }, [isAnswered, currentQ, currentIndex, questions, handleFinishQuiz]);
 
-  // Keyboard shortcut 1,2,3,4
+  // Keyboard shortcut 1,2,3,4 & A,B,C,D
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (isAnswered || isQuizCompleted) return;
-      if (['1', '2', '3', '4'].includes(e.key)) {
-        const opt = parseInt(e.key, 10) - 1;
+      const key = e.key.toUpperCase();
+      if (['1', '2', '3', '4'].includes(key)) {
+        const opt = parseInt(key, 10) - 1;
+        handleAnswer(opt);
+      } else if (['A', 'B', 'C', 'D'].includes(key)) {
+        const opt = key.charCodeAt(0) - 65; // 'A' -> 0, 'B' -> 1...
         handleAnswer(opt);
       }
     };

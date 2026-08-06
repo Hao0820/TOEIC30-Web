@@ -149,6 +149,10 @@ class SpeechService {
     this.notify(false, null);
   }
 
+  public speakAsync(text: string, ipaHint?: string, accent: VoiceAccent = 'us', rateMultiplier: number = 1.0): Promise<void> {
+    return this.speakSingleAsync(text, ipaHint, accent, rateMultiplier);
+  }
+
   private speakSingleAsync(text: string, ipaHint?: string, accent: VoiceAccent = 'us', rateMultiplier: number = 1.0): Promise<void> {
     return new Promise((resolve) => {
       if (!this.synth) {
@@ -237,6 +241,20 @@ class SpeechService {
     this.isSequenceRunning = false;
     this.notifyAccent(null);
     this.notify(false, null);
+  }
+
+  public speakSentenceAsync(
+    sentence: string,
+    targetWord: string,
+    ipaHint?: string,
+    accent: VoiceAccent = 'us',
+    rateMultiplier: number = 1.0
+  ): Promise<void> {
+    let naturalSentence = sentence.trim();
+    if (targetWord.toLowerCase() === 'resume' && ipaHint && (ipaHint.includes('rɛz') || ipaHint.includes('rez'))) {
+      naturalSentence = naturalSentence.replace(/\bresume\b/gi, 'résumé');
+    }
+    return this.speakSingleSentenceAsync(naturalSentence, sentence, accent, rateMultiplier);
   }
 
   private speakSingleSentenceAsync(naturalSentence: string, originalSentence: string, accent: VoiceAccent = 'us', rateMultiplier: number = 1.0): Promise<void> {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
-import { BookOpen, HelpCircle, Star, BookX, User } from 'lucide-react';
+import { BookOpen, HelpCircle, Star, BookX, Sparkles } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface TabItem {
@@ -18,7 +18,7 @@ export const TabBar: React.FC = () => {
     { id: 'quiz', label: '測驗', icon: HelpCircle },
     { id: 'favorites', label: '收藏', icon: Star, badge: favorites.length > 0 ? favorites.length : undefined },
     { id: 'mistakes', label: '錯題', icon: BookX },
-    { id: 'profile', label: '我的', icon: User },
+    { id: 'profile', label: 'TOEIC 30', icon: Sparkles },
   ];
 
   return (
