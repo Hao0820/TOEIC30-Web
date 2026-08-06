@@ -78,7 +78,12 @@ export const FullScreenQuizView: React.FC = () => {
       mistakeWords: mistakes,
     };
 
-    storageService.saveQuizRecord(record);
+    // 🔥 錯題重測不計入歷史紀錄
+    const isRetest = quizScopeTitle.includes('錯題專項重測') || quizScopeTitle.includes('重測');
+    if (!isRetest) {
+      storageService.saveQuizRecord(record);
+    }
+
     setCompletedRecord(record);
     setIsQuizCompleted(true);
   }, [quizScopeTitle]);
@@ -99,8 +104,10 @@ export const FullScreenQuizView: React.FC = () => {
     };
     setQuestions(updated);
 
-    // Transition to next after 0.8s
+    // Transition to next after 0.85s
     setTimeout(() => {
+      // 確保切換下一題時重置按鈕焦點與狀態
+      (document.activeElement as HTMLElement)?.blur();
       if (currentIndex < questions.length - 1) {
         setCurrentIndex(prev => prev + 1);
         setSelectedOption(null);
@@ -212,8 +219,8 @@ export const FullScreenQuizView: React.FC = () => {
           )}
         </div>
 
-        {/* Options Grid */}
-        <div className="options-grid">
+        {/* Options Grid with key on currentIndex to force fresh button elements */}
+        <div className="options-grid" key={currentIndex}>
           {currentQ.options.map((optionText, idx) => {
             const isCorrect = idx === currentQ.correctIndex;
             const isSelected = idx === selectedOption;
@@ -231,10 +238,13 @@ export const FullScreenQuizView: React.FC = () => {
 
             return (
               <button
-                key={idx}
+                key={`${currentIndex}_${idx}`}
                 className={optionClass}
                 disabled={isAnswered}
-                onClick={() => handleAnswer(idx)}
+                onClick={(e) => {
+                  (e.currentTarget as HTMLElement)?.blur();
+                  handleAnswer(idx);
+                }}
               >
                 <div className="option-label-circle">{['A', 'B', 'C', 'D'][idx]}</div>
                 <span className="option-text">{optionText}</span>
@@ -419,6 +429,12 @@ export const FullScreenQuizView: React.FC = () => {
           cursor: pointer;
           transition: all 0.18s ease;
           text-align: left;
+          outline: none;
+          -webkit-tap-highlight-color: transparent;
+          user-select: none;
+        }
+        .option-btn:focus, .option-btn:focus-visible {
+          outline: none;
         }
         .option-btn:hover:not(:disabled) {
           border-color: var(--accent-primary);

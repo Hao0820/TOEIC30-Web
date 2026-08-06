@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import type { QuizRecord } from '../../types';
 import { useApp } from '../../context/AppContext';
 import confetti from 'canvas-confetti';
-import { Trophy, RotateCcw, List, ArrowRight } from 'lucide-react';
+import { Trophy, RotateCcw, List, ArrowRight, X } from 'lucide-react';
 import { MistakeReviewModal } from './MistakeReviewModal';
 
 export const QuizResultView: React.FC<{ record: QuizRecord; onExit: () => void }> = ({ record, onExit }) => {
@@ -30,11 +30,25 @@ export const QuizResultView: React.FC<{ record: QuizRecord; onExit: () => void }
   const gradeInfo = getGradeInfo(record.scorePercentage);
 
   return (
-    <div className="quiz-fullscreen-backdrop">
-      <div className="result-card glass-panel fade-in">
-        {/* Top Trophy */}
+    <div
+      className="quiz-modal-backdrop"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onExit();
+      }}
+    >
+      <div className="result-modal-card glass-panel fade-in-scale">
+        {/* Close Button in Modal */}
+        <button
+          className="modal-close-btn"
+          onClick={onExit}
+          title="關閉測驗結果"
+        >
+          <X size={20} />
+        </button>
+
+        {/* Top Trophy Icon */}
         <div className="result-icon-box" style={{ background: `linear-gradient(135deg, ${gradeInfo.color}, #7C3AED)` }}>
-          <Trophy size={36} color="white" />
+          <Trophy size={34} color="white" />
         </div>
 
         <h2 className="result-title">{gradeInfo.title}</h2>
@@ -101,54 +115,109 @@ export const QuizResultView: React.FC<{ record: QuizRecord; onExit: () => void }
       )}
 
       <style>{`
-        .result-card {
+        .quiz-modal-backdrop {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.65);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          z-index: 1200;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          animation: modalFadeIn 0.25s ease-out;
+        }
+        @keyframes modalFadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        .result-modal-card {
           width: 100%;
-          max-width: 520px;
-          padding: 40px 32px;
+          max-width: 480px;
+          max-height: 90vh;
+          overflow-y: auto;
+          padding: 36px 28px 28px;
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
-          gap: 20px;
+          gap: 18px;
+          position: relative;
+          background: var(--bg-card);
+          border: 1px solid var(--border-color);
+          border-radius: var(--radius-xl);
+          box-shadow: var(--shadow-xl);
+          animation: modalScaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        @keyframes modalScaleUp {
+          from { transform: scale(0.92); opacity: 0; }
+          to { transform: scale(1); opacity: 1; }
+        }
+        .modal-close-btn {
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          border: 1px solid var(--border-color);
+          background: var(--bg-secondary);
+          color: var(--text-secondary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .modal-close-btn:hover {
+          background: var(--bg-card-hover);
+          color: var(--text-primary);
+          transform: scale(1.05);
         }
         .result-icon-box {
-          width: 72px;
-          height: 72px;
+          width: 68px;
+          height: 68px;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+          box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+          margin-top: 4px;
         }
         .result-title {
           font-family: var(--font-display);
-          font-size: 24px;
+          font-size: 22px;
           font-weight: 800;
           color: var(--text-primary);
+          margin-top: 2px;
         }
         .result-scope {
           font-size: 13px;
           color: var(--text-muted);
-          margin-top: -12px;
+          margin-top: -10px;
         }
         .score-circle-box {
-          padding: 10px 0;
+          padding: 6px 0;
         }
         .score-circle {
-          width: 140px;
-          height: 140px;
+          width: 130px;
+          height: 130px;
           border-radius: 50%;
-          border: 8px solid var(--accent-primary);
+          border: 7px solid var(--accent-primary);
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           position: relative;
-          background: var(--bg-card);
+          background: var(--bg-secondary);
         }
         .score-number {
           font-family: var(--font-display);
-          font-size: 38px;
+          font-size: 34px;
           font-weight: 800;
           color: var(--text-primary);
         }
@@ -160,21 +229,22 @@ export const QuizResultView: React.FC<{ record: QuizRecord; onExit: () => void }
           color: white;
           font-size: 11px;
           font-weight: 800;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
         .stats-row {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 12px;
+          gap: 10px;
           width: 100%;
         }
         .stat-pill {
           background: var(--bg-secondary);
           border: 1px solid var(--border-color);
           border-radius: var(--radius-md);
-          padding: 12px;
+          padding: 10px;
           display: flex;
           flex-direction: column;
-          gap: 4px;
+          gap: 2px;
         }
         .stat-label {
           font-size: 11px;
@@ -183,7 +253,7 @@ export const QuizResultView: React.FC<{ record: QuizRecord; onExit: () => void }
         }
         .stat-val {
           font-family: var(--font-display);
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 800;
           color: var(--text-primary);
         }
@@ -198,7 +268,7 @@ export const QuizResultView: React.FC<{ record: QuizRecord; onExit: () => void }
           flex-direction: column;
           gap: 10px;
           width: 100%;
-          margin-top: 10px;
+          margin-top: 6px;
         }
         .retest-btn {
           width: 100%;

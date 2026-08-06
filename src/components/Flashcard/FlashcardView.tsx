@@ -309,7 +309,10 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
                     className={`accent-chk-btn all-btn ${isAllAccents ? 'checked' : ''} ${
                       isWordSpeaking && isAllAccents ? 'speaking-pulse' : ''
                     }`}
-                    onClick={handleToggleAll}
+                    onClick={(e) => {
+                      (e.currentTarget as HTMLElement)?.blur();
+                      handleToggleAll();
+                    }}
                     title="勾選 All：播放時自動依序朗讀 美 ➔ 英 ➔ 澳 全口音"
                   >
                     <div className={`chk-box ${isAllAccents ? 'checked' : ''}`}>
@@ -324,7 +327,7 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
                     { id: 'uk', label: '英' },
                     { id: 'au', label: '澳' },
                   ].map((item) => {
-                    const isChecked = isAllAccents || selectedAccents.includes(item.id as VoiceAccent);
+                    const isChecked = !isAllAccents && selectedAccents.includes(item.id as VoiceAccent);
                     const isDimmed = isAllAccents;
                     const isPlayingThis = isWordSpeaking && activeAccent === item.id;
 
@@ -334,16 +337,22 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
                         className={`accent-chk-btn ${isChecked ? 'checked' : ''} ${isDimmed ? 'dimmed' : ''} ${
                           isPlayingThis ? 'active-speaking' : ''
                         }`}
-                        onClick={() => handleToggleAccent(item.id as VoiceAccent)}
-                        onDoubleClick={() => handleSpeakSingleAccent(item.id as VoiceAccent)}
+                        onClick={(e) => {
+                          (e.currentTarget as HTMLElement)?.blur();
+                          handleToggleAccent(item.id as VoiceAccent);
+                        }}
+                        onDoubleClick={(e) => {
+                          (e.currentTarget as HTMLElement)?.blur();
+                          handleSpeakSingleAccent(item.id as VoiceAccent);
+                        }}
                         title={
                           isDimmed
                             ? `點擊切換為單獨自選 ${item.label} 音`
                             : `勾選/取消 ${item.label} 音 (雙擊直接試聽)`
                         }
                       >
-                        <div className={`chk-box ${isChecked && !isDimmed ? 'checked' : ''}`}>
-                          {isChecked && !isDimmed && <Check size={12} strokeWidth={3.5} color="white" />}
+                        <div className={`chk-box ${isChecked ? 'checked' : ''}`}>
+                          {isChecked && <Check size={12} strokeWidth={3.5} color="white" />}
                         </div>
                         <span>{item.label}</span>
                       </button>
@@ -668,6 +677,12 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           font-weight: 700;
           cursor: pointer;
           transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+          outline: none;
+          -webkit-tap-highlight-color: transparent;
+          user-select: none;
+        }
+        .accent-chk-btn:focus, .accent-chk-btn:focus-visible {
+          outline: none;
         }
         .accent-chk-btn:hover {
           border-color: var(--accent-primary);
