@@ -242,11 +242,27 @@ export const ProfileView: React.FC = () => {
           <span>發音口音與語速設定 (TTS)</span>
         </h4>
 
+        {/* Play Mode */}
+        <div className="setting-row">
+          <div>
+            <label className="setting-label">點擊發音預設行為</label>
+            <p className="setting-sublabel">點擊喇叭圖示或空白鍵時的發音模式</p>
+          </div>
+          <select
+            className="select-input"
+            value={settings.voicePlayMode}
+            onChange={e => updateSettings({ voicePlayMode: e.target.value as 'single' | 'all' })}
+          >
+            <option value="all">🌐 順播全口音 (美 ➔ 英 ➔ 澳)</option>
+            <option value="single">🔊 播放預設口音 (單一口音)</option>
+          </select>
+        </div>
+
         {/* Accent */}
         <div className="setting-row">
           <div>
-            <label className="setting-label">多益真人發音口音</label>
-            <p className="setting-sublabel">支援美、英、澳、加等多國多益實戰口音</p>
+            <label className="setting-label">預設主要口音</label>
+            <p className="setting-sublabel">單一口音模式與例句朗讀所使用的腔調</p>
           </div>
           <select
             className="select-input"

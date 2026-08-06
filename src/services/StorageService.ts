@@ -3,6 +3,7 @@ import type { Word, QuizRecord, VoiceAccent, StudyMode, WordTier } from '../type
 export interface AppSettings {
   theme: 'dark' | 'light' | 'system';
   voiceAccent: VoiceAccent;
+  voicePlayMode: 'single' | 'all'; // 'single' = 播放單一口音, 'all' = 連播全口音 (美➔英➔澳)
   speechRate: number;
   dailyGoal: number;
   enabledTiers: WordTier[];
@@ -12,6 +13,7 @@ export interface AppSettings {
 const DEFAULT_SETTINGS: AppSettings = {
   theme: 'dark',
   voiceAccent: 'us',
+  voicePlayMode: 'all',
   speechRate: 1.0,
   dailyGoal: 20,
   enabledTiers: ['score_basic', 'score_600', 'score_800', 'score_900'],

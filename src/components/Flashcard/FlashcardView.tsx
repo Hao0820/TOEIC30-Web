@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useApp } from '../../context/AppContext';
 import { speechService } from '../../services/SpeechService';
 import { TIER_CONFIG, DAY_TITLES } from '../../services/DataLoader';
-import { Volume2, Star, ChevronLeft, ChevronRight, List, VolumeX, CheckCircle2 } from 'lucide-react';
+import type { VoiceAccent } from '../../types';
+import { Volume2, Star, ChevronLeft, ChevronRight, List, VolumeX, CheckCircle2, Sparkles } from 'lucide-react';
 import { DynamicPickerHeader } from './DynamicPickerHeader';
 
 export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpenWordList }) => {
@@ -23,6 +24,15 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
     setActiveTab,
   } = useApp();
 
+  const [activeAccent, setActiveAccent] = useState<VoiceAccent | null>(null);
+
+  useEffect(() => {
+    const unsubAccent = speechService.subscribeAccent((acc) => {
+      setActiveAccent(acc);
+    });
+    return unsubAccent;
+  }, []);
+
   const currentWord = words[currentIndex] || null;
   const isStarred = currentWord ? isFavorite(currentWord.id) : false;
 
@@ -40,7 +50,11 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
       } else if (e.code === 'Space') {
         e.preventDefault();
         if (currentWord) {
-          speechService.speak(currentWord.word, currentWord.phonetic, settings.voiceAccent, settings.speechRate);
+          if (settings.voicePlayMode === 'all') {
+            speechService.speakAllAccents(currentWord.word, currentWord.phonetic, settings.speechRate, ['us', 'uk', 'au']);
+          } else {
+            speechService.speak(currentWord.word, currentWord.phonetic, settings.voiceAccent, settings.speechRate);
+          }
         }
       } else if (e.key.toLowerCase() === 'f') {
         e.preventDefault();
@@ -74,7 +88,29 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
     if (isWordSpeaking) {
       speechService.stop();
     } else {
-      speechService.speak(currentWord.word, currentWord.phonetic, settings.voiceAccent, settings.speechRate);
+      if (settings.voicePlayMode === 'all') {
+        speechService.speakAllAccents(currentWord.word, currentWord.phonetic, settings.speechRate, ['us', 'uk', 'au']);
+      } else {
+        speechService.speak(currentWord.word, currentWord.phonetic, settings.voiceAccent, settings.speechRate);
+      }
+    }
+  };
+
+  const handleSpeakSpecificAccent = (accent: VoiceAccent) => {
+    if (!currentWord) return;
+    if (isWordSpeaking && activeAccent === accent) {
+      speechService.stop();
+    } else {
+      speechService.speak(currentWord.word, currentWord.phonetic, accent, settings.speechRate);
+    }
+  };
+
+  const handleSpeakAllAccents = () => {
+    if (!currentWord) return;
+    if (isWordSpeaking) {
+      speechService.stop();
+    } else {
+      speechService.speakAllAccents(currentWord.word, currentWord.phonetic, settings.speechRate, ['us', 'uk', 'au']);
     }
   };
 
@@ -168,6 +204,38 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
               <div className="phonetic-row">
                 {currentWord.pos && <span className="pos-badge">{currentWord.pos}</span>}
                 {currentWord.phonetic && <span className="phonetic-text">{currentWord.phonetic}</span>}
+              </div>
+
+              {/* Multi-Accent Quick Bar */}
+              <div className="accent-bar">
+                <button
+                  className={`accent-pill-btn all-accent-btn ${isWordSpeaking && activeAccent ? 'pulse-active' : ''}`}
+                  onClick={handleSpeakAllAccents}
+                  title="依序連續播放 美 ➔ 英 ➔ 澳 三大口音"
+                >
+                  <Sparkles size={13} />
+                  <span>🌐 順播全口音</span>
+                </button>
+
+                <div className="accent-sub-group">
+                  {[
+                    { id: 'us', label: '🇺🇸 美音' },
+                    { id: 'uk', label: '🇬🇧 英音' },
+                    { id: 'au', label: '🇦🇺 澳音' },
+                  ].map((item) => {
+                    const isPlayingThis = isWordSpeaking && activeAccent === item.id;
+                    return (
+                      <button
+                        key={item.id}
+                        className={`accent-pill-btn ${isPlayingThis ? 'active-playing' : ''}`}
+                        onClick={() => handleSpeakSpecificAccent(item.id as VoiceAccent)}
+                        title={`播放 ${item.label}`}
+                      >
+                        <span>{item.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
 
@@ -405,6 +473,64 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           font-family: var(--font-mono);
           font-size: 16px;
           color: var(--text-muted);
+        }
+        .accent-bar {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex-wrap: wrap;
+          margin-top: 4px;
+        }
+        .accent-sub-group {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .accent-pill-btn {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          padding: 5px 11px;
+          border-radius: 9999px;
+          background: var(--bg-secondary);
+          border: 1px solid var(--border-color);
+          color: var(--text-secondary);
+          font-size: 12px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .accent-pill-btn:hover {
+          border-color: var(--accent-primary);
+          color: var(--accent-primary);
+          background: var(--bg-card);
+        }
+        .all-accent-btn {
+          background: rgba(37, 99, 235, 0.1);
+          border-color: rgba(37, 99, 235, 0.3);
+          color: var(--accent-primary);
+        }
+        .all-accent-btn:hover {
+          background: var(--accent-primary);
+          color: white;
+          border-color: transparent;
+        }
+        .accent-pill-btn.active-playing {
+          background: var(--accent-primary);
+          color: white;
+          border-color: transparent;
+          box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+          transform: scale(1.05);
+        }
+        .all-accent-btn.pulse-active {
+          background: var(--accent-primary);
+          color: white;
+          box-shadow: 0 0 16px rgba(37, 99, 235, 0.5);
+          animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.85; transform: scale(1.03); }
         }
         .definition-box {
           padding: 16px 20px;
