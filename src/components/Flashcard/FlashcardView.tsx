@@ -3,7 +3,17 @@ import { useApp } from '../../context/AppContext';
 import { speechService } from '../../services/SpeechService';
 import { TIER_CONFIG, DAY_TITLES } from '../../services/DataLoader';
 import type { VoiceAccent } from '../../types';
-import { Volume2, Star, ChevronLeft, ChevronRight, List, VolumeX, CheckCircle2, Sparkles } from 'lucide-react';
+import {
+  Volume2,
+  Star,
+  ChevronLeft,
+  ChevronRight,
+  List,
+  VolumeX,
+  CheckCircle2,
+  Gauge,
+  Check,
+} from 'lucide-react';
 import { DynamicPickerHeader } from './DynamicPickerHeader';
 
 export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpenWordList }) => {
@@ -14,7 +24,11 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
     prevWord,
     toggleFavorite,
     isFavorite,
+    masteredWords,
+    toggleMastered,
+    isMastered,
     settings,
+    updateSettings,
     isSpeaking,
     currentSpeakingText,
     isLoading,
@@ -25,6 +39,10 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
   } = useApp();
 
   const [activeAccent, setActiveAccent] = useState<VoiceAccent | null>(null);
+  
+  // Voice selection states: All vs Custom multi-select
+  const [isAllAccents, setIsAllAccents] = useState<boolean>(true);
+  const [selectedAccents, setSelectedAccents] = useState<VoiceAccent[]>(['us', 'uk', 'au']);
 
   useEffect(() => {
     const unsubAccent = speechService.subscribeAccent((acc) => {
@@ -35,6 +53,64 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
 
   const currentWord = words[currentIndex] || null;
   const isStarred = currentWord ? isFavorite(currentWord.id) : false;
+  const isWordMastered = currentWord ? isMastered(currentWord.id) : false;
+
+  // Toggle All accents mode
+  const handleToggleAll = () => {
+    if (isAllAccents) {
+      setIsAllAccents(false);
+      setSelectedAccents(['us']);
+    } else {
+      setIsAllAccents(true);
+      setSelectedAccents(['us', 'uk', 'au']);
+    }
+  };
+
+  // Toggle individual accent
+  const handleToggleAccent = (accent: VoiceAccent) => {
+    if (isAllAccents) {
+      // Switching from All to single accent
+      setIsAllAccents(false);
+      setSelectedAccents([accent]);
+    } else {
+      if (selectedAccents.includes(accent)) {
+        if (selectedAccents.length > 1) {
+          setSelectedAccents(selectedAccents.filter(a => a !== accent));
+        }
+      } else {
+        const next = [...selectedAccents, accent];
+        if (next.length === 3) {
+          setIsAllAccents(true);
+          setSelectedAccents(['us', 'uk', 'au']);
+        } else {
+          setSelectedAccents(next);
+        }
+      }
+    }
+  };
+
+  const handleSpeakWord = () => {
+    if (!currentWord) return;
+    if (isWordSpeaking) {
+      speechService.stop();
+    } else {
+      const accentsToPlay = isAllAccents ? (['us', 'uk', 'au'] as VoiceAccent[]) : selectedAccents;
+      if (accentsToPlay.length > 1) {
+        speechService.speakAllAccents(currentWord.word, currentWord.phonetic, settings.speechRate, accentsToPlay);
+      } else if (accentsToPlay.length === 1) {
+        speechService.speak(currentWord.word, currentWord.phonetic, accentsToPlay[0], settings.speechRate);
+      }
+    }
+  };
+
+  const handleSpeakSingleAccent = (accent: VoiceAccent) => {
+    if (!currentWord) return;
+    if (isWordSpeaking && activeAccent === accent) {
+      speechService.stop();
+    } else {
+      speechService.speak(currentWord.word, currentWord.phonetic, accent, settings.speechRate);
+    }
+  };
 
   // Keyboard shortcut listener
   useEffect(() => {
@@ -49,24 +125,23 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         prevWord();
       } else if (e.code === 'Space') {
         e.preventDefault();
-        if (currentWord) {
-          if (settings.voicePlayMode === 'all') {
-            speechService.speakAllAccents(currentWord.word, currentWord.phonetic, settings.speechRate, ['us', 'uk', 'au']);
-          } else {
-            speechService.speak(currentWord.word, currentWord.phonetic, settings.voiceAccent, settings.speechRate);
-          }
-        }
+        handleSpeakWord();
       } else if (e.key.toLowerCase() === 'f') {
         e.preventDefault();
         if (currentWord) {
           toggleFavorite(currentWord);
+        }
+      } else if (e.key.toLowerCase() === 'c') {
+        e.preventDefault();
+        if (currentWord) {
+          toggleMastered(currentWord);
         }
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentWord, nextWord, prevWord, settings, toggleFavorite]);
+  }, [currentWord, nextWord, prevWord, isAllAccents, selectedAccents, settings.speechRate, toggleFavorite, toggleMastered]);
 
   const getUnitTitle = () => {
     if (studyMode === 'byDay') {
@@ -83,43 +158,37 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
   const isWordSpeaking = currentWord ? (isSpeaking && currentSpeakingText === currentWord.word) : false;
   const isSentenceSpeaking = currentWord ? (isSpeaking && currentSpeakingText === currentWord.example_en) : false;
 
-  const handleSpeakWord = () => {
-    if (!currentWord) return;
-    if (isWordSpeaking) {
-      speechService.stop();
-    } else {
-      if (settings.voicePlayMode === 'all') {
-        speechService.speakAllAccents(currentWord.word, currentWord.phonetic, settings.speechRate, ['us', 'uk', 'au']);
-      } else {
-        speechService.speak(currentWord.word, currentWord.phonetic, settings.voiceAccent, settings.speechRate);
-      }
-    }
-  };
-
-  const handleSpeakSpecificAccent = (accent: VoiceAccent) => {
-    if (!currentWord) return;
-    if (isWordSpeaking && activeAccent === accent) {
-      speechService.stop();
-    } else {
-      speechService.speak(currentWord.word, currentWord.phonetic, accent, settings.speechRate);
-    }
-  };
-
-  const handleSpeakAllAccents = () => {
-    if (!currentWord) return;
-    if (isWordSpeaking) {
-      speechService.stop();
-    } else {
-      speechService.speakAllAccents(currentWord.word, currentWord.phonetic, settings.speechRate, ['us', 'uk', 'au']);
-    }
-  };
-
   const handleSpeakSentence = () => {
     if (!currentWord) return;
     if (isSentenceSpeaking) {
       speechService.stop();
     } else {
-      speechService.speakSentence(currentWord.example_en, currentWord.word, currentWord.phonetic, settings.voiceAccent, settings.speechRate);
+      const accentsToPlay = isAllAccents ? (['us', 'uk', 'au'] as VoiceAccent[]) : selectedAccents;
+      if (accentsToPlay.length > 1) {
+        speechService.speakSentenceAllAccents(
+          currentWord.example_en,
+          currentWord.word,
+          currentWord.phonetic,
+          settings.speechRate,
+          accentsToPlay
+        );
+      } else if (accentsToPlay.length === 1) {
+        speechService.speakSentence(
+          currentWord.example_en,
+          currentWord.word,
+          currentWord.phonetic,
+          accentsToPlay[0],
+          settings.speechRate
+        );
+      } else {
+        speechService.speakSentence(
+          currentWord.example_en,
+          currentWord.word,
+          currentWord.phonetic,
+          'us',
+          settings.speechRate
+        );
+      }
     }
   };
 
@@ -135,7 +204,7 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         <div>
           <h2 className="unit-main-title">{getUnitTitle()}</h2>
           <p className="unit-sub-info">
-            {words.length > 0 ? `共收錄 ${words.length} 筆精選單字` : '目前無符合篩選條件的單字'}
+            {words.length > 0 ? `共收錄 ${words.length} 筆精選單字 · 已背熟 ${masteredWords.length} 字` : '目前無符合篩選條件的單字'}
           </p>
         </div>
 
@@ -153,7 +222,7 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         </div>
       ) : !currentWord ? (
         <div className="flashcard-center-empty glass-panel">
-          <p>此篩選條件下無單字，請至「設定」啟用更多分數階級。</p>
+          <p>此篩選條件下無單字，請至上方或「設定」啟用更多分數階級。</p>
         </div>
       ) : (
         <>
@@ -173,29 +242,55 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           {/* Main Card */}
           <div className="flashcard-wrapper fade-in" key={currentWord.id}>
             <div className="card-top-bar">
-              <div className="tier-tag" style={{ background: `var(--tier-${currentWord.tier.replace('score_', '')}-bg)`, color: tierMeta.color }}>
+              <div
+                className="tier-tag"
+                style={{
+                  background: `var(--tier-${currentWord.tier.replace('score_', '')}-bg)`,
+                  color: tierMeta.color,
+                }}
+              >
                 {tierMeta.badge}
               </div>
 
-              <button
-                className={`star-btn ${isStarred ? 'starred' : ''}`}
-                onClick={() => toggleFavorite(currentWord)}
-                title="收藏此單字 (F)"
-              >
-                <Star size={22} fill={isStarred ? '#F59E0B' : 'transparent'} color={isStarred ? '#F59E0B' : 'var(--text-muted)'} />
-              </button>
+              {/* Action Buttons: Mastered Checkmark + Favorite Star */}
+              <div className="card-top-actions">
+                <button
+                  className={`master-btn ${isWordMastered ? 'mastered' : ''}`}
+                  onClick={() => toggleMastered(currentWord)}
+                  title="標記為已背熟 (C)"
+                >
+                  <CheckCircle2
+                    size={20}
+                    fill={isWordMastered ? 'var(--accent-success)' : 'transparent'}
+                    color={isWordMastered ? 'white' : 'var(--text-muted)'}
+                  />
+                  <span className="master-btn-label">{isWordMastered ? '已背熟' : '背好了'}</span>
+                </button>
+
+                <button
+                  className={`star-btn ${isStarred ? 'starred' : ''}`}
+                  onClick={() => toggleFavorite(currentWord)}
+                  title="收藏此單字 (F)"
+                >
+                  <Star
+                    size={22}
+                    fill={isStarred ? '#F59E0B' : 'transparent'}
+                    color={isStarred ? '#F59E0B' : 'var(--text-muted)'}
+                  />
+                </button>
+              </div>
             </div>
 
             {/* Word Hero */}
             <div className="word-hero-box">
               <div className="word-title-row">
                 <h2 className="word-text">{currentWord.word}</h2>
-                
-                {/* Stable Speaker Button */}
+
+                {/* Main Speaker Play Button */}
                 <button
                   className={`speaker-btn ${isWordSpeaking ? 'speaking' : ''}`}
                   onClick={handleSpeakWord}
-                  title="單字真人發音 (空白鍵)"
+                  title="播放發音 (空白鍵)"
                 >
                   {isWordSpeaking ? <Volume2 size={24} className="anim-speaking" /> : <Volume2 size={24} />}
                 </button>
@@ -206,35 +301,71 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
                 {currentWord.phonetic && <span className="phonetic-text">{currentWord.phonetic}</span>}
               </div>
 
-              {/* Multi-Accent Quick Bar */}
-              <div className="accent-bar">
-                <button
-                  className={`accent-pill-btn all-accent-btn ${isWordSpeaking && activeAccent ? 'pulse-active' : ''}`}
-                  onClick={handleSpeakAllAccents}
-                  title="依序連續播放 美 ➔ 英 ➔ 澳 三大口音"
-                >
-                  <Sparkles size={13} />
-                  <span>🌐 順播全口音</span>
-                </button>
+              {/* Accent Checkbox Controls + Speed Controls Toolbar */}
+              <div className="audio-control-deck">
+                <div className="accent-checkbox-group">
+                  {/* All Checkbox */}
+                  <button
+                    className={`accent-chk-btn all-btn ${isAllAccents ? 'checked' : ''} ${
+                      isWordSpeaking && isAllAccents ? 'speaking-pulse' : ''
+                    }`}
+                    onClick={handleToggleAll}
+                    title="勾選 All：播放時自動依序朗讀 美 ➔ 英 ➔ 澳 全口音"
+                  >
+                    <div className={`chk-box ${isAllAccents ? 'checked' : ''}`}>
+                      {isAllAccents && <Check size={12} strokeWidth={3.5} color="white" />}
+                    </div>
+                    <span>All</span>
+                  </button>
 
-                <div className="accent-sub-group">
+                  {/* US, UK, AU Checkboxes */}
                   {[
-                    { id: 'us', label: '🇺🇸 美音' },
-                    { id: 'uk', label: '🇬🇧 英音' },
-                    { id: 'au', label: '🇦🇺 澳音' },
+                    { id: 'us', label: '美' },
+                    { id: 'uk', label: '英' },
+                    { id: 'au', label: '澳' },
                   ].map((item) => {
+                    const isChecked = isAllAccents || selectedAccents.includes(item.id as VoiceAccent);
+                    const isDimmed = isAllAccents;
                     const isPlayingThis = isWordSpeaking && activeAccent === item.id;
+
                     return (
                       <button
                         key={item.id}
-                        className={`accent-pill-btn ${isPlayingThis ? 'active-playing' : ''}`}
-                        onClick={() => handleSpeakSpecificAccent(item.id as VoiceAccent)}
-                        title={`播放 ${item.label}`}
+                        className={`accent-chk-btn ${isChecked ? 'checked' : ''} ${isDimmed ? 'dimmed' : ''} ${
+                          isPlayingThis ? 'active-speaking' : ''
+                        }`}
+                        onClick={() => handleToggleAccent(item.id as VoiceAccent)}
+                        onDoubleClick={() => handleSpeakSingleAccent(item.id as VoiceAccent)}
+                        title={
+                          isDimmed
+                            ? `點擊切換為單獨自選 ${item.label} 音`
+                            : `勾選/取消 ${item.label} 音 (雙擊直接試聽)`
+                        }
                       >
+                        <div className={`chk-box ${isChecked && !isDimmed ? 'checked' : ''}`}>
+                          {isChecked && !isDimmed && <Check size={12} strokeWidth={3.5} color="white" />}
+                        </div>
                         <span>{item.label}</span>
                       </button>
                     );
                   })}
+                </div>
+
+                {/* Inline Speech Speed Picker */}
+                <div className="speed-deck-group">
+                  <Gauge size={13} color="var(--text-muted)" />
+                  <div className="speed-options">
+                    {[0.8, 1.0, 1.2].map((rate) => (
+                      <button
+                        key={rate}
+                        className={`speed-option-btn ${settings.speechRate === rate ? 'active' : ''}`}
+                        onClick={() => updateSettings({ speechRate: rate })}
+                        title={`設定發音語速 ${rate.toFixed(1)}x`}
+                      >
+                        {rate.toFixed(1)}x
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -259,9 +390,7 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
                   </button>
                 </div>
                 <p className="example-en">{currentWord.example_en}</p>
-                {currentWord.example_zh && (
-                  <p className="example-zh">{currentWord.example_zh}</p>
-                )}
+                {currentWord.example_zh && <p className="example-zh">{currentWord.example_zh}</p>}
               </div>
             )}
           </div>
@@ -296,10 +425,11 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
             </button>
           </div>
 
-          {/* Keyboard Shortcuts Bar */}
+          {/* Keyboard Shortcuts Bar (Hidden on Mobile) */}
           <div className="keyboard-hints">
             <span className="hint-pill"><b>Space</b> 發音</span>
             <span className="hint-pill"><b>← / →</b> 切換</span>
+            <span className="hint-pill"><b>C</b> 標記背熟</span>
             <span className="hint-pill"><b>F</b> 收藏</span>
           </div>
         </>
@@ -399,6 +529,41 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           padding: 4px 12px;
           border-radius: 9999px;
         }
+        .card-top-actions {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .master-btn {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 5px 12px;
+          border-radius: 9999px;
+          background: var(--bg-secondary);
+          border: 1px solid var(--border-color);
+          color: var(--text-muted);
+          font-size: 12px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .master-btn:hover {
+          border-color: var(--accent-success);
+          color: var(--accent-success);
+        }
+        .master-btn.mastered {
+          background: rgba(16, 185, 129, 0.15);
+          border-color: rgba(16, 185, 129, 0.4);
+          color: var(--accent-success);
+          box-shadow: 0 0 12px rgba(16, 185, 129, 0.25);
+        }
+        .master-btn.mastered:hover {
+          background: rgba(16, 185, 129, 0.25);
+        }
+        .master-btn-label {
+          font-weight: 800;
+        }
         .star-btn {
           background: transparent;
           border: none;
@@ -474,63 +639,124 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           font-size: 16px;
           color: var(--text-muted);
         }
-        .accent-bar {
+        .audio-control-deck {
           display: flex;
           align-items: center;
-          gap: 8px;
+          justify-content: space-between;
+          gap: 12px;
           flex-wrap: wrap;
-          margin-top: 4px;
+          margin-top: 6px;
+          padding-top: 6px;
+          border-top: 1px dashed var(--border-color);
         }
-        .accent-sub-group {
+        .accent-checkbox-group {
           display: flex;
           align-items: center;
           gap: 6px;
+          flex-wrap: wrap;
         }
-        .accent-pill-btn {
+        .accent-chk-btn {
           display: flex;
           align-items: center;
-          gap: 5px;
-          padding: 5px 11px;
+          gap: 6px;
+          padding: 5px 12px;
           border-radius: 9999px;
           background: var(--bg-secondary);
-          border: 1px solid var(--border-color);
+          border: 1.5px solid var(--border-color);
           color: var(--text-secondary);
-          font-size: 12px;
+          font-size: 13px;
           font-weight: 700;
           cursor: pointer;
           transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .accent-pill-btn:hover {
+        .accent-chk-btn:hover {
           border-color: var(--accent-primary);
-          color: var(--accent-primary);
-          background: var(--bg-card);
+          color: var(--text-primary);
         }
-        .all-accent-btn {
-          background: rgba(37, 99, 235, 0.1);
-          border-color: rgba(37, 99, 235, 0.3);
+        .accent-chk-btn.checked {
+          border-color: var(--accent-primary);
+          background: rgba(37, 99, 235, 0.12);
           color: var(--accent-primary);
         }
-        .all-accent-btn:hover {
+        .accent-chk-btn.all-btn.checked {
           background: var(--accent-primary);
           color: white;
           border-color: transparent;
         }
-        .accent-pill-btn.active-playing {
-          background: var(--accent-primary);
-          color: white;
-          border-color: transparent;
-          box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+        .accent-chk-btn.dimmed {
+          opacity: 0.45;
+          filter: grayscale(0.5);
+        }
+        .accent-chk-btn.dimmed:hover {
+          opacity: 0.85;
+          filter: grayscale(0);
+        }
+        .accent-chk-btn.active-speaking {
+          background: var(--accent-primary) !important;
+          color: white !important;
+          border-color: transparent !important;
+          opacity: 1 !important;
+          filter: none !important;
+          box-shadow: 0 0 14px rgba(37, 99, 235, 0.55);
           transform: scale(1.05);
         }
-        .all-accent-btn.pulse-active {
-          background: var(--accent-primary);
-          color: white;
-          box-shadow: 0 0 16px rgba(37, 99, 235, 0.5);
-          animation: pulse 1.5s infinite;
+        .chk-box {
+          width: 15px;
+          height: 15px;
+          border-radius: 4px;
+          border: 1.5px solid var(--border-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--bg-card);
+          transition: all 0.2s;
         }
-        @keyframes pulse {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.85; transform: scale(1.03); }
+        .chk-box.checked {
+          background: var(--accent-primary);
+          border-color: var(--accent-primary);
+        }
+        .all-btn .chk-box {
+          border-radius: 9999px;
+        }
+        .all-btn .chk-box.checked {
+          background: white;
+          border-color: white;
+        }
+        .all-btn .chk-box.checked svg {
+          stroke: var(--accent-primary);
+        }
+        .speed-deck-group {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          background: var(--bg-secondary);
+          padding: 3px 8px;
+          border-radius: 9999px;
+          border: 1px solid var(--border-color);
+        }
+        .speed-options {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
+        .speed-option-btn {
+          border: none;
+          background: transparent;
+          color: var(--text-muted);
+          font-size: 11px;
+          font-weight: 700;
+          padding: 2px 7px;
+          border-radius: 9999px;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .speed-option-btn:hover {
+          color: var(--text-primary);
+        }
+        .speed-option-btn.active {
+          background: var(--bg-card);
+          color: var(--accent-primary);
+          box-shadow: var(--shadow-sm);
         }
         .definition-box {
           padding: 16px 20px;
@@ -644,7 +870,7 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         .keyboard-hints {
           display: flex;
           justify-content: center;
-          gap: 12px;
+          gap: 10px;
           padding-top: 4px;
         }
         .hint-pill {
@@ -654,6 +880,12 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           padding: 4px 10px;
           border-radius: 9999px;
           border: 1px solid var(--border-color);
+        }
+        /* Mobile: Hide keyboard shortcut hints bar */
+        @media (max-width: 768px), (pointer: coarse) {
+          .keyboard-hints {
+            display: none !important;
+          }
         }
         .flashcard-center-empty {
           text-align: center;

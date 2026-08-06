@@ -14,11 +14,11 @@ export const TabBar: React.FC = () => {
   const { activeTab, setActiveTab, favorites } = useApp();
 
   const tabs: TabItem[] = [
-    { id: 'vocabulary', label: '單字學習', icon: BookOpen },
-    { id: 'quiz', label: '測驗系統', icon: HelpCircle },
-    { id: 'favorites', label: '我的收藏', icon: Star, badge: favorites.length > 0 ? favorites.length : undefined },
-    { id: 'mistakes', label: '錯題本', icon: BookX },
-    { id: 'profile', label: '設定數據', icon: User },
+    { id: 'vocabulary', label: '單字', icon: BookOpen },
+    { id: 'quiz', label: '測驗', icon: HelpCircle },
+    { id: 'favorites', label: '收藏', icon: Star, badge: favorites.length > 0 ? favorites.length : undefined },
+    { id: 'mistakes', label: '錯題', icon: BookX },
+    { id: 'profile', label: '設定', icon: User },
   ];
 
   return (

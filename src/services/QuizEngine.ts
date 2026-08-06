@@ -1,4 +1,5 @@
 import type { Word, QuizType, QuizQuestion } from '../types';
+import { storageService } from './StorageService';
 
 class QuizEngine {
   public generateQuiz(
@@ -10,9 +11,16 @@ class QuizEngine {
     if (!targetWords || targetWords.length === 0) return [];
 
     const types = enabledTypes.length > 0 ? enabledTypes : (['enToZh', 'zhToEn', 'listening', 'fillInBlank'] as QuizType[]);
-    const shuffled = [...targetWords].sort(() => 0.5 - Math.random());
-    const limit = questionCount && questionCount > 0 ? Math.min(questionCount, shuffled.length) : shuffled.length;
-    const selected = shuffled.slice(0, limit);
+    
+    // 智慧加權抽題：未背熟單字 (權重 1.0) 優先出題；已背熟單字 (權重 0.15) 大幅降低出題機率
+    const masteredIds = new Set(storageService.getMasteredWords());
+    const unmastered = targetWords.filter(w => !masteredIds.has(w.id)).sort(() => 0.5 - Math.random());
+    const mastered = targetWords.filter(w => masteredIds.has(w.id)).sort(() => 0.5 - Math.random());
+
+    // 優先使用未背熟單字，不足時才由已背熟單字補充
+    const prioritizedWords = [...unmastered, ...mastered];
+    const limit = questionCount && questionCount > 0 ? Math.min(questionCount, prioritizedWords.length) : prioritizedWords.length;
+    const selected = prioritizedWords.slice(0, limit);
 
     const questions: QuizQuestion[] = [];
     selected.forEach((word, index) => {

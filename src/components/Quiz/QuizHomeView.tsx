@@ -4,17 +4,24 @@ import type { QuizType, Word } from '../../types';
 import { quizEngine } from '../../services/QuizEngine';
 import { storageService } from '../../services/StorageService';
 import { DAY_TITLES } from '../../services/DataLoader';
-import { Play, Clock, CheckCircle2, History, RotateCcw } from 'lucide-react';
+import { Play, CheckCircle2, History, RotateCcw } from 'lucide-react';
 import { MistakeReviewModal } from './MistakeReviewModal';
 import { DynamicPickerHeader } from '../Flashcard/DynamicPickerHeader';
 
 export const QuizHomeView: React.FC = () => {
-  const { words, allWordsPool, currentDay, currentTier, studyMode, enabledTiers, startQuiz, startRetest } = useApp();
+  const { words, allWordsPool, currentDay, currentTier, studyMode, enabledTiers, startQuiz, startRetest, settings, updateSettings } = useApp();
 
   const [scope, setScope] = useState<'current' | 'all' | 'mistakes'>('current');
   const [questionCount, setQuestionCount] = useState<number>(20);
   const [enabledTypes, setEnabledTypes] = useState<QuizType[]>(['enToZh', 'zhToEn', 'listening', 'fillInBlank']);
-  const [useTimer, setUseTimer] = useState<boolean>(true);
+  
+  // 0 = 無時限；10/15/20 = 倒數秒數
+  const [timerSec, setTimerSec] = useState<number>(() => settings.quizTimerSeconds ?? 15);
+
+  const handleSelectTimer = (sec: number) => {
+    setTimerSec(sec);
+    updateSettings({ quizTimerSeconds: sec });
+  };
 
   const [reviewMistakes, setReviewMistakes] = useState<Word[] | null>(null);
 
@@ -139,23 +146,20 @@ export const QuizHomeView: React.FC = () => {
           </div>
         </div>
 
-        {/* Timer Row */}
-        <div className="timer-setting-row">
-          <div className="timer-row-left">
-            <Clock size={18} color={useTimer ? 'var(--accent-gold)' : 'var(--text-muted)'} />
-            <div>
-              <span className="timer-row-title">作答倒數計時</span>
-              <p className="timer-row-sub">{useTimer ? '每題限時 15 秒作答' : '無作答時間限制'}</p>
-            </div>
+        {/* Timer Setting Grid */}
+        <div className="config-group">
+          <label className="config-label">作答時限</label>
+          <div className="count-grid">
+            {([0, 10, 15, 20] as number[]).map(sec => (
+              <button
+                key={sec}
+                className={`count-cell-btn timer-cell-btn ${timerSec === sec ? 'active-timer' : ''}`}
+                onClick={() => handleSelectTimer(sec)}
+              >
+                {sec === 0 ? '無' : `${sec} 秒`}
+              </button>
+            ))}
           </div>
-
-          <button
-            className={`timer-pill-btn ${useTimer ? 'active' : ''}`}
-            onClick={() => setUseTimer(!useTimer)}
-          >
-            <CheckCircle2 size={15} />
-            <span>{useTimer ? '每題 15 秒' : '無時限'}</span>
-          </button>
         </div>
 
         {/* Start Button */}
@@ -356,47 +360,16 @@ export const QuizHomeView: React.FC = () => {
           border-color: transparent;
           box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
         }
-        .timer-setting-row {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 12px 16px;
-          border-radius: var(--radius-md);
-          background: var(--bg-secondary);
-          border: 1px solid var(--border-color);
-        }
-        .timer-row-left {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
-        .timer-row-title {
-          font-size: 13px;
-          font-weight: 700;
-          color: var(--text-primary);
-        }
-        .timer-row-sub {
-          font-size: 11px;
-          color: var(--text-muted);
-        }
-        .timer-pill-btn {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          padding: 6px 14px;
-          border-radius: 9999px;
-          background: var(--bg-card);
-          border: 1px solid var(--border-color);
-          color: var(--text-muted);
-          font-size: 12px;
-          font-weight: 700;
-          cursor: pointer;
-          transition: all 0.2s;
-        }
-        .timer-pill-btn.active {
-          color: var(--accent-gold);
+        /* Orange override for timer grid cells */
+        .timer-cell-btn:hover {
           border-color: var(--accent-gold);
-          background: rgba(245, 158, 11, 0.1);
+          color: var(--accent-gold);
+        }
+        .timer-cell-btn.active-timer {
+          background: var(--accent-gold) !important;
+          color: #000 !important;
+          border-color: transparent !important;
+          box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35) !important;
         }
         .start-quiz-btn {
           width: 100%;

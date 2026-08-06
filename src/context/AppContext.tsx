@@ -33,6 +33,10 @@ interface AppContextType {
   toggleFavorite: (word: Word) => void;
   isFavorite: (wordId: string) => boolean;
 
+  masteredWords: string[];
+  toggleMastered: (word: Word) => void;
+  isMastered: (wordId: string) => boolean;
+
   settings: AppSettings;
   updateSettings: (newSettings: Partial<AppSettings>) => void;
 
@@ -65,6 +69,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const [favorites, setFavorites] = useState<Word[]>(() => storageService.getFavorites());
+  const [masteredWords, setMasteredWords] = useState<string[]>(() => storageService.getMasteredWords());
   const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
   const [currentSpeakingText, setCurrentSpeakingText] = useState<string | null>(null);
 
@@ -188,6 +193,15 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return favorites.some(w => w.id === wordId);
   };
 
+  const toggleMastered = (word: Word) => {
+    storageService.toggleMastered(word.id);
+    setMasteredWords(storageService.getMasteredWords());
+  };
+
+  const isMastered = (wordId: string) => {
+    return masteredWords.includes(wordId);
+  };
+
   const updateSettings = (newSettings: Partial<AppSettings>) => {
     storageService.saveSettings(newSettings);
     setSettings(storageService.getSettings());
@@ -231,6 +245,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         favorites,
         toggleFavorite,
         isFavorite,
+        masteredWords,
+        toggleMastered,
+        isMastered,
         settings,
         updateSettings,
         isLoading,

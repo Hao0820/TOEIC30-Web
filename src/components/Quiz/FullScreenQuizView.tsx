@@ -9,11 +9,14 @@ import { QuizResultView } from './QuizResultView';
 export const FullScreenQuizView: React.FC = () => {
   const { activeQuizQuestions, quizScopeTitle, exitQuiz, settings } = useApp();
 
+  const isTimerEnabled = (settings.quizTimerSeconds ?? 15) > 0;
+  const initialSeconds = isTimerEnabled ? (settings.quizTimerSeconds ?? 15) : 0;
+
   const [questions, setQuestions] = useState<QuizQuestion[]>(activeQuizQuestions || []);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState<boolean>(false);
-  const [timerSeconds, setTimerSeconds] = useState<number>(15);
+  const [timerSeconds, setTimerSeconds] = useState<number>(initialSeconds);
   const [isQuizCompleted, setIsQuizCompleted] = useState<boolean>(false);
   const [completedRecord, setCompletedRecord] = useState<QuizRecord | null>(null);
 
@@ -30,9 +33,9 @@ export const FullScreenQuizView: React.FC = () => {
 
   // Timer Countdown
   useEffect(() => {
-    if (isAnswered || isQuizCompleted) return;
+    if (isAnswered || isQuizCompleted || !isTimerEnabled) return;
 
-    setTimerSeconds(15);
+    setTimerSeconds(initialSeconds);
     timerRef.current = window.setInterval(() => {
       setTimerSeconds(prev => {
         if (prev <= 1) {
@@ -47,7 +50,7 @@ export const FullScreenQuizView: React.FC = () => {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [currentIndex, isAnswered, isQuizCompleted]);
+  }, [currentIndex, isAnswered, isQuizCompleted, isTimerEnabled, initialSeconds]);
 
   const handleFinishQuiz = useCallback((finalQuestions: QuizQuestion[]) => {
     let correct = 0;
@@ -162,10 +165,17 @@ export const FullScreenQuizView: React.FC = () => {
             </span>
           </div>
 
-          <div className={`timer-box ${timerSeconds <= 5 ? 'urgent' : ''}`}>
-            <Clock size={16} />
-            <span>{timerSeconds}s</span>
-          </div>
+          {isTimerEnabled ? (
+            <div className={`timer-box ${timerSeconds <= 5 ? 'urgent' : ''}`}>
+              <Clock size={16} />
+              <span>{timerSeconds}s</span>
+            </div>
+          ) : (
+            <div className="timer-box" style={{ opacity: 0.5 }}>
+              <Clock size={16} />
+              <span>無時限</span>
+            </div>
+          )}
         </div>
 
         {/* Progress Bar */}

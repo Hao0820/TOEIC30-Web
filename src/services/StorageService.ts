@@ -8,6 +8,7 @@ export interface AppSettings {
   dailyGoal: number;
   enabledTiers: WordTier[];
   studyMode: StudyMode;
+  quizTimerSeconds: number; // 0 = 無時限, 5/10/15/20/30 秒
 }
 
 const DEFAULT_SETTINGS: AppSettings = {
@@ -18,6 +19,7 @@ const DEFAULT_SETTINGS: AppSettings = {
   dailyGoal: 20,
   enabledTiers: ['score_basic', 'score_600', 'score_800', 'score_900'],
   studyMode: 'byDay',
+  quizTimerSeconds: 15,
 };
 
 class StorageService {
@@ -139,11 +141,51 @@ class StorageService {
     localStorage.removeItem('toeic30_mistake_book');
   }
 
+  // Mastered Words (已背熟單字)
+  public getMasteredWords(): string[] {
+    try {
+      const data = localStorage.getItem('toeic30_mastered_words');
+      return data ? JSON.parse(data) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  public isMastered(wordId: string): boolean {
+    const list = this.getMasteredWords();
+    return list.includes(wordId);
+  }
+
+  public toggleMastered(wordId: string): boolean {
+    const list = this.getMasteredWords();
+    const idx = list.indexOf(wordId);
+    let mastered = false;
+    if (idx >= 0) {
+      list.splice(idx, 1);
+      mastered = false;
+    } else {
+      list.push(wordId);
+      mastered = true;
+    }
+    localStorage.setItem('toeic30_mastered_words', JSON.stringify(list));
+    
+    // Update stats totalLearned
+    const stats = this.getUserStats();
+    stats.totalLearned = list.length;
+    localStorage.setItem('toeic30_stats', JSON.stringify(stats));
+    return mastered;
+  }
+
   // User Stats & Streak
   public getUserStats() {
     try {
       const data = localStorage.getItem('toeic30_stats');
-      return data ? JSON.parse(data) : { streak: 1, lastStudyDate: new Date().toISOString().split('T')[0], totalLearned: 0 };
+      const mastered = this.getMasteredWords().length;
+      if (data) {
+        const parsed = JSON.parse(data);
+        return { ...parsed, totalLearned: Math.max(parsed.totalLearned || 0, mastered) };
+      }
+      return { streak: 1, lastStudyDate: new Date().toISOString().split('T')[0], totalLearned: mastered };
     } catch {
       return { streak: 1, lastStudyDate: new Date().toISOString().split('T')[0], totalLearned: 0 };
     }
@@ -161,7 +203,8 @@ class StorageService {
       }
       stats.lastStudyDate = today;
     }
-    stats.totalLearned = (stats.totalLearned || 0) + wordsCount;
+    const mastered = this.getMasteredWords().length;
+    stats.totalLearned = Math.max((stats.totalLearned || 0) + wordsCount, mastered);
     localStorage.setItem('toeic30_stats', JSON.stringify(stats));
   }
 }

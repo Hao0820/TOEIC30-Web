@@ -206,6 +206,62 @@ class SpeechService {
     this.synth.speak(utterance);
   }
 
+  public async speakSentenceAllAccents(
+    sentence: string,
+    targetWord: string,
+    ipaHint?: string,
+    rateMultiplier: number = 1.0,
+    accents: VoiceAccent[] = ['us', 'uk', 'au']
+  ): Promise<void> {
+    if (!this.synth) return;
+
+    this.stop();
+    this.isSequenceRunning = true;
+
+    let naturalSentence = sentence.trim();
+    if (targetWord.toLowerCase() === 'resume' && ipaHint && (ipaHint.includes('rɛz') || ipaHint.includes('rez'))) {
+      naturalSentence = naturalSentence.replace(/\bresume\b/gi, 'résumé');
+    }
+
+    for (let i = 0; i < accents.length; i++) {
+      if (!this.isSequenceRunning) break;
+      const acc = accents[i];
+      this.notifyAccent(acc);
+      await this.speakSingleSentenceAsync(naturalSentence, sentence, acc, rateMultiplier);
+      if (!this.isSequenceRunning) break;
+      if (i < accents.length - 1) {
+        await new Promise(r => setTimeout(r, 450));
+      }
+    }
+
+    this.isSequenceRunning = false;
+    this.notifyAccent(null);
+    this.notify(false, null);
+  }
+
+  private speakSingleSentenceAsync(naturalSentence: string, originalSentence: string, accent: VoiceAccent = 'us', rateMultiplier: number = 1.0): Promise<void> {
+    return new Promise((resolve) => {
+      if (!this.synth) {
+        resolve();
+        return;
+      }
+      const lang = this.resolveLang(accent);
+      const utterance = new SpeechSynthesisUtterance(naturalSentence);
+      utterance.lang = lang;
+      const voice = this.selectVoice(lang);
+      if (voice) utterance.voice = voice;
+
+      utterance.rate = Math.min(Math.max(rateMultiplier * 0.95, 0.5), 1.5);
+      utterance.pitch = 1.0;
+
+      utterance.onstart = () => this.notify(true, originalSentence);
+      utterance.onend = () => resolve();
+      utterance.onerror = () => resolve();
+
+      this.synth.speak(utterance);
+    });
+  }
+
   public stop() {
     this.isSequenceRunning = false;
     if (this.synth) {
