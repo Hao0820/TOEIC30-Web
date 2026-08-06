@@ -4,8 +4,9 @@ import type { QuizType, Word } from '../../types';
 import { quizEngine } from '../../services/QuizEngine';
 import { storageService } from '../../services/StorageService';
 import { DAY_TITLES } from '../../services/DataLoader';
-import { Play, Clock, CheckCircle2, History, RotateCcw, Sparkles } from 'lucide-react';
+import { Play, Clock, CheckCircle2, History, RotateCcw } from 'lucide-react';
 import { MistakeReviewModal } from './MistakeReviewModal';
+import { DynamicPickerHeader } from '../Flashcard/DynamicPickerHeader';
 
 export const QuizHomeView: React.FC = () => {
   const { words, allWordsPool, currentDay, currentTier, studyMode, enabledTiers, startQuiz, startRetest } = useApp();
@@ -64,15 +65,8 @@ export const QuizHomeView: React.FC = () => {
 
   return (
     <div className="quiz-home-container">
-      {/* Top Hero Banner */}
-      <div className="quiz-hero-card">
-        <div className="hero-badge">
-          <Sparkles size={14} />
-          <span>全真模擬測驗</span>
-        </div>
-        <h2 className="hero-title">TOEIC 實戰防作弊測驗</h2>
-        <p className="hero-desc">4 大題型智慧出題，同詞性智能干擾選項，檢測您的真實商務詞彙量</p>
-      </div>
+      {/* Top Unit Selector Header (Day 1~30 or Basic~900) */}
+      <DynamicPickerHeader />
 
       {/* Quiz Configuration */}
       <div className="glass-panel config-card">
@@ -237,42 +231,10 @@ export const QuizHomeView: React.FC = () => {
         .quiz-home-container {
           max-width: 680px;
           margin: 0 auto;
-          padding: 24px 16px 120px;
+          padding: 16px 16px 120px;
           display: flex;
           flex-direction: column;
-          gap: 24px;
-        }
-        .quiz-hero-card {
-          background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(124, 58, 237, 0.15));
-          border: 1px solid var(--border-glow);
-          border-radius: var(--radius-xl);
-          padding: 28px;
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-        }
-        .hero-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          background: var(--bg-card);
-          color: var(--accent-primary);
-          font-size: 12px;
-          font-weight: 800;
-          padding: 4px 10px;
-          border-radius: 9999px;
-          width: fit-content;
-        }
-        .hero-title {
-          font-family: var(--font-display);
-          font-size: 26px;
-          font-weight: 800;
-          color: var(--text-primary);
-        }
-        .hero-desc {
-          font-size: 14px;
-          color: var(--text-secondary);
-          line-height: 1.5;
+          gap: 16px;
         }
         .config-card {
           padding: 28px;
