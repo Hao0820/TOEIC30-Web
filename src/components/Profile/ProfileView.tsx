@@ -171,7 +171,7 @@ export const ProfileView: React.FC = () => {
 
           <div className="stat-box">
             <BookCheck size={20} color="var(--accent-primary)" />
-            <span className="stat-number">{masteredWords.length || stats.totalLearned || 0} 字</span>
+            <span className="stat-number">{masteredWords.length} 字</span>
             <span className="stat-desc">累計背熟</span>
           </div>
 

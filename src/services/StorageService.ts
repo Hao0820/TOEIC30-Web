@@ -182,20 +182,20 @@ class StorageService {
 
   // User Stats & Streak
   public getUserStats() {
+    const mastered = this.getMasteredWords().length;
     try {
       const data = localStorage.getItem('toeic30_stats');
-      const mastered = this.getMasteredWords().length;
       if (data) {
         const parsed = JSON.parse(data);
-        return { ...parsed, totalLearned: Math.max(parsed.totalLearned || 0, mastered) };
+        return { ...parsed, totalLearned: mastered };
       }
       return { streak: 1, lastStudyDate: new Date().toISOString().split('T')[0], totalLearned: mastered };
     } catch {
-      return { streak: 1, lastStudyDate: new Date().toISOString().split('T')[0], totalLearned: 0 };
+      return { streak: 1, lastStudyDate: new Date().toISOString().split('T')[0], totalLearned: mastered };
     }
   }
 
-  public recordStudyActivity(wordsCount: number = 1) {
+  public recordStudyActivity() {
     const stats = this.getUserStats();
     const today = new Date().toISOString().split('T')[0];
     if (stats.lastStudyDate !== today) {
@@ -207,8 +207,7 @@ class StorageService {
       }
       stats.lastStudyDate = today;
     }
-    const mastered = this.getMasteredWords().length;
-    stats.totalLearned = Math.max((stats.totalLearned || 0) + wordsCount, mastered);
+    stats.totalLearned = this.getMasteredWords().length;
     localStorage.setItem('toeic30_stats', JSON.stringify(stats));
   }
 }

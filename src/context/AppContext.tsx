@@ -279,7 +279,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const valid = Math.min(Math.max(index, 0), words.length - 1);
     setCurrentIndexState(valid);
     storageService.saveWordProgress(studyMode, getUnitKey(), valid);
-    storageService.recordStudyActivity(1);
+    storageService.recordStudyActivity();
 
     if (user) {
       supabaseService.saveWordProgress(user.id, studyMode, getUnitKey(), valid);

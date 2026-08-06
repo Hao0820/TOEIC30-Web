@@ -1,10 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { useApp } from '../../context/AppContext';
 import { TIER_CONFIG } from '../../services/DataLoader';
-import { Search, X, Star } from 'lucide-react';
+import { Search, X, Star, CheckCircle2 } from 'lucide-react';
 
 export const WordListModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
-  const { words, currentIndex, setCurrentIndex, isFavorite, toggleFavorite } = useApp();
+  const { words, currentIndex, setCurrentIndex, isFavorite, toggleFavorite, isMastered, toggleMastered } = useApp();
   const [query, setQuery] = useState('');
 
   const filtered = useMemo(() => {
@@ -68,6 +68,7 @@ export const WordListModal: React.FC<{ isOpen: boolean; onClose: () => void }> =
               const originalIndex = words.findIndex(w => w.id === word.id);
               const isCurrent = originalIndex === currentIndex;
               const isFav = isFavorite(word.id);
+              const isMaster = isMastered(word.id);
               const tierMeta = TIER_CONFIG[word.tier] || TIER_CONFIG.score_basic;
 
               return (
@@ -87,12 +88,29 @@ export const WordListModal: React.FC<{ isOpen: boolean; onClose: () => void }> =
 
                   <div className="row-right">
                     <span className="row-chinese">{word.chinese}</span>
+                    
+                    <button
+                      className={`master-inline-btn ${isMaster ? 'mastered' : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleMastered(word);
+                      }}
+                      title="標記已背熟 (打勾)"
+                    >
+                      <CheckCircle2
+                        size={16}
+                        fill={isMaster ? 'var(--accent-success)' : 'transparent'}
+                        color={isMaster ? 'white' : 'var(--text-muted)'}
+                      />
+                    </button>
+
                     <button
                       className="star-inline-btn"
                       onClick={(e) => {
                         e.stopPropagation();
                         toggleFavorite(word);
                       }}
+                      title="收藏"
                     >
                       <Star
                         size={16}
@@ -248,6 +266,18 @@ export const WordListModal: React.FC<{ isOpen: boolean; onClose: () => void }> =
           overflow: hidden;
           text-overflow: ellipsis;
         }
+        .master-inline-btn {
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          padding: 2px;
+          transition: transform 0.15s;
+        }
+        .master-inline-btn:hover {
+          transform: scale(1.15);
+        }
         .star-inline-btn {
           background: transparent;
           border: none;
@@ -255,6 +285,10 @@ export const WordListModal: React.FC<{ isOpen: boolean; onClose: () => void }> =
           display: flex;
           align-items: center;
           padding: 2px;
+          transition: transform 0.15s;
+        }
+        .star-inline-btn:hover {
+          transform: scale(1.15);
         }
         .empty-search {
           text-align: center;
