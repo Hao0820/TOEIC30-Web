@@ -59,8 +59,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [settings, setSettings] = useState<AppSettings>(() => storageService.getSettings());
   
   const [studyMode, setStudyModeState] = useState<StudyMode>(() => settings.studyMode || 'byDay');
-  const [currentDay, setCurrentDayState] = useState<number>(1);
-  const [currentTier, setCurrentTierState] = useState<WordTier>('score_basic');
+  const [currentDay, setCurrentDayState] = useState<number>(() => settings.lastSelectedDay || 1);
+  const [currentTier, setCurrentTierState] = useState<WordTier>(() => settings.lastSelectedTier || 'score_basic');
   const [enabledTiers, setEnabledTiers] = useState<WordTier[]>(() => settings.enabledTiers || ['score_basic', 'score_600', 'score_800', 'score_900']);
 
   const [words, setWords] = useState<Word[]>([]);
@@ -163,10 +163,12 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const setCurrentDay = (day: number) => {
     setCurrentDayState(day);
+    updateSettings({ lastSelectedDay: day });
   };
 
   const setCurrentTier = (tier: WordTier) => {
     setCurrentTierState(tier);
+    updateSettings({ lastSelectedTier: tier });
   };
 
   const toggleTier = (tier: WordTier) => {

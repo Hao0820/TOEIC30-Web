@@ -9,6 +9,8 @@ export interface AppSettings {
   enabledTiers: WordTier[];
   studyMode: StudyMode;
   quizTimerSeconds: number; // 0 = 無時限, 5/10/15/20/30 秒
+  lastSelectedDay: number; // 上次停留的天數 (1~30)
+  lastSelectedTier: WordTier; // 上次停留的分數階段 (score_basic ~ score_900)
 }
 
 const DEFAULT_SETTINGS: AppSettings = {
@@ -20,6 +22,8 @@ const DEFAULT_SETTINGS: AppSettings = {
   enabledTiers: ['score_basic', 'score_600', 'score_800', 'score_900'],
   studyMode: 'byDay',
   quizTimerSeconds: 15,
+  lastSelectedDay: 1,
+  lastSelectedTier: 'score_basic',
 };
 
 class StorageService {
