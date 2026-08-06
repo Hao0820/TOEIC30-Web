@@ -8,7 +8,7 @@ import { Play, Clock, CheckCircle2, History, RotateCcw, Sparkles } from 'lucide-
 import { MistakeReviewModal } from './MistakeReviewModal';
 
 export const QuizHomeView: React.FC = () => {
-  const { words, allWordsPool, currentDay, studyMode, startQuiz, startRetest } = useApp();
+  const { words, allWordsPool, currentDay, currentTier, studyMode, enabledTiers, startQuiz, startRetest } = useApp();
 
   const [scope, setScope] = useState<'current' | 'all' | 'mistakes'>('current');
   const [questionCount, setQuestionCount] = useState<number>(20);
@@ -34,19 +34,27 @@ export const QuizHomeView: React.FC = () => {
     let targetWords: Word[] = [];
     let title = '';
 
+    const filteredGlobalPool = allWordsPool.filter(w => enabledTiers.includes(w.tier));
+
     if (scope === 'current') {
       targetWords = words;
-      title = studyMode === 'byDay' ? `Day ${String(currentDay).padStart(2, '0')} · ${DAY_TITLES[currentDay] || ''}` : '當前學習單元測驗';
+      if (studyMode === 'byDay') {
+        title = `Day ${String(currentDay).padStart(2, '0')} · ${DAY_TITLES[currentDay] || ''}`;
+      } else if (studyMode === 'byLevel') {
+        title = `目標等級 · ${currentTier.replace('score_', '').toUpperCase()} 測驗`;
+      } else {
+        title = '當前學習單元測驗';
+      }
     } else if (scope === 'all') {
-      targetWords = allWordsPool;
-      title = '全書 6,800+ 隨機全真測驗';
+      targetWords = filteredGlobalPool.length > 0 ? filteredGlobalPool : allWordsPool;
+      title = `全真題庫測驗 (${targetWords.length} 字)`;
     } else {
       targetWords = mistakeWords;
       title = `🔥 錯題專項強化測驗 (${mistakeWords.length} 字)`;
     }
 
     if (targetWords.length === 0) {
-      alert('所選範圍目前沒有單字可進行測驗！');
+      alert('所選範圍目前沒有單字可進行測驗！請至設定頁面確認已啟用的階級。');
       return;
     }
 
