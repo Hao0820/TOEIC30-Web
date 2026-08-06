@@ -30,12 +30,16 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onSuccess
         if (password.length < 6) {
           throw new Error('密碼長度至少需要 6 個字元');
         }
-        await supabaseService.signUp(email, password, displayName);
-        setSuccessMessage('註冊成功！已自動為您登入並建立個人雲端資料庫。');
-        setTimeout(() => {
-          onSuccess?.();
-          onClose();
-        }, 1200);
+        const data = await supabaseService.signUp(email, password, displayName);
+        if (data.session) {
+          setSuccessMessage('註冊成功！已自動為您登入並建立個人雲端資料庫。');
+          setTimeout(() => {
+            onSuccess?.();
+            onClose();
+          }, 1200);
+        } else {
+          setSuccessMessage('註冊成功！若您啟用了 Email 驗證，請至信箱點擊確認信後登入；如需免驗證直接登入，可至 Supabase 關閉 Confirm email。');
+        }
       } else {
         await supabaseService.signIn(email, password);
         setSuccessMessage('登入成功！正在同步雲端進度...');
@@ -51,6 +55,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onSuccess
         msg = '帳號或密碼錯誤，請重新確認';
       } else if (msg.includes('User already registered')) {
         msg = '此 Email 已經註冊過，請直接切換至登入';
+      } else if (msg.includes('Email not confirmed')) {
+        msg = '⚠️ 此信箱尚未完成驗證！請至您的信箱點擊確認連結，或至 Supabase 後台關閉「Confirm email」即可免驗證直接登入。';
       }
       setErrorMessage(msg);
     } finally {

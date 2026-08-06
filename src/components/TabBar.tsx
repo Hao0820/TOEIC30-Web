@@ -18,7 +18,7 @@ export const TabBar: React.FC = () => {
     { id: 'quiz', label: '測驗', icon: HelpCircle },
     { id: 'favorites', label: '收藏', icon: Star, badge: favorites.length > 0 ? favorites.length : undefined },
     { id: 'mistakes', label: '錯題', icon: BookX },
-    { id: 'profile', label: '設定', icon: User },
+    { id: 'profile', label: '我的', icon: User },
   ];
 
   return (

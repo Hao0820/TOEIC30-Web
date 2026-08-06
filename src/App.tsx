@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { AppProvider, useApp } from './context/AppContext';
-import { Navbar } from './components/Navbar';
 import { TabBar } from './components/TabBar';
 import { FlashcardView } from './components/Flashcard/FlashcardView';
 import { WordListModal } from './components/Flashcard/WordListModal';
@@ -17,9 +16,6 @@ const MainContent: React.FC = () => {
 
   return (
     <div className="app-shell">
-      {/* Top Navbar */}
-      <Navbar onOpenSearch={() => setIsWordListOpen(true)} />
-
       {/* Main Tab Content */}
       <main className="main-content-area">
         {activeTab === 'vocabulary' && (
