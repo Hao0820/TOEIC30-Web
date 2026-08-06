@@ -17,6 +17,7 @@ import {
   CheckCircle2,
   CheckSquare,
   Square,
+  RotateCw,
 } from 'lucide-react';
 
 export const ProfileView: React.FC = () => {
@@ -224,7 +225,39 @@ export const ProfileView: React.FC = () => {
         </div>
       </div>
 
-      {/* 5. 關於與法律免責聲明 */}
+      {/* 5. 版本更新與強制重整 (專為 iOS 加入主畫面 PWA 設計) */}
+      <div className="glass-panel section-card fade-in">
+        <div className="section-title-group">
+          <h4 className="card-section-title">
+            <RotateCw size={18} color="var(--accent-primary)" />
+            <span>應用程式版本與更新</span>
+          </h4>
+          <p className="section-help-text">若加入 iPhone 主畫面後未即時顯示最新改版，可點擊下方按鈕強制清除快取</p>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <button
+            className="btn-secondary"
+            style={{ width: '100%', height: '46px', justifyContent: 'center' }}
+            onClick={() => {
+              if ('caches' in window) {
+                caches.keys().then((names) => {
+                  names.forEach((name) => caches.delete(name));
+                });
+              }
+              window.location.href = window.location.origin + window.location.pathname + '?t=' + Date.now();
+            }}
+          >
+            <RotateCw size={16} />
+            <span>🔄 強制清除快取並載入最新版本</span>
+          </button>
+          <p style={{ fontSize: '12px', color: 'var(--text-muted)', textAlign: 'center' }}>
+            當前發布版本：v1.2.1 (2026.08.06 最新更新)
+          </p>
+        </div>
+      </div>
+
+      {/* 6. 關於與法律免責聲明 */}
       <div className="disclaimer-card">
         <ShieldAlert size={16} color="var(--text-muted)" style={{ flexShrink: 0, marginTop: 2 }} />
         <div>
@@ -232,7 +265,7 @@ export const ProfileView: React.FC = () => {
           <p>
             TOEIC® is a registered trademark of Educational Testing Service (ETS). This web application is an independently developed study tool and is not endorsed, sponsored, or affiliated with ETS.
           </p>
-          <p style={{ marginTop: 4 }}>資料庫版本：v1.0.0 (收錄 6,800+ 筆單字) · 版權所有 © Wesley Li</p>
+          <p style={{ marginTop: 4 }}>資料庫版本：v1.2.1 (收錄 6,800+ 筆單字) · 版權所有 © Wesley Li</p>
         </div>
       </div>
 
