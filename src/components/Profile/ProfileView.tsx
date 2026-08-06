@@ -1,6 +1,7 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
 import { storageService } from '../../services/StorageService';
+import { updateService } from '../../services/UpdateService';
 import { TIER_CONFIG } from '../../services/DataLoader';
 import type { StudyMode, WordTier } from '../../types';
 import {
@@ -239,20 +240,13 @@ export const ProfileView: React.FC = () => {
           <button
             className="btn-secondary"
             style={{ width: '100%', height: '46px', justifyContent: 'center' }}
-            onClick={() => {
-              if ('caches' in window) {
-                caches.keys().then((names) => {
-                  names.forEach((name) => caches.delete(name));
-                });
-              }
-              window.location.href = window.location.origin + window.location.pathname + '?t=' + Date.now();
-            }}
+            onClick={() => updateService.forceHardRefresh()}
           >
             <RotateCw size={16} />
             <span>🔄 強制清除快取並載入最新版本</span>
           </button>
           <p style={{ fontSize: '12px', color: 'var(--text-muted)', textAlign: 'center' }}>
-            當前發布版本：v1.2.1 (2026.08.06 最新更新)
+            當前發布版本：v1.2.2 (支援自動更新偵測)
           </p>
         </div>
       </div>
