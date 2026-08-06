@@ -129,33 +129,39 @@ export const QuizHomeView: React.FC = () => {
           </div>
         </div>
 
-        {/* Question Count & Timer */}
-        <div className="config-row">
-          <div className="config-group flex-1">
-            <label className="config-label">題目數量</label>
-            <div className="count-pills">
-              {[10, 20, 30, 50].map(cnt => (
-                <button
-                  key={cnt}
-                  className={`count-pill ${questionCount === cnt ? 'active' : ''}`}
-                  onClick={() => setQuestionCount(cnt)}
-                >
-                  {cnt} 題
-                </button>
-              ))}
+        {/* Question Count (Full-width 4-grid) */}
+        <div className="config-group">
+          <label className="config-label">題目數量</label>
+          <div className="count-grid">
+            {[10, 20, 30, 50].map(cnt => (
+              <button
+                key={cnt}
+                className={`count-cell-btn ${questionCount === cnt ? 'active' : ''}`}
+                onClick={() => setQuestionCount(cnt)}
+              >
+                {cnt} 題
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Timer Row */}
+        <div className="timer-setting-row">
+          <div className="timer-row-left">
+            <Clock size={18} color={useTimer ? 'var(--accent-gold)' : 'var(--text-muted)'} />
+            <div>
+              <span className="timer-row-title">作答倒數計時</span>
+              <p className="timer-row-sub">{useTimer ? '每題限時 15 秒作答' : '無作答時間限制'}</p>
             </div>
           </div>
 
-          <div className="config-group">
-            <label className="config-label">作答倒數計時</label>
-            <button
-              className={`timer-toggle ${useTimer ? 'active' : ''}`}
-              onClick={() => setUseTimer(!useTimer)}
-            >
-              <Clock size={16} />
-              <span>{useTimer ? '每題 15 秒' : '無時限'}</span>
-            </button>
-          </div>
+          <button
+            className={`timer-pill-btn ${useTimer ? 'active' : ''}`}
+            onClick={() => setUseTimer(!useTimer)}
+          >
+            <CheckCircle2 size={15} />
+            <span>{useTimer ? '每題 15 秒' : '無時限'}</span>
+          </button>
         </div>
 
         {/* Start Button */}
@@ -359,42 +365,76 @@ export const QuizHomeView: React.FC = () => {
         .flex-1 {
           flex: 1;
         }
-        .count-pills {
-          display: flex;
-          gap: 8px;
+        .count-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 10px;
         }
-        .count-pill {
-          padding: 8px 14px;
-          border-radius: 9999px;
+        .count-cell-btn {
+          height: 40px;
+          border-radius: var(--radius-md);
+          background: var(--bg-secondary);
+          border: 1.5px solid var(--border-color);
+          color: var(--text-secondary);
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .count-cell-btn:hover {
+          border-color: var(--accent-primary);
+          color: var(--accent-primary);
+        }
+        .count-cell-btn.active {
+          background: var(--accent-primary);
+          color: white;
+          border-color: transparent;
+          box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+        .timer-setting-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12px 16px;
+          border-radius: var(--radius-md);
           background: var(--bg-secondary);
           border: 1px solid var(--border-color);
-          color: var(--text-secondary);
+        }
+        .timer-row-left {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .timer-row-title {
+          font-size: 13px;
+          font-weight: 700;
+          color: var(--text-primary);
+        }
+        .timer-row-sub {
+          font-size: 11px;
+          color: var(--text-muted);
+        }
+        .timer-pill-btn {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 6px 14px;
+          border-radius: 9999px;
+          background: var(--bg-card);
+          border: 1px solid var(--border-color);
+          color: var(--text-muted);
           font-size: 12px;
           font-weight: 700;
           cursor: pointer;
           transition: all 0.2s;
         }
-        .count-pill.active {
-          background: var(--accent-primary);
-          color: white;
-          border-color: transparent;
-        }
-        .timer-toggle {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          padding: 8px 16px;
-          border-radius: 9999px;
-          background: var(--bg-secondary);
-          border: 1px solid var(--border-color);
-          color: var(--text-secondary);
-          font-size: 12px;
-          font-weight: 700;
-          cursor: pointer;
-        }
-        .timer-toggle.active {
+        .timer-pill-btn.active {
           color: var(--accent-gold);
           border-color: var(--accent-gold);
+          background: rgba(245, 158, 11, 0.1);
         }
         .start-quiz-btn {
           width: 100%;
