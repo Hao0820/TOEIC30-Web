@@ -82,8 +82,8 @@ export const ProfileView: React.FC = () => {
 
   return (
     <div className="profile-page-container">
-      {/* 0. 雲端會員帳號卡片 */}
-      <div className="glass-panel cloud-account-card fade-in">
+      {/* 1. 整合型個人帳號與學習數據卡片 (合併在同一個 Card) */}
+      <div className="glass-panel unified-profile-card fade-in">
         {user ? (
           <div className="account-logged-in">
             <div className="account-user-info">
@@ -148,20 +148,10 @@ export const ProfileView: React.FC = () => {
             </button>
           </div>
         )}
-      </div>
 
-      {/* 1. 學習數據中心 */}
-      <div className="glass-panel stats-card fade-in">
-        <div className="stats-header">
-          <div className="avatar-circle">
-            <Award size={28} color="white" />
-          </div>
-          <div>
-            <h3 className="user-title">TOEIC 30 學習數據中心</h3>
-            <p className="user-subtitle">每日堅持，邁向金色證書 990 滿分</p>
-          </div>
-        </div>
+        <div className="card-divider" />
 
+        {/* 學習數據統計區塊 */}
         <div className="stats-grid">
           <div className="stat-box">
             <Flame size={20} color="var(--accent-gold)" />
@@ -278,31 +268,13 @@ export const ProfileView: React.FC = () => {
         </div>
       </div>
 
-      {/* 4. 語音與系統偏好 */}
+      {/* 4. 偏好與外觀設定 (移除發音語速) */}
       <div className="glass-panel section-card fade-in">
         <div className="section-title-group">
           <h4 className="card-section-title">
             <Sliders size={18} color="var(--accent-gold)" />
-            <span>語音與外觀設定</span>
+            <span>偏好與外觀設定</span>
           </h4>
-        </div>
-
-        <div className="setting-item-row">
-          <div>
-            <label className="setting-label">發音語速</label>
-            <p className="setting-desc">調整單字與例句的英聽朗讀速度</p>
-          </div>
-          <div className="speed-pills">
-            {[0.8, 1.0, 1.2].map((rate) => (
-              <button
-                key={rate}
-                className={`pill-btn ${settings.speechRate === rate ? 'active' : ''}`}
-                onClick={() => updateSettings({ speechRate: rate })}
-              >
-                {rate}x
-              </button>
-            ))}
-          </div>
         </div>
 
         <div className="setting-item-row">
@@ -395,9 +367,18 @@ export const ProfileView: React.FC = () => {
           }
         }
 
-        /* 雲端會員卡片 */
-        .cloud-account-card {
-          padding: 18px 22px;
+        /* 整合型個人帳號與學習數據卡片 */
+        .unified-profile-card {
+          padding: 22px 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .card-divider {
+          height: 1px;
+          background: var(--border-color);
+          width: 100%;
+          opacity: 0.6;
         }
         .account-logged-in {
           display: flex;
@@ -558,37 +539,6 @@ export const ProfileView: React.FC = () => {
           box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
         }
 
-        .stats-card {
-          padding: 28px;
-          display: flex;
-          flex-direction: column;
-          gap: 24px;
-        }
-        .stats-header {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-        }
-        .avatar-circle {
-          width: 56px;
-          height: 56px;
-          border-radius: 50%;
-          background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
-        }
-        .user-title {
-          font-family: var(--font-display);
-          font-size: 20px;
-          font-weight: 800;
-          color: var(--text-primary);
-        }
-        .user-subtitle {
-          font-size: 13px;
-          color: var(--text-muted);
-        }
         .stats-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);

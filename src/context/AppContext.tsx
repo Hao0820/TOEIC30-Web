@@ -396,7 +396,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         theme: updated.theme,
         voice_accent: updated.voiceAccent,
         voice_play_mode: updated.voicePlayMode,
-        speech_rate: updated.speechRate,
         daily_goal: updated.dailyGoal,
         enabled_tiers: updated.enabledTiers,
         study_mode: updated.studyMode,
