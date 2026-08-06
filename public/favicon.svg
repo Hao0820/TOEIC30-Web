@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Book Icon Body -->
+  <path d="M120 160C120 142.327 134.327 128 152 128H236C247.046 128 256 136.954 256 148V368C244 360 224 356 200 356H152C134.327 356 120 370.327 120 388V160Z" fill="white" fill-opacity="0.95"/>
+  <path d="M392 160C392 142.327 377.673 128 360 128H276C264.954 128 256 136.954 256 148V368C268 360 288 356 312 356H360C377.673 356 392 370.327 392 388V160Z" fill="white" fill-opacity="0.85"/>
+  
+  <!-- Star / 30 Accent -->
+  <circle cx="256" cy="240" r="44" fill="url(#goldGrad)" />
+  <path d="M256 214L263.4 229.6L280.6 232.1L268.1 244.3L271.1 261.4L256 253.5L240.9 261.4L243.9 244.3L231.4 232.1L248.6 229.6L256 214Z" fill="#713F12"/>
+</svg>

@@ -1,0 +1,5335 @@
+{
+  "score_basic": [
+    {
+      "id": 1,
+      "day": 1,
+      "word_index": 1,
+      "word": "resume",
+      "phonetic": "/ˈrɛzəmeɪ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "履歷表"
+      ],
+      "definitions_summary": "履歷表",
+      "collocations": [
+        "submit a resume",
+        "update one's resume"
+      ],
+      "example": {
+        "en": "Applicants are required to submit a resume along with their portfolio.",
+        "zh": "應徵者須隨作品集附上履歷表。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 1,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "word_index": 2,
+      "word": "opening",
+      "phonetic": "/ˈoʊpənɪŋ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "空缺",
+        "職缺",
+        "開張",
+        "開始"
+      ],
+      "definitions_summary": "空缺、職缺、開張、開始",
+      "collocations": [
+        "job opening",
+        "grand opening"
+      ],
+      "example": {
+        "en": "There are several job openings available in the marketing department.",
+        "zh": "行銷部門目前有幾個職缺。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 2,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 3,
+      "day": 1,
+      "word_index": 3,
+      "word": "applicant",
+      "phonetic": "/ˈæplɪkənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "申請者",
+        "應徵者"
+      ],
+      "definitions_summary": "申請者、應徵者",
+      "collocations": [
+        "job applicant",
+        "qualified applicant"
+      ],
+      "example": {
+        "en": "The hiring committee reviewed hundreds of applicants for the position.",
+        "zh": "招聘委員會審查了該職位數百名應徵者的資料。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 3,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 4,
+      "day": 1,
+      "word_index": 4,
+      "word": "requirement",
+      "phonetic": "/rɪkˈwaɪrmənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "必要條件",
+        "要求",
+        "規定"
+      ],
+      "definitions_summary": "必要條件、要求、規定",
+      "collocations": [
+        "meet requirements",
+        "minimum requirement"
+      ],
+      "example": {
+        "en": "Fluency in English and Japanese is a basic requirement for this job.",
+        "zh": "流利的英語和日語是這份工作的基本要求。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 4,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 5,
+      "day": 1,
+      "word_index": 5,
+      "word": "meet",
+      "phonetic": "/miːt/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "符合",
+        "滿足",
+        "會面"
+      ],
+      "definitions_summary": "符合、滿足、會面",
+      "collocations": [
+        "meet one's needs",
+        "meet the requirements"
+      ],
+      "example": {
+        "en": "All candidates must meet the minimum qualifications listed in the description.",
+        "zh": "所有候選人都必須符合職位說明中列出的最低資格。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 5,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 6,
+      "day": 1,
+      "word_index": 6,
+      "word": "qualified",
+      "phonetic": "/kˈwɑləˌfaɪd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "有資格的",
+        "勝任的",
+        "合格的"
+      ],
+      "definitions_summary": "有資格的、勝任的、合格的",
+      "collocations": [
+        "be qualified for",
+        "highly qualified"
+      ],
+      "example": {
+        "en": "She is highly qualified for the senior management position.",
+        "zh": "她非常勝任這份高階管理職位。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 6,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 7,
+      "day": 1,
+      "word_index": 7,
+      "word": "candidate",
+      "phonetic": "/ˈkænədɪt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "候選者",
+        "應徵者"
+      ],
+      "definitions_summary": "候選者、應徵者",
+      "collocations": [
+        "prospective candidate",
+        "ideal candidate"
+      ],
+      "example": {
+        "en": "Five candidates were shortlisted for the second round of interviews.",
+        "zh": "有五位候選人進入了第二輪面試的名單。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 7,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 8,
+      "day": 1,
+      "word_index": 8,
+      "word": "confidence",
+      "phonetic": "/ˈkɑnfədɛns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "信心",
+        "自信",
+        "信任"
+      ],
+      "definitions_summary": "信心、自信、信任",
+      "collocations": [
+        "confidence in",
+        "with confidence"
+      ],
+      "example": {
+        "en": "The manager expressed full confidence in the team's ability to finish on time.",
+        "zh": "經理對團隊如期完成任務的能力表達了充分的信心。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 8,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 9,
+      "day": 1,
+      "word_index": 9,
+      "word": "highly",
+      "phonetic": "/ˈhaɪli/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "很",
+        "非常",
+        "高度地"
+      ],
+      "definitions_summary": "很、非常、高度地",
+      "collocations": [
+        "highly recommended",
+        "highly qualified"
+      ],
+      "example": {
+        "en": "Mr. Vance is a highly respected expert in international finance.",
+        "zh": "范斯先生是一位備受尊崇的國際金融專家。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 9,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 10,
+      "day": 1,
+      "word_index": 10,
+      "word": "professional",
+      "phonetic": "/prəˈfɛʃənəl/",
+      "part_of_speech": "adj. / n.",
+      "chinese_definitions": [
+        "專業的",
+        "職業的",
+        "專家",
+        "專業人士"
+      ],
+      "definitions_summary": "專業的、職業的、專家、專業人士",
+      "collocations": [
+        "professional experience",
+        "seasoned professional"
+      ],
+      "example": {
+        "en": "He has gained extensive professional experience over the last decade.",
+        "zh": "在過去十年間，他累積了豐富的專業經驗。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 10,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 11,
+      "day": 1,
+      "word_index": 11,
+      "word": "interview",
+      "phonetic": "/ˈɪntərvˌju/",
+      "part_of_speech": "n. / v.",
+      "chinese_definitions": [
+        "面試",
+        "面談",
+        "採訪"
+      ],
+      "definitions_summary": "面試、面談、採訪",
+      "collocations": [
+        "job interview",
+        "conduct an interview"
+      ],
+      "example": {
+        "en": "She was invited to an on-site interview scheduled for next Monday.",
+        "zh": "她受邀參加定於下週一進行的現場面試。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 11,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 12,
+      "day": 1,
+      "word_index": 12,
+      "word": "hire",
+      "phonetic": "/haɪər/",
+      "part_of_speech": "v. / n.",
+      "chinese_definitions": [
+        "雇用",
+        "聘請",
+        "新進員工"
+      ],
+      "definitions_summary": "雇用、聘請、新進員工",
+      "collocations": [
+        "new hire",
+        "hire staff"
+      ],
+      "example": {
+        "en": "The corporation plans to hire twenty software engineers next quarter.",
+        "zh": "該企業計劃在下個季度聘用二十名軟體工程師。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 12,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 13,
+      "day": 1,
+      "word_index": 13,
+      "word": "training",
+      "phonetic": "/ˈtreɪnɪŋ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "訓練",
+        "培訓"
+      ],
+      "definitions_summary": "訓練、培訓",
+      "collocations": [
+        "on-the-job training",
+        "training program"
+      ],
+      "example": {
+        "en": "New employees will undergo a two-week comprehensive training program.",
+        "zh": "新進員工將接受為期兩週的全面培訓課程。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 13,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 14,
+      "day": 1,
+      "word_index": 14,
+      "word": "reference",
+      "phonetic": "/ˈrɛfərəns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "推薦信",
+        "推薦人",
+        "參考"
+      ],
+      "definitions_summary": "推薦信、推薦人、參考",
+      "collocations": [
+        "letter of reference",
+        "professional reference"
+      ],
+      "example": {
+        "en": "Please provide the names and contact numbers of three professional references.",
+        "zh": "請提供三位專業推薦人的姓名和聯絡電話。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 14,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 15,
+      "day": 1,
+      "word_index": 15,
+      "word": "position",
+      "phonetic": "/pəˈzɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "職位",
+        "職務",
+        "位置"
+      ],
+      "definitions_summary": "職位、職務、位置",
+      "collocations": [
+        "managerial position",
+        "apply for a position"
+      ],
+      "example": {
+        "en": "He applied for an executive position at a leading tech startup.",
+        "zh": "他應徵了一家知名科技新創公司的高階主管職位。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 15,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 16,
+      "day": 1,
+      "word_index": 16,
+      "word": "achievement",
+      "phonetic": "/əˈʧivmənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "成就",
+        "業績",
+        "達成"
+      ],
+      "definitions_summary": "成就、業績、達成",
+      "collocations": [
+        "career achievement",
+        "sense of achievement"
+      ],
+      "example": {
+        "en": "Her resume highlights her notable achievements in expanding market share.",
+        "zh": "她的履歷重點介紹了她在擴大市佔率方面的顯著成就。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 16,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 17,
+      "day": 1,
+      "word_index": 17,
+      "word": "impressed",
+      "phonetic": "/ˌɪmˈprɛst/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "感到欽佩的",
+        "印象深刻的"
+      ],
+      "definitions_summary": "感到欽佩的、印象深刻的",
+      "collocations": [
+        "be impressed with",
+        "be impressed by"
+      ],
+      "example": {
+        "en": "The interviewers were deeply impressed by her problem-solving skills.",
+        "zh": "面試官對她的解決問題能力留下了深刻的印象。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 17,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 18,
+      "day": 1,
+      "word_index": 18,
+      "word": "excellent",
+      "phonetic": "/ˈɛksələnt/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "優秀的",
+        "卓越的",
+        "極好的"
+      ],
+      "definitions_summary": "優秀的、卓越的、極好的",
+      "collocations": [
+        "excellent communication skills",
+        "excellent performance"
+      ],
+      "example": {
+        "en": "The candidate has an excellent record of leadership in previous roles.",
+        "zh": "該候選人在過往職務中擁有卓越的領導記錄。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 18,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 19,
+      "day": 1,
+      "word_index": 19,
+      "word": "eligible",
+      "phonetic": "/ˈɛlɪʤəbəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "有資格的",
+        "合適的",
+        "符合條件的"
+      ],
+      "definitions_summary": "有資格的、合適的、符合條件的",
+      "collocations": [
+        "be eligible for",
+        "be eligible to"
+      ],
+      "example": {
+        "en": "Full-time employees are eligible for health insurance and paid vacation.",
+        "zh": "正職員工有資格享受健保和帶薪休假。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 19,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 20,
+      "day": 1,
+      "word_index": 20,
+      "word": "identify",
+      "phonetic": "/aɪˈdɛntəˌfaɪ/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "辨認",
+        "識別",
+        "確認"
+      ],
+      "definitions_summary": "辨認、識別、確認",
+      "collocations": [
+        "identify problems",
+        "identify qualified candidates"
+      ],
+      "example": {
+        "en": "The assessment test helps identify candidates with strong analytical skills.",
+        "zh": "這項評估測驗有助於識別具有較強分析能力的候選人。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 20,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 21,
+      "day": 1,
+      "word_index": 21,
+      "word": "associate",
+      "phonetic": "/əˈsoʊʃiˌeɪt/",
+      "part_of_speech": "v. / n.",
+      "chinese_definitions": [
+        "使有聯繫",
+        "同事",
+        "夥伴"
+      ],
+      "definitions_summary": "使有聯繫、同事、夥伴",
+      "collocations": [
+        "associate with",
+        "business associate"
+      ],
+      "example": {
+        "en": "She consulted with several business associates before accepting the job offer.",
+        "zh": "她在接受工作錄用前諮詢了幾位商業夥伴。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 21,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 22,
+      "day": 1,
+      "word_index": 22,
+      "word": "condition",
+      "phonetic": "/kənˈdɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "條件",
+        "狀況",
+        "狀態"
+      ],
+      "definitions_summary": "條件、狀況、狀態",
+      "collocations": [
+        "working conditions",
+        "condition of employment"
+      ],
+      "example": {
+        "en": "The working conditions and compensation package were clearly outlined in the contract.",
+        "zh": "合約中清楚列出了工作條件與薪資福利方案。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 22,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 23,
+      "day": 1,
+      "word_index": 23,
+      "word": "employment",
+      "phonetic": "/ɪmˈplɔɪmənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "雇用",
+        "就業",
+        "工作"
+      ],
+      "definitions_summary": "雇用、就業、工作",
+      "collocations": [
+        "employment contract",
+        "employment opportunity"
+      ],
+      "example": {
+        "en": "The recruitment agency specializes in finding temporary employment for professionals.",
+        "zh": "這家人力仲介公司專門為專業人士尋找短期工作機會。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 23,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 24,
+      "day": 1,
+      "word_index": 24,
+      "word": "lack",
+      "phonetic": "/læk/",
+      "part_of_speech": "v. / n.",
+      "chinese_definitions": [
+        "缺乏",
+        "缺少",
+        "不足"
+      ],
+      "definitions_summary": "缺乏、缺少、不足",
+      "collocations": [
+        "lack of experience",
+        "lack confidence"
+      ],
+      "example": {
+        "en": "Although he lacked formal training, his enthusiasm and practical skills stood out.",
+        "zh": "雖然他缺乏正規訓練，但他熱情與實務能力非常突出。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 24,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 25,
+      "day": 1,
+      "word_index": 25,
+      "word": "managerial",
+      "phonetic": "/ˌmænɪˈʤɪriəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "管理的",
+        "經營的"
+      ],
+      "definitions_summary": "管理的、經營的",
+      "collocations": [
+        "managerial role",
+        "managerial experience"
+      ],
+      "example": {
+        "en": "Applicants for managerial roles must possess strong conflict-resolution skills.",
+        "zh": "管理職務的應聘者必須具備出色的衝突解決能力。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 25,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 26,
+      "day": 1,
+      "word_index": 26,
+      "word": "diligent",
+      "phonetic": "/ˈdɪlɪʤənt/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "勤奮的",
+        "勤勉的"
+      ],
+      "definitions_summary": "勤奮的、勤勉的",
+      "collocations": [
+        "diligent worker",
+        "diligent effort"
+      ],
+      "example": {
+        "en": "Her diligent work ethic earned her a swift promotion within the firm.",
+        "zh": "她勤勉的工作態度讓她在公司內迅速獲得晉升。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 26,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 27,
+      "day": 1,
+      "word_index": 27,
+      "word": "familiar",
+      "phonetic": "/fəˈmɪljər/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "熟悉的",
+        "親近的"
+      ],
+      "definitions_summary": "熟悉的、親近的",
+      "collocations": [
+        "be familiar with",
+        "familiarize oneself with"
+      ],
+      "example": {
+        "en": "Candidates should be familiar with database management software.",
+        "zh": "應徵者應熟悉資料庫管理軟體。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 27,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 28,
+      "day": 1,
+      "word_index": 28,
+      "word": "proficiency",
+      "phonetic": "/prəˈfɪʃənsi/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "精通",
+        "熟練"
+      ],
+      "definitions_summary": "精通、熟練",
+      "collocations": [
+        "language proficiency",
+        "proficiency in"
+      ],
+      "example": {
+        "en": "Demonstrated proficiency in statistical modeling is required for this research analyst post.",
+        "zh": "此研究分析師職位要求具備經過證明的統計建模熟練能力。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 28,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 29,
+      "day": 1,
+      "word_index": 29,
+      "word": "prospective",
+      "phonetic": "/prəˈspɛktɪv/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "預期的",
+        "未來的",
+        "潛在的"
+      ],
+      "definitions_summary": "預期的、未來的、潛在的",
+      "collocations": [
+        "prospective employee",
+        "prospective client"
+      ],
+      "example": {
+        "en": "The HR director sent welcome packets to all prospective employees.",
+        "zh": "人資主管向所有即將入職的準員工發送了歡迎資料包。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 29,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 30,
+      "day": 1,
+      "word_index": 30,
+      "word": "appeal",
+      "phonetic": "/əˈpil/",
+      "part_of_speech": "v. / n.",
+      "chinese_definitions": [
+        "吸引",
+        "呼籲",
+        "引起興趣"
+      ],
+      "definitions_summary": "吸引、呼籲、引起興趣",
+      "collocations": [
+        "appeal to",
+        "broad appeal"
+      ],
+      "example": {
+        "en": "Flexible work hours appeal strongly to young professionals.",
+        "zh": "彈性工時對年輕專業人士極具吸引力。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 30,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 31,
+      "day": 1,
+      "word_index": 31,
+      "word": "specialize",
+      "phonetic": "/ˈspɛʃəˌlaɪz/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "專攻",
+        "專門從事"
+      ],
+      "definitions_summary": "專攻、專門從事",
+      "collocations": [
+        "specialize in",
+        "specialized training"
+      ],
+      "example": {
+        "en": "Our consulting firm specializes in corporate restructuring and talent acquisition.",
+        "zh": "我們的顧問公司專門從事企業重組與人才引進。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 31,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 32,
+      "day": 1,
+      "word_index": 32,
+      "word": "apprehensive",
+      "phonetic": "/ˌæprɪˈhɛnsɪv/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "憂慮的",
+        "擔心的"
+      ],
+      "definitions_summary": "憂慮的、擔心的",
+      "collocations": [
+        "apprehensive about",
+        "feel apprehensive"
+      ],
+      "example": {
+        "en": "Many candidates feel apprehensive before taking the technical assessment.",
+        "zh": "許多應徵者在參加技術評估測驗前都會感到擔憂。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 32,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 33,
+      "day": 1,
+      "word_index": 33,
+      "word": "consultant",
+      "phonetic": "/kənˈsəltənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "顧問",
+        "諮詢師"
+      ],
+      "definitions_summary": "顧問、諮詢師",
+      "collocations": [
+        "management consultant",
+        "financial consultant"
+      ],
+      "example": {
+        "en": "The board brought in an independent human resources consultant to restructure compensation.",
+        "zh": "董事會聘請了獨立的人力資源顧問來重組薪酬體系。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 33,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 34,
+      "day": 1,
+      "word_index": 34,
+      "word": "entitle",
+      "phonetic": "/ɪnˈtaɪtəl/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "給予權利",
+        "賦予資格"
+      ],
+      "definitions_summary": "給予權利、賦予資格",
+      "collocations": [
+        "be entitled to",
+        "entitle sb to sth"
+      ],
+      "example": {
+        "en": "Permanent staff members are entitled to twenty days of annual paid leave.",
+        "zh": "正職員工享有每年二十天的有薪休假權利。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 34,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 35,
+      "day": 1,
+      "word_index": 35,
+      "word": "degree",
+      "phonetic": "/dɪˈgri/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "學位",
+        "等級",
+        "程度"
+      ],
+      "definitions_summary": "學位、等級、程度",
+      "collocations": [
+        "bachelor's degree",
+        "to a certain degree"
+      ],
+      "example": {
+        "en": "A bachelor's degree in computer science is preferred for this development role.",
+        "zh": "此開發職位優先考慮具有計算機科學學士學位者。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 35,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 36,
+      "day": 1,
+      "word_index": 36,
+      "word": "payroll",
+      "phonetic": "/ˈpeɪˌroʊl/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "薪水冊",
+        "發薪名單",
+        "薪資總額"
+      ],
+      "definitions_summary": "薪水冊、發薪名單、薪資總額",
+      "collocations": [
+        "on the payroll",
+        "payroll department"
+      ],
+      "example": {
+        "en": "The enterprise currently has over five thousand employees on its payroll.",
+        "zh": "該企業目前受薪員工超過五千人。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 36,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 37,
+      "day": 1,
+      "word_index": 37,
+      "word": "recruit",
+      "phonetic": "/rɪˈkrut/",
+      "part_of_speech": "v. / n.",
+      "chinese_definitions": [
+        "招募",
+        "徵募",
+        "新進員工"
+      ],
+      "definitions_summary": "招募、徵募、新進員工",
+      "collocations": [
+        "recruit new talent",
+        "new recruit"
+      ],
+      "example": {
+        "en": "The tech giant actively recruits top university graduates each spring.",
+        "zh": "這家科技巨頭每年春天都積極招募頂尖大學畢業生。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 37,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 38,
+      "day": 1,
+      "word_index": 38,
+      "word": "certification",
+      "phonetic": "/ˌsərtəfəˈkeɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "資格認證",
+        "執照",
+        "證明"
+      ],
+      "definitions_summary": "資格認證、執照、證明",
+      "collocations": [
+        "professional certification",
+        "obtain certification"
+      ],
+      "example": {
+        "en": "Holding a cloud architecture certification gives applicants a distinct advantage.",
+        "zh": "持有雲端架構認證為應徵者帶來明顯優勢。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 38,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 39,
+      "day": 1,
+      "word_index": 39,
+      "word": "occupation",
+      "phonetic": "/ˌɑkjəˈpeɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "職業",
+        "工作"
+      ],
+      "definitions_summary": "職業、工作",
+      "collocations": [
+        "primary occupation",
+        "choose an occupation"
+      ],
+      "example": {
+        "en": "Please state your current occupation and employer on the background form.",
+        "zh": "請在背景調查表上註明您目前的職業與雇主。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 39,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 40,
+      "day": 1,
+      "word_index": 40,
+      "word": "wage",
+      "phonetic": "/weɪʤ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "工資",
+        "薪水"
+      ],
+      "definitions_summary": "工資、薪水",
+      "collocations": [
+        "minimum wage",
+        "hourly wage"
+      ],
+      "example": {
+        "en": "The government raised the statutory minimum wage to improve living standards.",
+        "zh": "政府調高了法定最低工資以提升生活水準。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 40,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 41,
+      "day": 1,
+      "word_index": 41,
+      "word": "perspective",
+      "phonetic": "/pərˈspɛktɪv/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "觀點",
+        "視角",
+        "遠景",
+        "洞察力"
+      ],
+      "definitions_summary": "觀點、視角、遠景、洞察力",
+      "collocations": [
+        "broad perspective",
+        "gain perspective",
+        "from one's perspective"
+      ],
+      "example": {
+        "en": "The management seminar offered a fresh perspective on corporate innovation.",
+        "zh": "該管理研討會為企業創新提供了嶄新的視角與觀點。"
+      },
+      "audio": {
+        "file": "basic_Day01.mp3",
+        "track": 41,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    }
+  ],
+  "score_600": [
+    {
+      "id": 1,
+      "day": 1,
+      "tier": "score_600",
+      "word": "application form",
+      "phonetic": "/ˌæpləˈkeɪʃən fɔrm/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "申請表格",
+        "求職應徵表"
+      ],
+      "definitions_summary": "申請表格、求職應徵表",
+      "collocations": [
+        "essential application form",
+        "master application form"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding application form during the interview.",
+        "zh": "請在截止日前填妥申請表格。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 1
+      }
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "tier": "score_600",
+      "word": "career",
+      "phonetic": "/kərɪr/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "職業",
+        "經歷",
+        "生涯",
+        "歷程"
+      ],
+      "definitions_summary": "職業、經歷、生涯、歷程",
+      "collocations": [
+        "essential career",
+        "standard career"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of career is essential in corporate business.",
+        "zh": "充分掌握關於職業的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 2
+      }
+    },
+    {
+      "id": 3,
+      "day": 1,
+      "tier": "score_600",
+      "word": "completion",
+      "phonetic": "/kəmˈpliʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "完成",
+        "結束",
+        "圓滿",
+        "實現"
+      ],
+      "definitions_summary": "完成、結束、圓滿、實現",
+      "collocations": [
+        "essential completion",
+        "standard completion"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of completion is essential in corporate business.",
+        "zh": "充分掌握關於完成的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 3
+      }
+    },
+    {
+      "id": 4,
+      "day": 1,
+      "tier": "score_600",
+      "word": "fair",
+      "phonetic": "/fɛr/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "公正的",
+        "公平的",
+        "誠實的",
+        "尚可的"
+      ],
+      "definitions_summary": "公正的、公平的、誠實的、尚可的",
+      "collocations": [
+        "essential fair",
+        "standard fair"
+      ],
+      "example": {
+        "en": "The applicant demonstrated fair qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常公正的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 4
+      }
+    },
+    {
+      "id": 5,
+      "day": 1,
+      "tier": "score_600",
+      "word": "graduation",
+      "phonetic": "/ˌgræʤəˈweɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "畢業",
+        "畢業典禮",
+        "刻度",
+        "分等級"
+      ],
+      "definitions_summary": "畢業、畢業典禮、刻度、分等級",
+      "collocations": [
+        "essential graduation",
+        "standard graduation"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of graduation is essential in corporate business.",
+        "zh": "充分掌握關於畢業的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 5
+      }
+    },
+    {
+      "id": 6,
+      "day": 1,
+      "tier": "score_600",
+      "word": "in fact",
+      "phonetic": "/ɪn fækt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "事實上"
+      ],
+      "definitions_summary": "事實上",
+      "collocations": [
+        "essential in fact",
+        "standard in fact"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of in fact is essential in corporate business.",
+        "zh": "充分掌握關於事實上的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 6
+      }
+    },
+    {
+      "id": 7,
+      "day": 1,
+      "tier": "score_600",
+      "word": "job fair",
+      "phonetic": "/ʤɑb fɛr/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "公正的",
+        "公平的",
+        "誠實的"
+      ],
+      "definitions_summary": "公正的、公平的、誠實的",
+      "collocations": [
+        "essential job fair",
+        "standard job fair"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of job fair is essential in corporate business.",
+        "zh": "充分掌握關於公正的的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 7
+      }
+    },
+    {
+      "id": 8,
+      "day": 1,
+      "tier": "score_600",
+      "word": "job offer",
+      "phonetic": "/ʤɑb ˈɔfər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "工作邀約",
+        "錄取通知"
+      ],
+      "definitions_summary": "工作邀約、錄取通知",
+      "collocations": [
+        "essential job offer",
+        "master job offer"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding job offer during the interview.",
+        "zh": "該公司向優秀應徵者發出錄取通知。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 8
+      }
+    },
+    {
+      "id": 9,
+      "day": 1,
+      "tier": "score_600",
+      "word": "list",
+      "phonetic": "/lɪst/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "名冊",
+        "目錄",
+        "列舉"
+      ],
+      "definitions_summary": "名冊、目錄、列舉",
+      "collocations": [
+        "essential list",
+        "standard list"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of list is essential in corporate business.",
+        "zh": "充分掌握關於名冊的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 9
+      }
+    },
+    {
+      "id": 10,
+      "day": 1,
+      "tier": "score_600",
+      "word": "newcomer",
+      "phonetic": "/ˈnuˌkəmər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "新來的人",
+        "新近到達的移民",
+        "新手",
+        "初學者"
+      ],
+      "definitions_summary": "新來的人、新近到達的移民、新手、初學者",
+      "collocations": [
+        "essential newcomer",
+        "standard newcomer"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of newcomer is essential in corporate business.",
+        "zh": "充分掌握關於新來的人的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 10
+      }
+    },
+    {
+      "id": 11,
+      "day": 1,
+      "tier": "score_600",
+      "word": "time",
+      "phonetic": "/taɪm/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "時間",
+        "不可數名詞",
+        "通常不與",
+        "連用"
+      ],
+      "definitions_summary": "時間、不可數名詞、通常不與、連用",
+      "collocations": [
+        "essential part time",
+        "standard part time"
+      ],
+      "example": {
+        "en": "The applicant demonstrated part time qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常部分時間的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 11
+      }
+    },
+    {
+      "id": 12,
+      "day": 1,
+      "tier": "score_600",
+      "word": "previous job",
+      "phonetic": "/ˈpriviəs ʤɑb/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "工作",
+        "職業",
+        "零工"
+      ],
+      "definitions_summary": "工作、職業、零工",
+      "collocations": [
+        "essential previous job",
+        "standard previous job"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of previous job is essential in corporate business.",
+        "zh": "充分掌握關於工作的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 12
+      }
+    },
+    {
+      "id": 13,
+      "day": 1,
+      "tier": "score_600",
+      "word": "secretary",
+      "phonetic": "/ˈsɛkrəˌtɛri/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "祕書",
+        "祕書官",
+        "書記官",
+        "書記"
+      ],
+      "definitions_summary": "祕書、祕書官、書記官、書記",
+      "collocations": [
+        "essential secretary",
+        "standard secretary"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of secretary is essential in corporate business.",
+        "zh": "充分掌握關於祕書的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 13
+      }
+    },
+    {
+      "id": 14,
+      "day": 1,
+      "tier": "score_600",
+      "word": "send in",
+      "phonetic": "/sɛnd ɪn/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential send in",
+        "standard send in"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of send in is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 14
+      }
+    },
+    {
+      "id": 15,
+      "day": 1,
+      "tier": "score_600",
+      "word": "tidy",
+      "phonetic": "/ˈtaɪdi/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "整潔的",
+        "整齊的",
+        "井然的",
+        "一萬美元是相當大的一筆錢"
+      ],
+      "definitions_summary": "整潔的、整齊的、井然的、一萬美元是相當大的一筆錢",
+      "collocations": [
+        "essential tidy",
+        "standard tidy"
+      ],
+      "example": {
+        "en": "The applicant demonstrated tidy qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常整潔的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 15
+      }
+    },
+    {
+      "id": 16,
+      "day": 1,
+      "tier": "score_600",
+      "word": "trainee",
+      "phonetic": "/ˈtreɪˈni/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "練習生",
+        "新兵",
+        "訓練中的動物",
+        "受訓者"
+      ],
+      "definitions_summary": "練習生、新兵、訓練中的動物、受訓者",
+      "collocations": [
+        "essential trainee",
+        "standard trainee"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of trainee is essential in corporate business.",
+        "zh": "充分掌握關於練習生的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 16
+      }
+    },
+    {
+      "id": 17,
+      "day": 1,
+      "tier": "score_600",
+      "word": "apply for",
+      "phonetic": "/əˈplaɪ fɔːr/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "為了",
+        "代替",
+        "代表"
+      ],
+      "definitions_summary": "為了、代替、代表",
+      "collocations": [
+        "essential arcy apply for",
+        "standard arcy apply for"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of arcy apply for is essential in corporate business.",
+        "zh": "充分掌握關於為了的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 17
+      }
+    },
+    {
+      "id": 18,
+      "day": 1,
+      "tier": "score_600",
+      "word": "aptitude",
+      "phonetic": "/ˈæptəˌtud/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "傾向",
+        "習性",
+        "天資",
+        "才能"
+      ],
+      "definitions_summary": "傾向、習性、天資、才能",
+      "collocations": [
+        "essential aptitude",
+        "standard aptitude"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of aptitude is essential in corporate business.",
+        "zh": "充分掌握關於傾向的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 18
+      }
+    },
+    {
+      "id": 19,
+      "day": 1,
+      "tier": "score_600",
+      "word": "be advised to do",
+      "phonetic": "/bi ədˈvaɪzd tɪ du/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "製作",
+        "實行",
+        "完成"
+      ],
+      "definitions_summary": "製作、實行、完成",
+      "collocations": [
+        "essential be advised to do",
+        "standard be advised to do"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of be advised to do is essential in corporate business.",
+        "zh": "充分掌握關於製作的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 19
+      }
+    },
+    {
+      "id": 20,
+      "day": 1,
+      "tier": "score_600",
+      "word": "criteria",
+      "phonetic": "/kraɪˈtɪriə/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "的名詞複數"
+      ],
+      "definitions_summary": "的名詞複數",
+      "collocations": [
+        "essential criteria",
+        "standard criteria"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of criteria is essential in corporate business.",
+        "zh": "充分掌握關於的名詞複數的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 20
+      }
+    },
+    {
+      "id": 21,
+      "day": 1,
+      "tier": "score_600",
+      "word": "decade",
+      "phonetic": "/ˈdɛkeɪd/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "十年",
+        "念珠的一部分",
+        "同義參見"
+      ],
+      "definitions_summary": "十年、念珠的一部分、同義參見",
+      "collocations": [
+        "essential decade",
+        "standard decade"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of decade is essential in corporate business.",
+        "zh": "充分掌握關於十年的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 21
+      }
+    },
+    {
+      "id": 22,
+      "day": 1,
+      "tier": "score_600",
+      "word": "employee employ",
+      "phonetic": "/ɪmˈplɔɪi ɪmˈplɔɪ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "僱用",
+        "使用",
+        "利用"
+      ],
+      "definitions_summary": "僱用、使用、利用",
+      "collocations": [
+        "essential employee employ",
+        "standard employee employ"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of employee employ is essential in corporate business.",
+        "zh": "充分掌握關於僱用的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 22
+      }
+    },
+    {
+      "id": 23,
+      "day": 1,
+      "tier": "score_600",
+      "word": "insufficient",
+      "phonetic": "/ˌɪnsəˈfɪʃənt/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "不充分的",
+        "不足的",
+        "不適合的",
+        "不勝任的"
+      ],
+      "definitions_summary": "不充分的、不足的、不適合的、不勝任的",
+      "collocations": [
+        "essential insufficient",
+        "standard insufficient"
+      ],
+      "example": {
+        "en": "The applicant demonstrated insufficient qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常不充分的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 23
+      }
+    },
+    {
+      "id": 24,
+      "day": 1,
+      "tier": "score_600",
+      "word": "minimum",
+      "phonetic": "/ˈmɪnəməm/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "最小量",
+        "最小數",
+        "最低限度",
+        "你每天必須最少練習三十分鐘"
+      ],
+      "definitions_summary": "最小量、最小數、最低限度、你每天必須最少練習三十分鐘",
+      "collocations": [
+        "essential minimum",
+        "standard minimum"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of minimum is essential in corporate business.",
+        "zh": "充分掌握關於最小量的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 24
+      }
+    },
+    {
+      "id": 25,
+      "day": 1,
+      "tier": "score_600",
+      "word": "party",
+      "phonetic": "/ˈpɑrti/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "聚會",
+        "集會",
+        "派對",
+        "一團人"
+      ],
+      "definitions_summary": "聚會、集會、派對、一團人",
+      "collocations": [
+        "essential party",
+        "standard party"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of party is essential in corporate business.",
+        "zh": "充分掌握關於聚會的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 25
+      }
+    },
+    {
+      "id": 26,
+      "day": 1,
+      "tier": "score_600",
+      "word": "plentiful",
+      "phonetic": "/ˈplɛnɪfəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "豐富的",
+        "充足的",
+        "多的",
+        "富裕的"
+      ],
+      "definitions_summary": "豐富的、充足的、多的、富裕的",
+      "collocations": [
+        "essential plentiful",
+        "standard plentiful"
+      ],
+      "example": {
+        "en": "The applicant demonstrated plentiful qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常豐富的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 26
+      }
+    },
+    {
+      "id": 27,
+      "day": 1,
+      "tier": "score_600",
+      "word": "profession",
+      "phonetic": "/prəˈfɛʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "職業",
+        "同業",
+        "同行",
+        "聲明"
+      ],
+      "definitions_summary": "職業、同業、同行、聲明",
+      "collocations": [
+        "essential profession",
+        "standard profession"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of profession is essential in corporate business.",
+        "zh": "充分掌握關於職業的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 27
+      }
+    },
+    {
+      "id": 28,
+      "day": 1,
+      "tier": "score_600",
+      "word": "apply for",
+      "phonetic": "/əˈplaɪ fər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "為了",
+        "代替",
+        "代表"
+      ],
+      "definitions_summary": "為了、代替、代表",
+      "collocations": [
+        "essential apply for",
+        "standard apply for"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of apply for is essential in corporate business.",
+        "zh": "充分掌握關於為了的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 28
+      }
+    },
+    {
+      "id": 29,
+      "day": 1,
+      "tier": "score_600",
+      "word": "employ",
+      "phonetic": "/ɪmˈplɔɪ/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "僱用",
+        "使用",
+        "利用",
+        "使忙於"
+      ],
+      "definitions_summary": "僱用、使用、利用、使忙於",
+      "collocations": [
+        "essential employ",
+        "standard employ"
+      ],
+      "example": {
+        "en": "The management decided to employ the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行僱用，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 29
+      }
+    },
+    {
+      "id": 30,
+      "day": 1,
+      "tier": "score_600",
+      "word": "plentiful",
+      "phonetic": "/ˈplɛntɪfl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "豐富的、充足的",
+      "collocations": [
+        "essential plantifull",
+        "standard plantifull"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of plantifull is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 30
+      }
+    },
+    {
+      "id": 31,
+      "day": 1,
+      "tier": "score_600",
+      "word": "fare",
+      "phonetic": "/fɛr/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "發熱",
+        "溫度增高",
+        "產生熱量這種取暖器發熱性能好",
+        "發燒"
+      ],
+      "definitions_summary": "發熱、溫度增高、產生熱量這種取暖器發熱性能好、發燒",
+      "collocations": [
+        "essential fare",
+        "standard fare"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of fare is essential in corporate business.",
+        "zh": "充分掌握關於發熱的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 31
+      }
+    },
+    {
+      "id": 32,
+      "day": 1,
+      "tier": "score_600",
+      "word": "in fact",
+      "phonetic": "/ɪn fækt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "事實上、實際上",
+      "collocations": [
+        "essential infact",
+        "standard infact"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of infact is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 32
+      }
+    },
+    {
+      "id": 33,
+      "day": 1,
+      "tier": "score_600",
+      "word": "be admitted to",
+      "phonetic": "/bi ədˈmɪtəd tɪ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "直到",
+        "趨於",
+        "面對"
+      ],
+      "definitions_summary": "直到、趨於、面對",
+      "collocations": [
+        "essential be admitted to",
+        "standard be admitted to"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of be admitted to is essential in corporate business.",
+        "zh": "充分掌握關於直到的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day01.mp3",
+        "track": 33
+      }
+    }
+  ],
+  "score_800": [
+    {
+      "id": 1,
+      "day": 1,
+      "tier": "score_800",
+      "word": "apprentice",
+      "phonetic": "/əˈprɛntɪs/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "見習生",
+        "學徒",
+        "初學者"
+      ],
+      "definitions_summary": "見習生、學徒、初學者",
+      "collocations": [
+        "essential apprentice",
+        "master apprentice"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding apprentice during the interview.",
+        "zh": "新進的見習生正在資深導師的指導下學習技術。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 1
+      }
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "tier": "score_800",
+      "word": "dress formally",
+      "phonetic": "/drɛs ˈfɔrməli/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "穿著正式服裝",
+        "著正裝"
+      ],
+      "definitions_summary": "穿著正式服裝、著正裝",
+      "collocations": [
+        "essential dress formally",
+        "master dress formally"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding dress formally during the interview.",
+        "zh": "出席正式商務會議時應著正裝。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 2
+      }
+    },
+    {
+      "id": 3,
+      "day": 1,
+      "tier": "score_800",
+      "word": "dressed in suit",
+      "phonetic": "/drɛst ɪn sut/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "身著西裝套裝"
+      ],
+      "definitions_summary": "身著西裝套裝",
+      "collocations": [
+        "essential dressed in suit",
+        "master dressed in suit"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding dressed in suit during the interview.",
+        "zh": "應試者身著西裝套裝顯得專業莊重。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 3
+      }
+    },
+    {
+      "id": 4,
+      "day": 1,
+      "tier": "score_800",
+      "word": "figure out",
+      "phonetic": "/ˈfɪgjər aʊt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "想出",
+        "理解",
+        "解決"
+      ],
+      "definitions_summary": "想出、理解、解決",
+      "collocations": [
+        "essential figure out",
+        "master figure out"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding figure out during the interview.",
+        "zh": "團隊正在努力想出最佳的因應方案。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 4
+      }
+    },
+    {
+      "id": 5,
+      "day": 1,
+      "tier": "score_800",
+      "word": "full-time work",
+      "phonetic": "/ˈfʊlˌtaɪm wərk/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "全職工作"
+      ],
+      "definitions_summary": "全職工作",
+      "collocations": [
+        "essential full-time work",
+        "master full-time work"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding full-time work during the interview.",
+        "zh": "他決定尋求一份穩定的全職工作。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 5
+      }
+    },
+    {
+      "id": 6,
+      "day": 1,
+      "tier": "score_800",
+      "word": "job opportunity",
+      "phonetic": "/ʤɑb ˌɑpərˈtunəti/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "機會",
+        "良機"
+      ],
+      "definitions_summary": "機會、良機",
+      "collocations": [
+        "essential job opportunity",
+        "standard job opportunity"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of job opportunity is essential in corporate business.",
+        "zh": "充分掌握關於機會的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 6
+      }
+    },
+    {
+      "id": 7,
+      "day": 1,
+      "tier": "score_800",
+      "word": "job search",
+      "phonetic": "/ʤɑb sərʧ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "求職",
+        "尋找工作"
+      ],
+      "definitions_summary": "求職、尋找工作",
+      "collocations": [
+        "essential job search",
+        "master job search"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding job search during the interview.",
+        "zh": "定期瀏覽招募網站有助於求職。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 7
+      }
+    },
+    {
+      "id": 8,
+      "day": 1,
+      "tier": "score_800",
+      "word": "job seeker",
+      "phonetic": "/ʤɑb ˈsikər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "求職者"
+      ],
+      "definitions_summary": "求職者",
+      "collocations": [
+        "essential job seeker",
+        "master job seeker"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding job seeker during the interview.",
+        "zh": "許多求職者參加了本場就業博覽會。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 8
+      }
+    },
+    {
+      "id": 9,
+      "day": 1,
+      "tier": "score_800",
+      "word": "layout",
+      "phonetic": "/leɪaʊt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "安排",
+        "設計",
+        "布局",
+        "版面設計"
+      ],
+      "definitions_summary": "安排、設計、布局、版面設計",
+      "collocations": [
+        "essential layout",
+        "standard layout"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of layout is essential in corporate business.",
+        "zh": "充分掌握關於安排的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 9
+      }
+    },
+    {
+      "id": 10,
+      "day": 1,
+      "tier": "score_800",
+      "word": "letter of recommendation",
+      "phonetic": "/ˈlɛtər əv ˌrɛkəmənˈdeɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "推薦信"
+      ],
+      "definitions_summary": "推薦信",
+      "collocations": [
+        "essential letter of recommendation",
+        "master letter of recommendation"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding letter of recommendation during the interview.",
+        "zh": "教授為他撰寫了極具說服力的推薦信。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 10
+      }
+    },
+    {
+      "id": 11,
+      "day": 1,
+      "tier": "score_800",
+      "word": "pay raise",
+      "phonetic": "/peɪ reɪz/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "加薪",
+        "調薪"
+      ],
+      "definitions_summary": "加薪、調薪",
+      "collocations": [
+        "essential pay raise",
+        "master pay raise"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding pay raise during the interview.",
+        "zh": "員工表現優異即可獲得加薪。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 11
+      }
+    },
+    {
+      "id": 12,
+      "day": 1,
+      "tier": "score_800",
+      "word": "practical experience",
+      "phonetic": "/ˈpræktɪkəl ɪkˈspɪriəns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "實務經驗",
+        "實際工作經驗"
+      ],
+      "definitions_summary": "實務經驗、實際工作經驗",
+      "collocations": [
+        "essential practical experience",
+        "master practical experience"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding practical experience during the interview.",
+        "zh": "該職缺重視實際工作經驗。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 12
+      }
+    },
+    {
+      "id": 13,
+      "day": 1,
+      "tier": "score_800",
+      "word": "proof of employment",
+      "phonetic": "/pruf əv ɪmˈplɔɪmənt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "在職證明"
+      ],
+      "definitions_summary": "在職證明",
+      "collocations": [
+        "essential proof of employment",
+        "master proof of employment"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding proof of employment during the interview.",
+        "zh": "申辦簽證需要出示在職證明。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 13
+      }
+    },
+    {
+      "id": 14,
+      "day": 1,
+      "tier": "score_800",
+      "word": "reapply",
+      "phonetic": "/ˌriəplaɪ/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "再應用",
+        "再塗敷",
+        "再申請"
+      ],
+      "definitions_summary": "再應用、再塗敷、再申請",
+      "collocations": [
+        "essential reapply",
+        "standard reapply"
+      ],
+      "example": {
+        "en": "The management decided to reapply the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行再應用，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 14
+      }
+    },
+    {
+      "id": 15,
+      "day": 1,
+      "tier": "score_800",
+      "word": "recommendation letter",
+      "phonetic": "/ˌrɛkəmənˈdeɪʃən ˈlɛtər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "推薦信"
+      ],
+      "definitions_summary": "推薦信",
+      "collocations": [
+        "essential recommendation letter",
+        "master recommendation letter"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding recommendation letter during the interview.",
+        "zh": "申請該職位須附上推薦信。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 15
+      }
+    },
+    {
+      "id": 16,
+      "day": 1,
+      "tier": "score_800",
+      "word": "reference letter",
+      "phonetic": "/ˈrɛfərəns ˈlɛtər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "推薦信",
+        "介紹信"
+      ],
+      "definitions_summary": "推薦信、介紹信",
+      "collocations": [
+        "essential reference letter",
+        "master reference letter"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding reference letter during the interview.",
+        "zh": "請向先前的雇主索取推薦信。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 16
+      }
+    },
+    {
+      "id": 17,
+      "day": 1,
+      "tier": "score_800",
+      "word": "send off to",
+      "phonetic": "/sɛnd ɔf tɪ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "寄送給",
+        "發出至"
+      ],
+      "definitions_summary": "寄送給、發出至",
+      "collocations": [
+        "essential send off to",
+        "master send off to"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding send off to during the interview.",
+        "zh": "文件已確認無誤並寄送給總部。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 17
+      }
+    },
+    {
+      "id": 18,
+      "day": 1,
+      "tier": "score_800",
+      "word": "set up an interview",
+      "phonetic": "/sɛt əp ən ˈɪntərvˌju/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "安排面試",
+        "約定面談"
+      ],
+      "definitions_summary": "安排面試、約定面談",
+      "collocations": [
+        "essential set up an interview",
+        "master set up an interview"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding set up an interview during the interview.",
+        "zh": "人事部門已為候選人安排面試。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 18
+      }
+    },
+    {
+      "id": 19,
+      "day": 1,
+      "tier": "score_800",
+      "word": "take an examination",
+      "phonetic": "/teɪk ən ɪgˌzæməˈneɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "參加測驗",
+        "應試"
+      ],
+      "definitions_summary": "參加測驗、應試",
+      "collocations": [
+        "essential take an examination",
+        "master take an examination"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding take an examination during the interview.",
+        "zh": "新進員工須參加專業技能測驗。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 19
+      }
+    },
+    {
+      "id": 20,
+      "day": 1,
+      "tier": "score_800",
+      "word": "training center",
+      "phonetic": "/ˈtreɪnɪŋ ˈsɛnər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "訓練中心",
+        "培訓中心"
+      ],
+      "definitions_summary": "訓練中心、培訓中心",
+      "collocations": [
+        "essential training center",
+        "master training center"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding training center during the interview.",
+        "zh": "本週將在企業培訓中心展開新人教育。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 20
+      }
+    },
+    {
+      "id": 21,
+      "day": 1,
+      "tier": "score_800",
+      "word": "waiting room",
+      "phonetic": "/ˈweɪtɪŋ rum/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "等候室",
+        "候診室"
+      ],
+      "definitions_summary": "等候室、候診室",
+      "collocations": [
+        "essential waiting room",
+        "master waiting room"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding waiting room during the interview.",
+        "zh": "面試者請在等候室稍作休息。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 21
+      }
+    },
+    {
+      "id": 22,
+      "day": 1,
+      "tier": "score_800",
+      "word": "well educated",
+      "phonetic": "/wɛl ˈɛʤəˌkeɪtɪd/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "受過教育的",
+        "有教養的",
+        "根據知識或經驗的"
+      ],
+      "definitions_summary": "受過教育的、有教養的、根據知識或經驗的",
+      "collocations": [
+        "essential well educated",
+        "standard well educated"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of well educated is essential in corporate business.",
+        "zh": "充分掌握關於受過教育的的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 22
+      }
+    },
+    {
+      "id": 23,
+      "day": 1,
+      "tier": "score_800",
+      "word": "workstation",
+      "phonetic": "/ˈwərkˌsteɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "工作站",
+        "工作台"
+      ],
+      "definitions_summary": "工作站、工作台",
+      "collocations": [
+        "essential workstation",
+        "master workstation"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding workstation during the interview.",
+        "zh": "每位工程師均配備高效能工作站。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 23
+      }
+    },
+    {
+      "id": 24,
+      "day": 1,
+      "tier": "score_800",
+      "word": "zealous",
+      "phonetic": "/ˈzɛləs/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "熱心的",
+        "熱情的",
+        "熱望的",
+        "積極的"
+      ],
+      "definitions_summary": "熱心的、熱情的、熱望的、積極的",
+      "collocations": [
+        "essential zealous",
+        "standard zealous"
+      ],
+      "example": {
+        "en": "The applicant demonstrated zealous qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常熱心的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 24
+      }
+    },
+    {
+      "id": 25,
+      "day": 1,
+      "tier": "score_800",
+      "word": "cover letter",
+      "phonetic": "/ˈkəvər ˈlɛtər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "求職信",
+        "自薦信"
+      ],
+      "definitions_summary": "求職信、自薦信",
+      "collocations": [
+        "essential cover letter",
+        "master cover letter"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding cover letter during the interview.",
+        "zh": "履歷表應隨附完整的求職信。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 25
+      }
+    },
+    {
+      "id": 26,
+      "day": 1,
+      "tier": "score_800",
+      "word": "devoted",
+      "phonetic": "/dɪˈvoʊtɪd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "獻身的",
+        "虔誠的",
+        "專心致志的",
+        "忠實的"
+      ],
+      "definitions_summary": "獻身的、虔誠的、專心致志的、忠實的",
+      "collocations": [
+        "essential devoted",
+        "standard devoted"
+      ],
+      "example": {
+        "en": "The applicant demonstrated devoted qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常獻身的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 26
+      }
+    },
+    {
+      "id": 27,
+      "day": 1,
+      "tier": "score_800",
+      "word": "energetic",
+      "phonetic": "/ˌɛnərˈʤɛtɪk/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "精力旺盛的",
+        "精神飽滿的",
+        "有力的",
+        "積極的"
+      ],
+      "definitions_summary": "精力旺盛的、精神飽滿的、有力的、積極的",
+      "collocations": [
+        "essential energetic",
+        "standard energetic"
+      ],
+      "example": {
+        "en": "The applicant demonstrated energetic qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常精力旺盛的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 27
+      }
+    },
+    {
+      "id": 28,
+      "day": 1,
+      "tier": "score_800",
+      "word": "enthusiastic",
+      "phonetic": "/ɪnˌθuziˈæstɪk/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "熱情的",
+        "熱烈的",
+        "熱心的"
+      ],
+      "definitions_summary": "熱情的、熱烈的、熱心的",
+      "collocations": [
+        "essential enthusiastic",
+        "standard enthusiastic"
+      ],
+      "example": {
+        "en": "The applicant demonstrated enthusiastic qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常熱情的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 28
+      }
+    },
+    {
+      "id": 29,
+      "day": 1,
+      "tier": "score_800",
+      "word": "excel",
+      "phonetic": "/ɪkˈsɛl/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "勝過",
+        "優於"
+      ],
+      "definitions_summary": "勝過、優於",
+      "collocations": [
+        "essential excel",
+        "standard excel"
+      ],
+      "example": {
+        "en": "The management decided to excel the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行勝過，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 29
+      }
+    },
+    {
+      "id": 30,
+      "day": 1,
+      "tier": "score_800",
+      "word": "exclude",
+      "phonetic": "/ɪkˈsklud/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "拒絕接納",
+        "逐出",
+        "開除",
+        "排斥"
+      ],
+      "definitions_summary": "拒絕接納、逐出、開除、排斥",
+      "collocations": [
+        "essential exclude",
+        "standard exclude"
+      ],
+      "example": {
+        "en": "The management decided to exclude the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行拒絕接納，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 30
+      }
+    },
+    {
+      "id": 31,
+      "day": 1,
+      "tier": "score_800",
+      "word": "fluently",
+      "phonetic": "/ˈfluəntli/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "流利地",
+        "流暢地"
+      ],
+      "definitions_summary": "流利地、流暢地",
+      "collocations": [
+        "essential fluently",
+        "standard fluently"
+      ],
+      "example": {
+        "en": "The management decided to fluently the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行流利地，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 31
+      }
+    },
+    {
+      "id": 32,
+      "day": 1,
+      "tier": "score_800",
+      "word": "get through",
+      "phonetic": "/gɪt θru/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "穿過",
+        "通過",
+        "憑藉"
+      ],
+      "definitions_summary": "穿過、通過、憑藉",
+      "collocations": [
+        "essential get through",
+        "standard get through"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of get through is essential in corporate business.",
+        "zh": "充分掌握關於穿過的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 32
+      }
+    },
+    {
+      "id": 33,
+      "day": 1,
+      "tier": "score_800",
+      "word": "match",
+      "phonetic": "/mæʧ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "比賽",
+        "競賽",
+        "對手",
+        "敵手"
+      ],
+      "definitions_summary": "比賽、競賽、對手、敵手",
+      "collocations": [
+        "essential match",
+        "standard match"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of match is essential in corporate business.",
+        "zh": "充分掌握關於比賽的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 33
+      }
+    },
+    {
+      "id": 34,
+      "day": 1,
+      "tier": "score_800",
+      "word": "necessity",
+      "phonetic": "/nəˈsɛsɪti/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "需要",
+        "必要性",
+        "必需品",
+        "必然"
+      ],
+      "definitions_summary": "需要、必要性、必需品、必然",
+      "collocations": [
+        "essential necessity",
+        "standard necessity"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of necessity is essential in corporate business.",
+        "zh": "充分掌握關於需要的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 34
+      }
+    },
+    {
+      "id": 35,
+      "day": 1,
+      "tier": "score_800",
+      "word": "qualification",
+      "phonetic": "/kˌwɑləfəˈkeɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "賦予",
+        "資格",
+        "能力",
+        "資格證書"
+      ],
+      "definitions_summary": "賦予、資格、能力、資格證書",
+      "collocations": [
+        "essential qualification",
+        "standard qualification"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of qualification is essential in corporate business.",
+        "zh": "充分掌握關於賦予的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 35
+      }
+    },
+    {
+      "id": 36,
+      "day": 1,
+      "tier": "score_800",
+      "word": "relevant",
+      "phonetic": "/ˈrɛləvənt/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "有關的",
+        "切題的",
+        "恰當的",
+        "有意義的"
+      ],
+      "definitions_summary": "有關的、切題的、恰當的、有意義的",
+      "collocations": [
+        "essential relevant",
+        "standard relevant"
+      ],
+      "example": {
+        "en": "The applicant demonstrated relevant qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常有關的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 36
+      }
+    },
+    {
+      "id": 37,
+      "day": 1,
+      "tier": "score_800",
+      "word": "sign up for",
+      "phonetic": "/saɪn əp fər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "報名參加",
+        "登記"
+      ],
+      "definitions_summary": "報名參加、登記",
+      "collocations": [
+        "essential sign up for",
+        "master sign up for"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding sign up for during the interview.",
+        "zh": "員工可自由報名參加專業技能研討會。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 37
+      }
+    },
+    {
+      "id": 38,
+      "day": 1,
+      "tier": "score_800",
+      "word": "talented",
+      "phonetic": "/ˈtæləntɪd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "有天才的",
+        "有才幹的"
+      ],
+      "definitions_summary": "有天才的、有才幹的",
+      "collocations": [
+        "essential talented",
+        "standard talented"
+      ],
+      "example": {
+        "en": "The applicant demonstrated talented qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常有天才的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 38
+      }
+    },
+    {
+      "id": 39,
+      "day": 1,
+      "tier": "score_800",
+      "word": "visiting",
+      "phonetic": "/ˈvɪzɪtɪŋ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "參觀"
+      ],
+      "definitions_summary": "參觀",
+      "collocations": [
+        "essential visiting",
+        "standard visiting"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of visiting is essential in corporate business.",
+        "zh": "充分掌握關於參觀的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 39
+      }
+    },
+    {
+      "id": 40,
+      "day": 1,
+      "tier": "score_800",
+      "word": "workforce",
+      "phonetic": "/ˈwərkˌfɔrs/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential workforce",
+        "standard workforce"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of workforce is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 40
+      }
+    },
+    {
+      "id": 41,
+      "day": 1,
+      "tier": "score_800",
+      "word": "address the audience",
+      "phonetic": "/ˈæˌdrɛs ðə ˈɔdiəns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "聽眾",
+        "觀眾",
+        "讀者群"
+      ],
+      "definitions_summary": "聽眾、觀眾、讀者群",
+      "collocations": [
+        "essential address the audience",
+        "standard address the audience"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of address the audience is essential in corporate business.",
+        "zh": "充分掌握關於聽眾的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 41
+      }
+    },
+    {
+      "id": 42,
+      "day": 1,
+      "tier": "score_800",
+      "word": "be influenced by appearance",
+      "phonetic": "/bi ˈɪnfluənst baɪ əˈpɪrəns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "出現",
+        "顯露",
+        "露面"
+      ],
+      "definitions_summary": "出現、顯露、露面",
+      "collocations": [
+        "essential be influenced by appearance",
+        "standard be influenced by appearance"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of be influenced by appearance is essential in corporate business.",
+        "zh": "充分掌握關於出現的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 42
+      }
+    },
+    {
+      "id": 43,
+      "day": 1,
+      "tier": "score_800",
+      "word": "bilingual",
+      "phonetic": "/baɪˈlɪŋgwəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "兩種語言的",
+        "雙語的",
+        "通兩種語言的人"
+      ],
+      "definitions_summary": "兩種語言的、雙語的、通兩種語言的人",
+      "collocations": [
+        "essential bilingual",
+        "standard bilingual"
+      ],
+      "example": {
+        "en": "The applicant demonstrated bilingual qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常兩種語言的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 43
+      }
+    },
+    {
+      "id": 44,
+      "day": 1,
+      "tier": "score_800",
+      "word": "curriculum vitae",
+      "phonetic": "/kərˈɪkjələm ˈvaɪtə/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "履歷表",
+        "個人履歷"
+      ],
+      "definitions_summary": "履歷表、個人履歷",
+      "collocations": [
+        "essential curriculum vitae",
+        "master curriculum vitae"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding curriculum vitae during the interview.",
+        "zh": "請提交詳細的個人履歷。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 44
+      }
+    },
+    {
+      "id": 45,
+      "day": 1,
+      "tier": "score_800",
+      "word": "diploma",
+      "phonetic": "/dɪˈploʊmɑ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "畢業文憑",
+        "學位證書",
+        "執照",
+        "特許狀"
+      ],
+      "definitions_summary": "畢業文憑、學位證書、執照、特許狀",
+      "collocations": [
+        "essential diploma",
+        "standard diploma"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of diploma is essential in corporate business.",
+        "zh": "充分掌握關於畢業文憑的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 45
+      }
+    },
+    {
+      "id": 46,
+      "day": 1,
+      "tier": "score_800",
+      "word": "endurance",
+      "phonetic": "/ˈɛndərəns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "忍耐",
+        "耐久力",
+        "持久",
+        "苦難"
+      ],
+      "definitions_summary": "忍耐、耐久力、持久、苦難",
+      "collocations": [
+        "essential endurance",
+        "standard endurance"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of endurance is essential in corporate business.",
+        "zh": "充分掌握關於忍耐的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 46
+      }
+    },
+    {
+      "id": 47,
+      "day": 1,
+      "tier": "score_800",
+      "word": "fluency",
+      "phonetic": "/ˈfluənsi/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "流暢",
+        "流暢的說話"
+      ],
+      "definitions_summary": "流暢、流暢的說話",
+      "collocations": [
+        "essential fluency",
+        "standard fluency"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of fluency is essential in corporate business.",
+        "zh": "充分掌握關於流暢的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 47
+      }
+    },
+    {
+      "id": 48,
+      "day": 1,
+      "tier": "score_800",
+      "word": "fluent in",
+      "phonetic": "/fluənt ɪn/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "從事於",
+        "參加著",
+        "穿著"
+      ],
+      "definitions_summary": "從事於、參加著、穿著",
+      "collocations": [
+        "essential fluent in",
+        "standard fluent in"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of fluent in is essential in corporate business.",
+        "zh": "充分掌握關於從事於的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 48
+      }
+    },
+    {
+      "id": 49,
+      "day": 1,
+      "tier": "score_800",
+      "word": "go with",
+      "phonetic": "/goʊ wɪθ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "帶著",
+        "符合",
+        "一致"
+      ],
+      "definitions_summary": "帶著、符合、一致",
+      "collocations": [
+        "essential go with",
+        "standard go with"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of go with is essential in corporate business.",
+        "zh": "充分掌握關於帶著的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 49
+      }
+    },
+    {
+      "id": 50,
+      "day": 1,
+      "tier": "score_800",
+      "word": "human resources",
+      "phonetic": "/ˈjumən ˈrisɔrsɪz/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "人力資源部",
+        "人事部"
+      ],
+      "definitions_summary": "人力資源部、人事部",
+      "collocations": [
+        "essential human resources",
+        "master human resources"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding human resources during the interview.",
+        "zh": "人力資源部負責統籌新進員工培訓。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 50
+      }
+    },
+    {
+      "id": 51,
+      "day": 1,
+      "tier": "score_800",
+      "word": "improperly",
+      "phonetic": "/ˌɪmˈprɑpərli/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "不合適的",
+        "不適當的",
+        "不合標準的",
+        "不規則的"
+      ],
+      "definitions_summary": "不合適的、不適當的、不合標準的、不規則的",
+      "collocations": [
+        "essential improperly",
+        "standard improperly"
+      ],
+      "example": {
+        "en": "The applicant demonstrated improperly qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常不合適的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 51
+      }
+    },
+    {
+      "id": 52,
+      "day": 1,
+      "tier": "score_800",
+      "word": "in a positive manner",
+      "phonetic": "/ɪn ə ˈpɑzətɪv ˈmænər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "方式",
+        "方法",
+        "態度"
+      ],
+      "definitions_summary": "方式、方法、態度",
+      "collocations": [
+        "essential in a positive manner",
+        "standard in a positive manner"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of in a positive manner is essential in corporate business.",
+        "zh": "充分掌握關於方式的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 52
+      }
+    },
+    {
+      "id": 53,
+      "day": 1,
+      "tier": "score_800",
+      "word": "in the field of",
+      "phonetic": "/ɪn ðə fild əv/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "含有",
+        "表示同位",
+        "表示受格關係"
+      ],
+      "definitions_summary": "含有、表示同位、表示受格關係",
+      "collocations": [
+        "essential in the field of",
+        "standard in the field of"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of in the field of is essential in corporate business.",
+        "zh": "充分掌握關於含有的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 53
+      }
+    },
+    {
+      "id": 54,
+      "day": 1,
+      "tier": "score_800",
+      "word": "inexperience",
+      "phonetic": "/ˌɪnɪkˈspɪriəns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "無經驗",
+        "不諳世故",
+        "不熟練"
+      ],
+      "definitions_summary": "無經驗、不諳世故、不熟練",
+      "collocations": [
+        "essential inexperience",
+        "standard inexperience"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of inexperience is essential in corporate business.",
+        "zh": "充分掌握關於無經驗的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 54
+      }
+    },
+    {
+      "id": 55,
+      "day": 1,
+      "tier": "score_800",
+      "word": "lack confidence",
+      "phonetic": "/læk ˈkɑnfədɛns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "自信",
+        "信心",
+        "把握"
+      ],
+      "definitions_summary": "自信、信心、把握",
+      "collocations": [
+        "essential lack confidence",
+        "standard lack confidence"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of lack confidence is essential in corporate business.",
+        "zh": "充分掌握關於自信的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 55
+      }
+    },
+    {
+      "id": 56,
+      "day": 1,
+      "tier": "score_800",
+      "word": "make a commitment to",
+      "phonetic": "/meɪk ə kəˈmɪtmənt tɪ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "直到",
+        "趨於",
+        "面對"
+      ],
+      "definitions_summary": "直到、趨於、面對",
+      "collocations": [
+        "essential make a commitment to",
+        "standard make a commitment to"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of make a commitment to is essential in corporate business.",
+        "zh": "充分掌握關於直到的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 56
+      }
+    },
+    {
+      "id": 57,
+      "day": 1,
+      "tier": "score_800",
+      "word": "manpower",
+      "phonetic": "/ˈmænˌpaʊər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "人力",
+        "勞動力",
+        "人力資源",
+        "同義參見"
+      ],
+      "definitions_summary": "人力、勞動力、人力資源、同義參見",
+      "collocations": [
+        "essential manpower",
+        "standard manpower"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of manpower is essential in corporate business.",
+        "zh": "充分掌握關於人力的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 57
+      }
+    },
+    {
+      "id": 58,
+      "day": 1,
+      "tier": "score_800",
+      "word": "master s degree",
+      "phonetic": "/ˈmæstər ɛs dɪˈgri/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "度數",
+        "程度",
+        "等級"
+      ],
+      "definitions_summary": "度數、程度、等級",
+      "collocations": [
+        "essential master s degree",
+        "standard master s degree"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of master s degree is essential in corporate business.",
+        "zh": "充分掌握關於度數的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 58
+      }
+    },
+    {
+      "id": 59,
+      "day": 1,
+      "tier": "score_800",
+      "word": "novice",
+      "phonetic": "/ˈnɑvəs/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "新手",
+        "初學者",
+        "新進者"
+      ],
+      "definitions_summary": "新手、初學者、新進者",
+      "collocations": [
+        "essential novice",
+        "standard novice"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of novice is essential in corporate business.",
+        "zh": "充分掌握關於新手的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 59
+      }
+    },
+    {
+      "id": 60,
+      "day": 1,
+      "tier": "score_800",
+      "word": "paycheck",
+      "phonetic": "/ˈpeɪˌʧɛk/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "付薪水的支票",
+        "薪津"
+      ],
+      "definitions_summary": "付薪水的支票、薪津",
+      "collocations": [
+        "essential paycheck",
+        "standard paycheck"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of paycheck is essential in corporate business.",
+        "zh": "充分掌握關於付薪水的支票的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 60
+      }
+    },
+    {
+      "id": 61,
+      "day": 1,
+      "tier": "score_800",
+      "word": "self motivation",
+      "phonetic": "/sɛlf ˌmoʊtəˈveɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential self motivation",
+        "standard self motivation"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of self motivation is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 61
+      }
+    },
+    {
+      "id": 62,
+      "day": 1,
+      "tier": "score_800",
+      "word": "send a notification",
+      "phonetic": "/sɛnd ə ˌnoʊtəfəˈkeɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "通知",
+        "通告",
+        "申報書"
+      ],
+      "definitions_summary": "通知、通告、申報書",
+      "collocations": [
+        "essential send a notification",
+        "standard send a notification"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of send a notification is essential in corporate business.",
+        "zh": "充分掌握關於通知的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 62
+      }
+    },
+    {
+      "id": 63,
+      "day": 1,
+      "tier": "score_800",
+      "word": "vacancy",
+      "phonetic": "/ˈveɪkənsi/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "空白",
+        "空間",
+        "空處",
+        "空地"
+      ],
+      "definitions_summary": "空白、空間、空處、空地",
+      "collocations": [
+        "essential vacancy",
+        "standard vacancy"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of vacancy is essential in corporate business.",
+        "zh": "充分掌握關於空白的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 63
+      }
+    },
+    {
+      "id": 64,
+      "day": 1,
+      "tier": "score_800",
+      "word": "wanted",
+      "phonetic": "/ˈwɔntɪd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "被通緝的",
+        "被徵求的"
+      ],
+      "definitions_summary": "被通緝的、被徵求的",
+      "collocations": [
+        "essential wanted",
+        "standard wanted"
+      ],
+      "example": {
+        "en": "The applicant demonstrated wanted qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常被通緝的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 64
+      }
+    },
+    {
+      "id": 65,
+      "day": 1,
+      "tier": "score_800",
+      "word": "work history",
+      "phonetic": "/wərk ˈhɪstəri/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "歷史",
+        "史學",
+        "來歷"
+      ],
+      "definitions_summary": "歷史、史學、來歷",
+      "collocations": [
+        "essential work history",
+        "standard work history"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of work history is essential in corporate business.",
+        "zh": "充分掌握關於歷史的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 65
+      }
+    },
+    {
+      "id": 66,
+      "day": 1,
+      "tier": "score_800",
+      "word": "Well-educated",
+      "phonetic": "/ˈwɛˈlɛʤəˌkeɪtɪd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "受過良好教育的",
+        "有教養的"
+      ],
+      "definitions_summary": "受過良好教育的、有教養的",
+      "collocations": [
+        "essential Well-educated",
+        "master Well-educated"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding Well-educated during the interview.",
+        "zh": "公司致力於招募受過良好教育的優秀人才。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 66
+      }
+    },
+    {
+      "id": 67,
+      "day": 1,
+      "tier": "score_800",
+      "word": "zealous",
+      "phonetic": "/ˈzɛləs/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "熱情的、狂熱的、積極的",
+      "collocations": [
+        "essential Zellus",
+        "standard Zellus"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Zellus is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 67
+      }
+    },
+    {
+      "id": 68,
+      "day": 1,
+      "tier": "score_800",
+      "word": "devoted",
+      "phonetic": "/dɪˈvoʊtɪd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "忠誠的、專心致志的、摯愛的",
+      "collocations": [
+        "essential Divoted",
+        "standard Divoted"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Divoted is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 68
+      }
+    },
+    {
+      "id": 69,
+      "day": 1,
+      "tier": "score_800",
+      "word": "enthusiastic",
+      "phonetic": "/ɪnˌθuːziˈæstɪk/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "熱情的、熱衷的",
+      "collocations": [
+        "essential Inthusiastic",
+        "standard Inthusiastic"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Inthusiastic is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 69
+      }
+    },
+    {
+      "id": 71,
+      "day": 1,
+      "tier": "score_800",
+      "word": "Curriculum V",
+      "phonetic": "/kərˈɪkjələm vi/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "對抗",
+        "同義參見"
+      ],
+      "definitions_summary": "對抗、同義參見",
+      "collocations": [
+        "essential Curriculum V",
+        "standard Curriculum V"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Curriculum V is essential in corporate business.",
+        "zh": "充分掌握關於對抗的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 71
+      }
+    },
+    {
+      "id": 72,
+      "day": 1,
+      "tier": "score_800",
+      "word": "endurance",
+      "phonetic": "/ɪnˈdʊrəns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "忍耐力、耐力、持久力",
+      "collocations": [
+        "essential Andurance",
+        "standard Andurance"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Andurance is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 72
+      }
+    },
+    {
+      "id": 73,
+      "day": 1,
+      "tier": "score_800",
+      "word": "Fluent",
+      "phonetic": "/fluənt/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "流利的",
+        "流暢的",
+        "暢流的",
+        "液態的"
+      ],
+      "definitions_summary": "流利的、流暢的、暢流的、液態的",
+      "collocations": [
+        "essential Fluent",
+        "standard Fluent"
+      ],
+      "example": {
+        "en": "The applicant demonstrated Fluent qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常流利的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 73
+      }
+    },
+    {
+      "id": 74,
+      "day": 1,
+      "tier": "score_800",
+      "word": "Lac confidence",
+      "phonetic": "/læk ˈkɑnfədɛns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "自信",
+        "信心",
+        "把握"
+      ],
+      "definitions_summary": "自信、信心、把握",
+      "collocations": [
+        "essential Lac confidence",
+        "standard Lac confidence"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Lac confidence is essential in corporate business.",
+        "zh": "充分掌握關於自信的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 74
+      }
+    },
+    {
+      "id": 75,
+      "day": 1,
+      "tier": "score_800",
+      "word": "Make a regular habit",
+      "phonetic": "/meɪk ə ˈrɛgjələr ˈhæbət/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "習慣",
+        "習性",
+        "氣質"
+      ],
+      "definitions_summary": "習慣、習性、氣質",
+      "collocations": [
+        "essential Make a regular habit",
+        "standard Make a regular habit"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Make a regular habit is essential in corporate business.",
+        "zh": "充分掌握關於習慣的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 75
+      }
+    },
+    {
+      "id": 76,
+      "day": 1,
+      "tier": "score_800",
+      "word": "Make a point of",
+      "phonetic": "/meɪk ə pɔɪnt əv/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "視為",
+        "說成必要的"
+      ],
+      "definitions_summary": "視為、說成必要的",
+      "collocations": [
+        "essential Make a point of",
+        "standard Make a point of"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Make a point of is essential in corporate business.",
+        "zh": "充分掌握關於視為的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 76
+      }
+    },
+    {
+      "id": 77,
+      "day": 1,
+      "tier": "score_800",
+      "word": "Masters degree",
+      "phonetic": "/ˈmæstərz dɪˈgri/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "度數",
+        "程度",
+        "等級"
+      ],
+      "definitions_summary": "度數、程度、等級",
+      "collocations": [
+        "essential Masters degree",
+        "standard Masters degree"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Masters degree is essential in corporate business.",
+        "zh": "充分掌握關於度數的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 77
+      }
+    },
+    {
+      "id": 78,
+      "day": 1,
+      "tier": "score_800",
+      "word": "novice",
+      "phonetic": "/ˈnɑːvɪs/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "新手、初學者",
+      "collocations": [
+        "essential Novis",
+        "standard Novis"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Novis is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 78
+      }
+    },
+    {
+      "id": 79,
+      "day": 1,
+      "tier": "score_800",
+      "word": "full time work",
+      "phonetic": "/fʊl taɪm wərk/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "工作",
+        "勞動",
+        "作業"
+      ],
+      "definitions_summary": "工作、勞動、作業",
+      "collocations": [
+        "essential full time work",
+        "standard full time work"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of full time work is essential in corporate business.",
+        "zh": "充分掌握關於工作的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 79
+      }
+    },
+    {
+      "id": 80,
+      "day": 1,
+      "tier": "score_800",
+      "word": "in experience",
+      "phonetic": "/ɪn ɪkˈspɪriəns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "經驗",
+        "體驗",
+        "經歷"
+      ],
+      "definitions_summary": "經驗、體驗、經歷",
+      "collocations": [
+        "essential in experience",
+        "standard in experience"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of in experience is essential in corporate business.",
+        "zh": "充分掌握關於經驗的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 80
+      }
+    },
+    {
+      "id": 81,
+      "day": 1,
+      "tier": "score_800",
+      "word": "make a commitment too",
+      "phonetic": "/meɪk ə kəˈmɪtmənt tu/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "過分",
+        "而且"
+      ],
+      "definitions_summary": "過分、而且",
+      "collocations": [
+        "essential make a commitment too",
+        "standard make a commitment too"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of make a commitment too is essential in corporate business.",
+        "zh": "充分掌握關於過分的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 81
+      }
+    },
+    {
+      "id": 82,
+      "day": 1,
+      "tier": "score_800",
+      "word": "self-motivation",
+      "phonetic": "/ˌselfˈmōdəˌvādəd/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential self-motivation",
+        "standard self-motivation"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of self-motivation is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day01.mp3",
+        "track": 82
+      }
+    }
+  ],
+  "score_900": [
+    {
+      "id": 1,
+      "day": 1,
+      "tier": "score_900",
+      "word": "credential",
+      "phonetic": "/krɪˈdɛnʃəl/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "國書",
+        "憑據",
+        "證書",
+        "憑證"
+      ],
+      "definitions_summary": "國書、憑據、證書、憑證",
+      "collocations": [
+        "essential credential",
+        "standard credential"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of credential is essential in corporate business.",
+        "zh": "充分掌握關於國書的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 1
+      }
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "tier": "score_900",
+      "word": "first hand",
+      "phonetic": "/fərst hænd/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential first hand",
+        "standard first hand"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of first hand is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 2
+      }
+    },
+    {
+      "id": 3,
+      "day": 1,
+      "tier": "score_900",
+      "word": "hiring committee",
+      "phonetic": "/ˈhaɪrɪŋ kəˈmɪti/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "招募委員會",
+        "遴選委員會"
+      ],
+      "definitions_summary": "招募委員會、遴選委員會",
+      "collocations": [
+        "essential hiring committee",
+        "master hiring committee"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding hiring committee during the interview.",
+        "zh": "招募委員會將於下週進行最終面試。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 3
+      }
+    },
+    {
+      "id": 4,
+      "day": 1,
+      "tier": "score_900",
+      "word": "not to mention",
+      "phonetic": "/nɑt tɪ ˈmɛnʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "更不用說",
+        "何況"
+      ],
+      "definitions_summary": "更不用說、何況",
+      "collocations": [
+        "essential not to mention",
+        "master not to mention"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding not to mention during the interview.",
+        "zh": "這項方案節省了成本，更不用說提升了效率。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 4
+      }
+    },
+    {
+      "id": 5,
+      "day": 1,
+      "tier": "score_900",
+      "word": "on occasion",
+      "phonetic": "/ɔn əˈkeɪʒən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential on occasion",
+        "standard on occasion"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of on occasion is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 5
+      }
+    },
+    {
+      "id": 6,
+      "day": 1,
+      "tier": "score_900",
+      "word": "overqualified",
+      "phonetic": "/ˈoʊvərkˌwɑləˌfaɪd/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential overqualified",
+        "standard overqualified"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of overqualified is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 6
+      }
+    },
+    {
+      "id": 7,
+      "day": 1,
+      "tier": "score_900",
+      "word": "screening",
+      "phonetic": "/ˈskrinɪŋ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "掩護",
+        "隔開",
+        "篩過",
+        "審查"
+      ],
+      "definitions_summary": "掩護、隔開、篩過、審查",
+      "collocations": [
+        "essential screening",
+        "standard screening"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of screening is essential in corporate business.",
+        "zh": "充分掌握關於掩護的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 7
+      }
+    },
+    {
+      "id": 8,
+      "day": 1,
+      "tier": "score_900",
+      "word": "on the waiting list",
+      "phonetic": "/ɔn ðə ˈweɪtɪŋ lɪst/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "在候補名單上"
+      ],
+      "definitions_summary": "在候補名單上",
+      "collocations": [
+        "essential on the waiting list",
+        "master on the waiting list"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding on the waiting list during the interview.",
+        "zh": "該研討會名額已滿，目前處於候補名單。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 8
+      }
+    },
+    {
+      "id": 9,
+      "day": 1,
+      "tier": "score_900",
+      "word": "oriented",
+      "phonetic": "/ˈɔriˌɛntɪd/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "亞洲",
+        "東方",
+        "珍珠的光澤",
+        "優質珍珠"
+      ],
+      "definitions_summary": "亞洲、東方、珍珠的光澤、優質珍珠",
+      "collocations": [
+        "essential oriented",
+        "standard oriented"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of oriented is essential in corporate business.",
+        "zh": "充分掌握關於亞洲的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 9
+      }
+    },
+    {
+      "id": 10,
+      "day": 1,
+      "tier": "score_900",
+      "word": "replenish",
+      "phonetic": "/riˈplɛnɪʃ/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "我們不得不額外進口四百萬噸小麥以補充我們的儲備",
+        "提供",
+        "供給"
+      ],
+      "definitions_summary": "我們不得不額外進口四百萬噸小麥以補充我們的儲備、提供、供給",
+      "collocations": [
+        "essential replenish",
+        "standard replenish"
+      ],
+      "example": {
+        "en": "The management decided to replenish the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行我們不得不額外進口四百萬噸小麥以補充我們的儲備，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 10
+      }
+    },
+    {
+      "id": 11,
+      "day": 1,
+      "tier": "score_900",
+      "word": "simplicity",
+      "phonetic": "/sɪmˈplɪsɪti/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "簡單",
+        "簡易",
+        "簡明",
+        "簡明易懂的事物"
+      ],
+      "definitions_summary": "簡單、簡易、簡明、簡明易懂的事物",
+      "collocations": [
+        "essential simplicity",
+        "standard simplicity"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of simplicity is essential in corporate business.",
+        "zh": "充分掌握關於簡單的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 11
+      }
+    },
+    {
+      "id": 12,
+      "day": 1,
+      "tier": "score_900",
+      "word": "stellar",
+      "phonetic": "/ˈstɛlər/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "星的",
+        "星形的",
+        "主要的",
+        "顯著的"
+      ],
+      "definitions_summary": "星的、星形的、主要的、顯著的",
+      "collocations": [
+        "essential stellar",
+        "standard stellar"
+      ],
+      "example": {
+        "en": "The applicant demonstrated stellar qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常星的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 12
+      }
+    },
+    {
+      "id": 13,
+      "day": 1,
+      "tier": "score_900",
+      "word": "versatile",
+      "phonetic": "/ˈvərsətəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "多才多藝的",
+        "多功能的",
+        "多方面適用的",
+        "活動的"
+      ],
+      "definitions_summary": "多才多藝的、多功能的、多方面適用的、活動的",
+      "collocations": [
+        "essential versatile",
+        "standard versatile"
+      ],
+      "example": {
+        "en": "The applicant demonstrated versatile qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常多才多藝的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 13
+      }
+    },
+    {
+      "id": 14,
+      "day": 1,
+      "tier": "score_900",
+      "word": "against all odds",
+      "phonetic": "/əˈgɛnst ɔl ɑdz/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "克服一切困難",
+        "排除萬難"
+      ],
+      "definitions_summary": "克服一切困難、排除萬難",
+      "collocations": [
+        "essential against all odds",
+        "master against all odds"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding against all odds during the interview.",
+        "zh": "團隊克服一切困難如期完成了專案。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 14
+      }
+    },
+    {
+      "id": 15,
+      "day": 1,
+      "tier": "score_900",
+      "word": "command",
+      "phonetic": "/kəˈmænd/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "命令",
+        "指揮",
+        "統率",
+        "控制"
+      ],
+      "definitions_summary": "命令、指揮、統率、控制",
+      "collocations": [
+        "essential command",
+        "standard command"
+      ],
+      "example": {
+        "en": "The management decided to command the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行命令，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 15
+      }
+    },
+    {
+      "id": 16,
+      "day": 1,
+      "tier": "score_900",
+      "word": "commensurate",
+      "phonetic": "/kəˈmɛnʃərət/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "相稱的、相當的",
+      "collocations": [
+        "essential comensurate",
+        "standard comensurate"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of comensurate is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 16
+      }
+    },
+    {
+      "id": 17,
+      "day": 1,
+      "tier": "score_900",
+      "word": "computer literate",
+      "phonetic": "/kəmˈpjutər ˈlɪtərət/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "熟練電腦操作的"
+      ],
+      "definitions_summary": "熟練電腦操作的",
+      "collocations": [
+        "essential computer literate",
+        "master computer literate"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding computer literate during the interview.",
+        "zh": "應徵者需具備熟練的電腦操作能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 17
+      }
+    },
+    {
+      "id": 18,
+      "day": 1,
+      "tier": "score_900",
+      "word": "eagerness",
+      "phonetic": "/ˈigərnəs/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "渴望",
+        "熱心",
+        "熱切"
+      ],
+      "definitions_summary": "渴望、熱心、熱切",
+      "collocations": [
+        "essential eagerness",
+        "standard eagerness"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of eagerness is essential in corporate business.",
+        "zh": "充分掌握關於渴望的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 18
+      }
+    },
+    {
+      "id": 19,
+      "day": 1,
+      "tier": "score_900",
+      "word": "familiarize oneself with",
+      "phonetic": "/fəˈmɪljərˌaɪz ˌwənˈsɛlf wɪθ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "使自己熟悉",
+        "通曉"
+      ],
+      "definitions_summary": "使自己熟悉、通曉",
+      "collocations": [
+        "essential familiarize oneself with",
+        "master familiarize oneself with"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding familiarize oneself with during the interview.",
+        "zh": "新進人員須儘快熟悉公司的作業流程。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 19
+      }
+    },
+    {
+      "id": 20,
+      "day": 1,
+      "tier": "score_900",
+      "word": "increment",
+      "phonetic": "/ˈɪnkrəmənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "增加",
+        "增加量",
+        "增額",
+        "同義參見"
+      ],
+      "definitions_summary": "增加、增加量、增額、同義參見",
+      "collocations": [
+        "essential increment",
+        "standard increment"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of increment is essential in corporate business.",
+        "zh": "充分掌握關於增加的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 20
+      }
+    },
+    {
+      "id": 21,
+      "day": 1,
+      "tier": "score_900",
+      "word": "interpersonal skills",
+      "phonetic": "/ˌɪntərˈpərsənəl skɪlz/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "人際溝通能力",
+        "人際交往技巧"
+      ],
+      "definitions_summary": "人際溝通能力、人際交往技巧",
+      "collocations": [
+        "essential interpersonal skills",
+        "master interpersonal skills"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding interpersonal skills during the interview.",
+        "zh": "優秀的人際溝通能力是主管必備條件。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 21
+      }
+    },
+    {
+      "id": 22,
+      "day": 1,
+      "tier": "score_900",
+      "word": "mindful",
+      "phonetic": "/ˈmaɪndfəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "記住的",
+        "留心的",
+        "警覺的",
+        "小心的"
+      ],
+      "definitions_summary": "記住的、留心的、警覺的、小心的",
+      "collocations": [
+        "essential mindful",
+        "standard mindful"
+      ],
+      "example": {
+        "en": "The applicant demonstrated mindful qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常記住的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 22
+      }
+    },
+    {
+      "id": 23,
+      "day": 1,
+      "tier": "score_900",
+      "word": "preeminent",
+      "phonetic": "/priˈɛmənənt/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "卓越的",
+        "顯著的"
+      ],
+      "definitions_summary": "卓越的、顯著的",
+      "collocations": [
+        "essential preeminent",
+        "standard preeminent"
+      ],
+      "example": {
+        "en": "The applicant demonstrated preeminent qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常卓越的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 23
+      }
+    },
+    {
+      "id": 24,
+      "day": 1,
+      "tier": "score_900",
+      "word": "preliminary",
+      "phonetic": "/prɪˈlɪməˌnɛri/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "預備的",
+        "初步的",
+        "序言",
+        "初步"
+      ],
+      "definitions_summary": "預備的、初步的、序言、初步",
+      "collocations": [
+        "essential preliminary",
+        "standard preliminary"
+      ],
+      "example": {
+        "en": "The applicant demonstrated preliminary qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常預備的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 24
+      }
+    },
+    {
+      "id": 25,
+      "day": 1,
+      "tier": "score_900",
+      "word": "prerequisite",
+      "phonetic": "/priˈrɛkwəzət/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "不可缺的",
+        "事先需要的",
+        "必修的",
+        "首要事物"
+      ],
+      "definitions_summary": "不可缺的、事先需要的、必修的、首要事物",
+      "collocations": [
+        "essential prerequisite",
+        "standard prerequisite"
+      ],
+      "example": {
+        "en": "The applicant demonstrated prerequisite qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常不可缺的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 25
+      }
+    },
+    {
+      "id": 26,
+      "day": 1,
+      "tier": "score_900",
+      "word": "over",
+      "phonetic": "/ˈoʊvər/",
+      "part_of_speech": "prep.",
+      "chinese_definitions": [
+        "越過",
+        "遍及",
+        "到處",
+        "高於"
+      ],
+      "definitions_summary": "越過、遍及、到處、高於",
+      "collocations": [
+        "essential over",
+        "standard over"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of over is essential in corporate business.",
+        "zh": "充分掌握關於越過的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 26
+      }
+    },
+    {
+      "id": 27,
+      "day": 1,
+      "tier": "score_900",
+      "word": "lag",
+      "phonetic": "/læg/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "走得慢",
+        "落後",
+        "延遲",
+        "減弱"
+      ],
+      "definitions_summary": "走得慢、落後、延遲、減弱",
+      "collocations": [
+        "essential lag",
+        "standard lag"
+      ],
+      "example": {
+        "en": "The management decided to lag the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行走得慢，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 27
+      }
+    },
+    {
+      "id": 28,
+      "day": 1,
+      "tier": "score_900",
+      "word": "pertaining to",
+      "phonetic": "/pərˈteɪnɪŋ tɪ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "關於",
+        "與...有關"
+      ],
+      "definitions_summary": "關於、與...有關",
+      "collocations": [
+        "essential pertaining to",
+        "master pertaining to"
+      ],
+      "example": {
+        "en": "The candidate demonstrated proficiency regarding pertaining to during the interview.",
+        "zh": "請詳閱所有與勞工安全相關的規定。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 28
+      }
+    },
+    {
+      "id": 29,
+      "day": 1,
+      "tier": "score_900",
+      "word": "questionably",
+      "phonetic": "/ˈkwɛstʃǝnǝblɪ/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "可疑地",
+        "不清楚地",
+        "不可靠地"
+      ],
+      "definitions_summary": "可疑地、不清楚地、不可靠地",
+      "collocations": [
+        "essential questionably",
+        "standard questionably"
+      ],
+      "example": {
+        "en": "The management decided to questionably the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行可疑地，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 29
+      }
+    },
+    {
+      "id": 30,
+      "day": 1,
+      "tier": "score_900",
+      "word": "regularity",
+      "phonetic": "/ˌrɛgjəˈlɛrəti/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "規則性",
+        "規律性",
+        "一致性",
+        "端正"
+      ],
+      "definitions_summary": "規則性、規律性、一致性、端正",
+      "collocations": [
+        "essential regularity",
+        "standard regularity"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of regularity is essential in corporate business.",
+        "zh": "充分掌握關於規則性的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 30
+      }
+    },
+    {
+      "id": 31,
+      "day": 1,
+      "tier": "score_900",
+      "word": "replenish",
+      "phonetic": "/rɪˈplɛnɪʃ/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "補充、再裝滿",
+      "collocations": [
+        "essential replanage",
+        "standard replanage"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of replanage is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 31
+      }
+    },
+    {
+      "id": 32,
+      "day": 1,
+      "tier": "score_900",
+      "word": "stellar",
+      "phonetic": "/ˈstɛlər/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "傑出的、優秀的、恆星的",
+      "collocations": [
+        "essential steller",
+        "standard steller"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of steller is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 32
+      }
+    },
+    {
+      "id": 33,
+      "day": 1,
+      "tier": "score_900",
+      "word": "adept",
+      "phonetic": "/əˈdɛpt/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "熟練的",
+        "內行的"
+      ],
+      "definitions_summary": "熟練的、內行的",
+      "collocations": [
+        "essential adept",
+        "standard adept"
+      ],
+      "example": {
+        "en": "The applicant demonstrated adept qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常熟練的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 33
+      }
+    },
+    {
+      "id": 34,
+      "day": 1,
+      "tier": "score_900",
+      "word": "commensurate",
+      "phonetic": "/kəˈmɛnsərɪt/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "同量的",
+        "相稱的",
+        "相應的",
+        "相當的"
+      ],
+      "definitions_summary": "同量的、相稱的、相應的、相當的",
+      "collocations": [
+        "essential commensurate",
+        "standard commensurate"
+      ],
+      "example": {
+        "en": "The applicant demonstrated commensurate qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常同量的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 34
+      }
+    },
+    {
+      "id": 35,
+      "day": 1,
+      "tier": "score_900",
+      "word": "preliminary",
+      "phonetic": "/prɪˈlɪmɪneri/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "初步的、預備的",
+      "collocations": [
+        "essential proliminary",
+        "standard proliminary"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of proliminary is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 35
+      }
+    },
+    {
+      "id": 36,
+      "day": 1,
+      "tier": "score_900",
+      "word": "pre requisite",
+      "phonetic": "/pri ˈrɛkwəzət/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "不可缺的",
+        "事先需要的",
+        "必修的",
+        "首要事物"
+      ],
+      "definitions_summary": "不可缺的、事先需要的、必修的、首要事物",
+      "collocations": [
+        "essential pre requisite",
+        "standard pre requisite"
+      ],
+      "example": {
+        "en": "The applicant demonstrated pre requisite qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常不可缺的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 36
+      }
+    },
+    {
+      "id": 37,
+      "day": 1,
+      "tier": "score_900",
+      "word": "probationary",
+      "phonetic": "/proʊˈbeɪʃəneri/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "實習的、審查中的、試用的",
+      "collocations": [
+        "essential probeational",
+        "standard probeational"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of probeational is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 37
+      }
+    },
+    {
+      "id": 38,
+      "day": 1,
+      "tier": "score_900",
+      "word": "sternly",
+      "phonetic": "/ˈstərnli/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "嚴格地",
+        "嚴厲地",
+        "斷然地",
+        "堅決地"
+      ],
+      "definitions_summary": "嚴格地、嚴厲地、斷然地、堅決地",
+      "collocations": [
+        "essential sternly",
+        "standard sternly"
+      ],
+      "example": {
+        "en": "The management decided to sternly the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行嚴格地，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 38
+      }
+    },
+    {
+      "id": 39,
+      "day": 1,
+      "tier": "score_900",
+      "word": "due to",
+      "phonetic": "/duː tuː/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "直到",
+        "趨於",
+        "面對"
+      ],
+      "definitions_summary": "直到、趨於、面對",
+      "collocations": [
+        "essential New to doye",
+        "standard New to doye"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of New to doye is essential in corporate business.",
+        "zh": "充分掌握關於直到的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 39
+      }
+    },
+    {
+      "id": 40,
+      "day": 1,
+      "tier": "score_900",
+      "word": "pre-eminent",
+      "phonetic": "/prēˈemən(ə)nt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential pre-eminent",
+        "standard pre-eminent"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of pre-eminent is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 40
+      }
+    },
+    {
+      "id": 41,
+      "day": 1,
+      "tier": "score_900",
+      "word": "probationer",
+      "phonetic": "/proʊˈbeɪʃənər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "試用人員",
+        "實習生",
+        "緩刑中的犯人"
+      ],
+      "definitions_summary": "試用人員、實習生、緩刑中的犯人",
+      "collocations": [
+        "essential probationer",
+        "standard probationer"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of probationer is essential in corporate business.",
+        "zh": "充分掌握關於試用人員的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day01.mp3",
+        "track": 41
+      }
+    }
+  ]
+}

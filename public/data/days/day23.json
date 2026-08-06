@@ -1,0 +1,6482 @@
+{
+  "score_basic": [
+    {
+      "id": 1,
+      "day": 23,
+      "word_index": 1,
+      "word": "benefit",
+      "phonetic": "/ˈbɛnəfɪt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "利益",
+        "好處",
+        "優勢",
+        "津貼"
+      ],
+      "definitions_summary": "利益、好處、優勢、津貼",
+      "collocations": [
+        "key benefit",
+        "effective benefit",
+        "benefit management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of benefit during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於利益的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 1,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 2,
+      "day": 23,
+      "word_index": 2,
+      "word": "compensation",
+      "phonetic": "/ˌkɑmpənˈseɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "補償",
+        "報酬",
+        "薪酬"
+      ],
+      "definitions_summary": "補償、報酬、薪酬",
+      "collocations": [
+        "compensation package",
+        "worker's compensation"
+      ],
+      "example": {
+        "en": "The executive compensation package includes generous stock options.",
+        "zh": "高階主管的薪酬福利方案中包含了豐厚的公司股票選擇權。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 2,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 3,
+      "day": 23,
+      "word_index": 3,
+      "word": "insurance",
+      "phonetic": "/ˌɪnˈʃʊrəns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "保險",
+        "保險契約",
+        "保險業",
+        "保險金額"
+      ],
+      "definitions_summary": "保險、保險契約、保險業、保險金額",
+      "collocations": [
+        "key insurance",
+        "effective insurance",
+        "insurance management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of insurance during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於保險的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 3,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 4,
+      "day": 23,
+      "word_index": 4,
+      "word": "pension",
+      "phonetic": "/ˈpɛnʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "退休金",
+        "養老金",
+        "撫恤金",
+        "津貼"
+      ],
+      "definitions_summary": "退休金、養老金、撫恤金、津貼",
+      "collocations": [
+        "key pension",
+        "effective pension",
+        "pension management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of pension during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於退休金的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 4,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 5,
+      "day": 23,
+      "word_index": 5,
+      "word": "allowance",
+      "phonetic": "/əˈlaʊəns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "津貼",
+        "補貼",
+        "零用錢",
+        "分配額"
+      ],
+      "definitions_summary": "津貼、補貼、零用錢、分配額",
+      "collocations": [
+        "key allowance",
+        "effective allowance",
+        "allowance management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of allowance during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於津貼的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 5,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 6,
+      "day": 23,
+      "word_index": 6,
+      "word": "severance",
+      "phonetic": "/ˈsɛˌvərəns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "切斷",
+        "隔離",
+        "分離",
+        "分開"
+      ],
+      "definitions_summary": "切斷、隔離、分離、分開",
+      "collocations": [
+        "key severance",
+        "effective severance",
+        "severance management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of severance during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於切斷的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 6,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 7,
+      "day": 23,
+      "word_index": 7,
+      "word": "bonus",
+      "phonetic": "/ˈboʊnəs/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "獎金",
+        "額外津貼",
+        "特別補助",
+        "紅利"
+      ],
+      "definitions_summary": "獎金、額外津貼、特別補助、紅利",
+      "collocations": [
+        "key bonus",
+        "effective bonus",
+        "bonus management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of bonus during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於獎金的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 7,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 8,
+      "day": 23,
+      "word_index": 8,
+      "word": "paid leave",
+      "phonetic": "/peɪd liv/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "多益核心詞彙",
+        "商務實務",
+        "專業用語"
+      ],
+      "definitions_summary": "多益核心詞彙、商務實務、專業用語",
+      "collocations": [
+        "key paid leave",
+        "effective paid leave",
+        "paid leave management"
+      ],
+      "example": {
+        "en": "The team reviewed this important business topic during the workshop.",
+        "zh": "團隊在研討會期間深入回顧了這項重要的商務主題與實務要點。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 8,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 9,
+      "day": 23,
+      "word_index": 9,
+      "word": "maternity leave",
+      "phonetic": "/məˈtərnɪti liv/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "重要多益核心單字"
+      ],
+      "definitions_summary": "重要多益核心單字",
+      "collocations": [
+        "key maternity leave",
+        "effective maternity leave",
+        "maternity leave management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of maternity leave during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於重要多益核心單字的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 9,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 10,
+      "day": 23,
+      "word_index": 10,
+      "word": "healthcare",
+      "phonetic": "/ˈhɛlθˌkɛr/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "重要多益核心單字"
+      ],
+      "definitions_summary": "重要多益核心單字",
+      "collocations": [
+        "key healthcare",
+        "effective healthcare",
+        "healthcare management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of healthcare during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於重要多益核心單字的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 10,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 11,
+      "day": 23,
+      "word_index": 11,
+      "word": "wellness",
+      "phonetic": "/ˈwɛlnəs/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "重要多益核心單字"
+      ],
+      "definitions_summary": "重要多益核心單字",
+      "collocations": [
+        "key wellness",
+        "effective wellness",
+        "wellness management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of wellness during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於重要多益核心單字的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 11,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 12,
+      "day": 23,
+      "word_index": 12,
+      "word": "perk",
+      "phonetic": "/pərk/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "昂首挺胸",
+        "得意洋洋",
+        "振作",
+        "活躍起來"
+      ],
+      "definitions_summary": "昂首挺胸、得意洋洋、振作、活躍起來",
+      "collocations": [
+        "actively perk",
+        "perk efficiently",
+        "plan to perk"
+      ],
+      "example": {
+        "en": "The management decided to perk the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定昂首挺胸提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 12,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 13,
+      "day": 23,
+      "word_index": 13,
+      "word": "retirement",
+      "phonetic": "/rɪˈtaɪərmənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "退休",
+        "退職",
+        "退役",
+        "退休的實例"
+      ],
+      "definitions_summary": "退休、退職、退役、退休的實例",
+      "collocations": [
+        "key retirement",
+        "effective retirement",
+        "retirement management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of retirement during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於退休的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 13,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 14,
+      "day": 23,
+      "word_index": 14,
+      "word": "subsidy",
+      "phonetic": "/ˈsəbsɪdi/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "津貼",
+        "補貼",
+        "補助金",
+        "財政援助"
+      ],
+      "definitions_summary": "津貼、補貼、補助金、財政援助",
+      "collocations": [
+        "key subsidy",
+        "effective subsidy",
+        "subsidy management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of subsidy during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於津貼的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 14,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 15,
+      "day": 23,
+      "word_index": 15,
+      "word": "medical",
+      "phonetic": "/ˈmɛdɪkəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "醫學的",
+        "醫術的",
+        "醫療的",
+        "內科的"
+      ],
+      "definitions_summary": "醫學的、醫術的、醫療的、內科的",
+      "collocations": [
+        "highly medical",
+        "medical standard",
+        "medical approach"
+      ],
+      "example": {
+        "en": "The department achieved medical performance during the past business quarter.",
+        "zh": "該部門在過去一個商務季度中取得了非常醫學的的表現。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 15,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 16,
+      "day": 23,
+      "word_index": 16,
+      "word": "incentive",
+      "phonetic": "/ˌɪnˈsɛnɪv/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "刺激",
+        "鼓勵",
+        "動機",
+        "刺激的"
+      ],
+      "definitions_summary": "刺激、鼓勵、動機、刺激的",
+      "collocations": [
+        "key incentive",
+        "effective incentive",
+        "incentive management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of incentive during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於刺激的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 16,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 17,
+      "day": 23,
+      "word_index": 17,
+      "word": "reimburse",
+      "phonetic": "/ˌriɪmˈbərs/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "核銷",
+        "償還",
+        "賠償"
+      ],
+      "definitions_summary": "核銷、償還、賠償",
+      "collocations": [
+        "reimburse expenses",
+        "reimburse for"
+      ],
+      "example": {
+        "en": "The company will promptly reimburse employees for legitimate travel expenses.",
+        "zh": "公司將及時為員工核銷合理的商務出差差旅費用。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 17,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 18,
+      "day": 23,
+      "word_index": 18,
+      "word": "vacation",
+      "phonetic": "/veɪˈkeɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "休假",
+        "假期",
+        "休庭期",
+        "休假日"
+      ],
+      "definitions_summary": "休假、假期、休庭期、休假日",
+      "collocations": [
+        "key vacation",
+        "effective vacation",
+        "vacation management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of vacation during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於休假的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 18,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 19,
+      "day": 23,
+      "word_index": 19,
+      "word": "overtime",
+      "phonetic": "/ˈoʊvərˌtaɪm/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "加班",
+        "加班時間",
+        "加班費",
+        "超過時間"
+      ],
+      "definitions_summary": "加班、加班時間、加班費、超過時間",
+      "collocations": [
+        "key overtime",
+        "effective overtime",
+        "overtime management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of overtime during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於加班的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 19,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 20,
+      "day": 23,
+      "word_index": 20,
+      "word": "sick leave",
+      "phonetic": "/sɪk liv/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "重要多益核心單字"
+      ],
+      "definitions_summary": "重要多益核心單字",
+      "collocations": [
+        "key sick leave",
+        "effective sick leave",
+        "sick leave management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of sick leave during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於重要多益核心單字的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 20,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 21,
+      "day": 23,
+      "word_index": 21,
+      "word": "tuition",
+      "phonetic": "/tjuˈɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "講授",
+        "教學",
+        "教誨",
+        "學費"
+      ],
+      "definitions_summary": "講授、教學、教誨、學費",
+      "collocations": [
+        "key tuition",
+        "effective tuition",
+        "tuition management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of tuition during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於講授的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 21,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 22,
+      "day": 23,
+      "word_index": 22,
+      "word": "coverage",
+      "phonetic": "/ˈkəvərɪʤ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "覆蓋",
+        "覆蓋範圍",
+        "保險項目",
+        "信貸準備金"
+      ],
+      "definitions_summary": "覆蓋、覆蓋範圍、保險項目、信貸準備金",
+      "collocations": [
+        "key coverage",
+        "effective coverage",
+        "coverage management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of coverage during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於覆蓋的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 22,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 23,
+      "day": 23,
+      "word_index": 23,
+      "word": "entitlement",
+      "phonetic": "/ɛnˈtaɪtəlmənt/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "命名",
+        "使有權利"
+      ],
+      "definitions_summary": "命名、使有權利",
+      "collocations": [
+        "actively entitlement",
+        "entitlement efficiently",
+        "plan to entitlement"
+      ],
+      "example": {
+        "en": "The management decided to entitlement the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定命名提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 23,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 24,
+      "day": 23,
+      "word_index": 24,
+      "word": "salary",
+      "phonetic": "/ˈsæləri/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "薪資",
+        "薪水"
+      ],
+      "definitions_summary": "薪資、薪水",
+      "collocations": [
+        "key salary",
+        "effective salary",
+        "salary management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of salary during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於薪資的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 24,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 25,
+      "day": 23,
+      "word_index": 25,
+      "word": "flexible hours",
+      "phonetic": "/ˈflɛksəbəl aʊərz/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "多益核心詞彙",
+        "商務實務",
+        "專業用語"
+      ],
+      "definitions_summary": "多益核心詞彙、商務實務、專業用語",
+      "collocations": [
+        "key flexible hours",
+        "effective flexible hours",
+        "flexible hours management"
+      ],
+      "example": {
+        "en": "The team reviewed this important business topic during the workshop.",
+        "zh": "團隊在研討會期間深入回顧了這項重要的商務主題與實務要點。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 25,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 26,
+      "day": 23,
+      "word_index": 26,
+      "word": "annuity",
+      "phonetic": "/əˈnuɪti/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "年金",
+        "年金保險",
+        "年金保險投資"
+      ],
+      "definitions_summary": "年金、年金保險、年金保險投資",
+      "collocations": [
+        "key annuity",
+        "effective annuity",
+        "annuity management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of annuity during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於年金的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 26,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 27,
+      "day": 23,
+      "word_index": 27,
+      "word": "premium",
+      "phonetic": "/ˈprimiəm/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "獎品",
+        "獎金",
+        "額外補貼",
+        "津貼"
+      ],
+      "definitions_summary": "獎品、獎金、額外補貼、津貼",
+      "collocations": [
+        "key premium",
+        "effective premium",
+        "premium management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of premium during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於獎品的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 27,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 28,
+      "day": 23,
+      "word_index": 28,
+      "word": "childcare",
+      "phonetic": "/ˈʧaɪldˌkɛr/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "重要多益核心單字"
+      ],
+      "definitions_summary": "重要多益核心單字",
+      "collocations": [
+        "key childcare",
+        "effective childcare",
+        "childcare management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of childcare during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於重要多益核心單字的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 28,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 29,
+      "day": 23,
+      "word_index": 29,
+      "word": "reward",
+      "phonetic": "/rɪˈwɔrd/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "報答",
+        "報償",
+        "獎賞",
+        "報應"
+      ],
+      "definitions_summary": "報答、報償、獎賞、報應",
+      "collocations": [
+        "key reward",
+        "effective reward",
+        "reward management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of reward during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於報答的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 29,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 30,
+      "day": 23,
+      "word_index": 30,
+      "word": "grant",
+      "phonetic": "/grænt/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "同意",
+        "准予",
+        "給予",
+        "授予"
+      ],
+      "definitions_summary": "同意、准予、給予、授予",
+      "collocations": [
+        "actively grant",
+        "grant efficiently",
+        "plan to grant"
+      ],
+      "example": {
+        "en": "The management decided to grant the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定同意提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 30,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 31,
+      "day": 23,
+      "word_index": 31,
+      "word": "fringe benefit",
+      "phonetic": "/frɪnʤ ˈbɛnəfɪt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "額外福利"
+      ],
+      "definitions_summary": "額外福利",
+      "collocations": [
+        "key fringe benefit",
+        "effective fringe benefit",
+        "fringe benefit management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of fringe benefit during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於額外福利的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 31,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 32,
+      "day": 23,
+      "word_index": 32,
+      "word": "package",
+      "phonetic": "/ˈpækɪʤ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "包裹",
+        "包裝箱",
+        "一包",
+        "一組事物"
+      ],
+      "definitions_summary": "包裹、包裝箱、一包、一組事物",
+      "collocations": [
+        "key package",
+        "effective package",
+        "package management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of package during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於包裹的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 32,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 33,
+      "day": 23,
+      "word_index": 33,
+      "word": "deductible",
+      "phonetic": "/dɪˈdəktəbəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "可扣除的",
+        "可減免的",
+        "扣除條款"
+      ],
+      "definitions_summary": "可扣除的、可減免的、扣除條款",
+      "collocations": [
+        "highly deductible",
+        "deductible standard",
+        "deductible approach"
+      ],
+      "example": {
+        "en": "The department achieved deductible performance during the past business quarter.",
+        "zh": "該部門在過去一個商務季度中取得了非常可扣除的的表現。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 33,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 34,
+      "day": 23,
+      "word_index": 34,
+      "word": "privilege",
+      "phonetic": "/ˈprɪvɪlɪʤ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "特權",
+        "優特",
+        "恩典",
+        "殊榮"
+      ],
+      "definitions_summary": "特權、優特、恩典、殊榮",
+      "collocations": [
+        "key privilege",
+        "effective privilege",
+        "privilege management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of privilege during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於特權的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 34,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 35,
+      "day": 23,
+      "word_index": 35,
+      "word": "stipend",
+      "phonetic": "/ˈstaɪpənd/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "津貼",
+        "薪餉",
+        "獎學金",
+        "養老金"
+      ],
+      "definitions_summary": "津貼、薪餉、獎學金、養老金",
+      "collocations": [
+        "key stipend",
+        "effective stipend",
+        "stipend management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of stipend during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於津貼的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 35,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 36,
+      "day": 23,
+      "word_index": 36,
+      "word": "contribution",
+      "phonetic": "/ˌkɑntrəˈbjuʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "貢獻",
+        "捐獻",
+        "捐助",
+        "捐獻的物品"
+      ],
+      "definitions_summary": "貢獻、捐獻、捐助、捐獻的物品",
+      "collocations": [
+        "key contribution",
+        "effective contribution",
+        "contribution management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of contribution during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於貢獻的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 36,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 37,
+      "day": 23,
+      "word_index": 37,
+      "word": "tenure",
+      "phonetic": "/ˈtɛnjər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "佔有",
+        "佔有權",
+        "佔有期",
+        "任期"
+      ],
+      "definitions_summary": "佔有、佔有權、佔有期、任期",
+      "collocations": [
+        "key tenure",
+        "effective tenure",
+        "tenure management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of tenure during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於佔有的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 37,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 38,
+      "day": 23,
+      "word_index": 38,
+      "word": "leave",
+      "phonetic": "/liv/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "離開",
+        "辭去",
+        "遺忘",
+        "丟下"
+      ],
+      "definitions_summary": "離開、辭去、遺忘、丟下",
+      "collocations": [
+        "actively leave",
+        "leave efficiently",
+        "plan to leave"
+      ],
+      "example": {
+        "en": "The management decided to leave the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定離開提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 38,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 39,
+      "day": 23,
+      "word_index": 39,
+      "word": "vesting",
+      "phonetic": "/ˈvɛstɪŋ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "使穿衣",
+        "裝束",
+        "授予",
+        "賦予"
+      ],
+      "definitions_summary": "使穿衣、裝束、授予、賦予",
+      "collocations": [
+        "key vesting",
+        "effective vesting",
+        "vesting management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of vesting during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於使穿衣的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 39,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 40,
+      "day": 23,
+      "word_index": 40,
+      "word": "copay",
+      "phonetic": "/kōˈpāmənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "重要多益核心單字"
+      ],
+      "definitions_summary": "重要多益核心單字",
+      "collocations": [
+        "key copay",
+        "effective copay",
+        "copay management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of copay during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於重要多益核心單字的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 40,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 41,
+      "day": 23,
+      "word_index": 41,
+      "word": "host",
+      "phonetic": "/hoʊst/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "主人",
+        "東道主",
+        "旅館老板",
+        "節目主持人"
+      ],
+      "definitions_summary": "主人、東道主、旅館老板、節目主持人",
+      "collocations": [
+        "key host",
+        "effective host",
+        "host management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of host during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於主人的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 41,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 42,
+      "day": 23,
+      "word_index": 42,
+      "word": "annual",
+      "phonetic": "/ˈænjuəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "一年的",
+        "一年一次的",
+        "每年的",
+        "全年的"
+      ],
+      "definitions_summary": "一年的、一年一次的、每年的、全年的",
+      "collocations": [
+        "highly annual",
+        "annual standard",
+        "annual approach"
+      ],
+      "example": {
+        "en": "The department achieved annual performance during the past business quarter.",
+        "zh": "該部門在過去一個商務季度中取得了非常一年的的表現。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 42,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 43,
+      "day": 23,
+      "word_index": 43,
+      "word": "purpose",
+      "phonetic": "/ˈpərpəs/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "目的",
+        "意圖",
+        "用途",
+        "效用"
+      ],
+      "definitions_summary": "目的、意圖、用途、效用",
+      "collocations": [
+        "key purpose",
+        "effective purpose",
+        "purpose management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of purpose during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於目的的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 43,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 44,
+      "day": 23,
+      "word_index": 44,
+      "word": "enroll",
+      "phonetic": "/ɪnˈroʊl/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "使入會",
+        "使入學",
+        "記錄",
+        "記下"
+      ],
+      "definitions_summary": "使入會、使入學、記錄、記下",
+      "collocations": [
+        "actively enroll",
+        "enroll efficiently",
+        "plan to enroll"
+      ],
+      "example": {
+        "en": "The management decided to enroll the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定使入會提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 44,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 45,
+      "day": 23,
+      "word_index": 45,
+      "word": "participant",
+      "phonetic": "/pɑrˈtɪsəpənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "關係者",
+        "參與者",
+        "參與的",
+        "有關係的"
+      ],
+      "definitions_summary": "關係者、參與者、參與的、有關係的",
+      "collocations": [
+        "key participant",
+        "effective participant",
+        "participant management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of participant during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於關係者的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 45,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 46,
+      "day": 23,
+      "word_index": 46,
+      "word": "attend",
+      "phonetic": "/əˈtɛnd/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "出席",
+        "參加",
+        "照料",
+        "護理"
+      ],
+      "definitions_summary": "出席、參加、照料、護理",
+      "collocations": [
+        "actively attend",
+        "attend efficiently",
+        "plan to attend"
+      ],
+      "example": {
+        "en": "The management decided to attend the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定出席提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 46,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 47,
+      "day": 23,
+      "word_index": 47,
+      "word": "encourage",
+      "phonetic": "/ɪnˈkərəʤ/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "鼓勵",
+        "慫恿",
+        "促進",
+        "助長"
+      ],
+      "definitions_summary": "鼓勵、慫恿、促進、助長",
+      "collocations": [
+        "actively encourage",
+        "encourage efficiently",
+        "plan to encourage"
+      ],
+      "example": {
+        "en": "The management decided to encourage the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定鼓勵提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 47,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 48,
+      "day": 23,
+      "word_index": 48,
+      "word": "recommendation",
+      "phonetic": "/ˌrɛkəmənˈdeɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "推薦",
+        "推薦信",
+        "介紹信",
+        "勸告"
+      ],
+      "definitions_summary": "推薦、推薦信、介紹信、勸告",
+      "collocations": [
+        "key recommendation",
+        "effective recommendation",
+        "recommendation management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of recommendation during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於推薦的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 48,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 49,
+      "day": 23,
+      "word_index": 49,
+      "word": "conference",
+      "phonetic": "/ˈkɑnfərəns/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "會議",
+        "討論會",
+        "協商會",
+        "討論"
+      ],
+      "definitions_summary": "會議、討論會、協商會、討論",
+      "collocations": [
+        "key conference",
+        "effective conference",
+        "conference management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of conference during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於會議的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 49,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 50,
+      "day": 23,
+      "word_index": 50,
+      "word": "schedule",
+      "phonetic": "/ˈskɛʤʊl/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "清單",
+        "目錄",
+        "計畫表",
+        "日程安排表"
+      ],
+      "definitions_summary": "清單、目錄、計畫表、日程安排表",
+      "collocations": [
+        "key schedule",
+        "effective schedule",
+        "schedule management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of schedule during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於清單的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 50,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 51,
+      "day": 23,
+      "word_index": 51,
+      "word": "result",
+      "phonetic": "/rɪˈzəlt/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "發生",
+        "產生",
+        "結果",
+        "導致"
+      ],
+      "definitions_summary": "發生、產生、結果、導致",
+      "collocations": [
+        "actively result",
+        "result efficiently",
+        "plan to result"
+      ],
+      "example": {
+        "en": "The management decided to result the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定發生提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 51,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 52,
+      "day": 23,
+      "word_index": 52,
+      "word": "register",
+      "phonetic": "/ˈrɛʤɪstər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "登記",
+        "註冊",
+        "登記簿",
+        "花名冊"
+      ],
+      "definitions_summary": "登記、註冊、登記簿、花名冊",
+      "collocations": [
+        "key register",
+        "effective register",
+        "register management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of register during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於登記的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 52,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 53,
+      "day": 23,
+      "word_index": 53,
+      "word": "require",
+      "phonetic": "/ˌrikˈwaɪər/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "需要"
+      ],
+      "definitions_summary": "需要",
+      "collocations": [
+        "actively require",
+        "require efficiently",
+        "plan to require"
+      ],
+      "example": {
+        "en": "The management decided to require the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定需要提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 53,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 54,
+      "day": 23,
+      "word_index": 54,
+      "word": "grateful",
+      "phonetic": "/ˈgreɪtfəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "感謝的",
+        "感激的",
+        "表示感謝的",
+        "令人愉快的"
+      ],
+      "definitions_summary": "感謝的、感激的、表示感謝的、令人愉快的",
+      "collocations": [
+        "highly grateful",
+        "grateful standard",
+        "grateful approach"
+      ],
+      "example": {
+        "en": "The department achieved grateful performance during the past business quarter.",
+        "zh": "該部門在過去一個商務季度中取得了非常感謝的的表現。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 54,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 55,
+      "day": 23,
+      "word_index": 55,
+      "word": "responsibility",
+      "phonetic": "/riˌspɑnsəˈbɪləti/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "責任",
+        "責任感",
+        "職責",
+        "任務"
+      ],
+      "definitions_summary": "責任、責任感、職責、任務",
+      "collocations": [
+        "key responsibility",
+        "effective responsibility",
+        "responsibility management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of responsibility during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於責任的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 55,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 56,
+      "day": 23,
+      "word_index": 56,
+      "word": "ascend",
+      "phonetic": "/əˈsɛnd/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "多益核心詞彙",
+        "商務實務",
+        "專業用語"
+      ],
+      "definitions_summary": "上升、攀登、晉升",
+      "collocations": [
+        "key assend",
+        "effective assend",
+        "assend management"
+      ],
+      "example": {
+        "en": "The team reviewed this important business topic during the workshop.",
+        "zh": "團隊在研討會期間深入回顧了這項重要的商務主題與實務要點。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 56,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 57,
+      "day": 23,
+      "word_index": 57,
+      "word": "regard",
+      "phonetic": "/rɪˈgɑrd/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "注重",
+        "注意",
+        "考慮",
+        "關心"
+      ],
+      "definitions_summary": "注重、注意、考慮、關心",
+      "collocations": [
+        "key regard",
+        "effective regard",
+        "regard management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of regard during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於注重的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 57,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 58,
+      "day": 23,
+      "word_index": 58,
+      "word": "tentative",
+      "phonetic": "/ˈtɛntətɪv/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "試驗性的",
+        "嘗試的",
+        "暫時性的",
+        "躊躇的"
+      ],
+      "definitions_summary": "試驗性的、嘗試的、暫時性的、躊躇的",
+      "collocations": [
+        "highly tentative",
+        "tentative standard",
+        "tentative approach"
+      ],
+      "example": {
+        "en": "The department achieved tentative performance during the past business quarter.",
+        "zh": "該部門在過去一個商務季度中取得了非常試驗性的的表現。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 58,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 59,
+      "day": 23,
+      "word_index": 59,
+      "word": "welcome",
+      "phonetic": "/ˈwɛlkəm/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "歡迎",
+        "欣然接受",
+        "受歡迎的",
+        "令人愉快的"
+      ],
+      "definitions_summary": "歡迎、欣然接受、受歡迎的、令人愉快的",
+      "collocations": [
+        "actively welcome",
+        "welcome efficiently",
+        "plan to welcome"
+      ],
+      "example": {
+        "en": "The management decided to welcome the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定歡迎提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 59,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 60,
+      "day": 23,
+      "word_index": 60,
+      "word": "function",
+      "phonetic": "/ˈfəŋkʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "功能",
+        "作用",
+        "官能",
+        "職務"
+      ],
+      "definitions_summary": "功能、作用、官能、職務",
+      "collocations": [
+        "key function",
+        "effective function",
+        "function management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of function during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於功能的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 60,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 61,
+      "day": 23,
+      "word_index": 61,
+      "word": "commence",
+      "phonetic": "/kəˈmɛns/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "開始",
+        "著手"
+      ],
+      "definitions_summary": "開始、著手",
+      "collocations": [
+        "actively commence",
+        "commence efficiently",
+        "plan to commence"
+      ],
+      "example": {
+        "en": "The management decided to commence the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定開始提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 61,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 62,
+      "day": 23,
+      "word_index": 62,
+      "word": "objective",
+      "phonetic": "/əˈbʤɛktɪv/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "客觀存在的",
+        "客觀的",
+        "如實的",
+        "無偏見的"
+      ],
+      "definitions_summary": "客觀存在的、客觀的、如實的、無偏見的",
+      "collocations": [
+        "highly objective",
+        "objective standard",
+        "objective approach"
+      ],
+      "example": {
+        "en": "The department achieved objective performance during the past business quarter.",
+        "zh": "該部門在過去一個商務季度中取得了非常客觀存在的的表現。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 62,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 63,
+      "day": 23,
+      "word_index": 63,
+      "word": "excited",
+      "phonetic": "/ɪkˈsaɪtɪd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "興奮的",
+        "激動的",
+        "活躍的"
+      ],
+      "definitions_summary": "興奮的、激動的、活躍的",
+      "collocations": [
+        "highly excited",
+        "excited standard",
+        "excited approach"
+      ],
+      "example": {
+        "en": "The department achieved excited performance during the past business quarter.",
+        "zh": "該部門在過去一個商務季度中取得了非常興奮的的表現。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 63,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 64,
+      "day": 23,
+      "word_index": 64,
+      "word": "reimbursement",
+      "phonetic": "/ˌriːɪmˈbɜːrsmənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "多益核心詞彙",
+        "商務實務",
+        "專業用語"
+      ],
+      "definitions_summary": "退款、報銷、核銷",
+      "collocations": [
+        "key embursement",
+        "effective embursement",
+        "embursement management"
+      ],
+      "example": {
+        "en": "The team reviewed this important business topic during the workshop.",
+        "zh": "團隊在研討會期間深入回顧了這項重要的商務主題與實務要點。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 64,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 65,
+      "day": 23,
+      "word_index": 65,
+      "word": "treatment",
+      "phonetic": "/ˈtritmənt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "對待",
+        "待遇",
+        "處理",
+        "論述"
+      ],
+      "definitions_summary": "對待、待遇、處理、論述",
+      "collocations": [
+        "key treatment",
+        "effective treatment",
+        "treatment management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of treatment during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於對待的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 65,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 66,
+      "day": 23,
+      "word_index": 66,
+      "word": "honour",
+      "phonetic": "/ˈɑnər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "同義參見"
+      ],
+      "definitions_summary": "同義參見",
+      "collocations": [
+        "key honour",
+        "effective honour",
+        "honour management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of honour during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於同義參見的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 66,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 67,
+      "day": 23,
+      "word_index": 67,
+      "word": "arise",
+      "phonetic": "/əraɪz/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "升起",
+        "上升",
+        "產生",
+        "出現"
+      ],
+      "definitions_summary": "升起、上升、產生、出現",
+      "collocations": [
+        "actively arise",
+        "arise efficiently",
+        "plan to arise"
+      ],
+      "example": {
+        "en": "The management decided to arise the proposed plan to improve overall efficiency.",
+        "zh": "管理階層決定升起提議的方案，以提升整體營運效率。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 67,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 68,
+      "day": 23,
+      "word_index": 68,
+      "word": "labor",
+      "phonetic": "/ˈleɪbər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "勞動",
+        "勞工",
+        "勞方",
+        "分娩"
+      ],
+      "definitions_summary": "勞動、勞工、勞方、分娩",
+      "collocations": [
+        "key labor",
+        "effective labor",
+        "labor management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of labor during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於勞動的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 68,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 69,
+      "day": 23,
+      "word_index": 69,
+      "word": "union",
+      "phonetic": "/ˈjunjən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "結合",
+        "合併",
+        "和諧",
+        "一致"
+      ],
+      "definitions_summary": "結合、合併、和諧、一致",
+      "collocations": [
+        "key union",
+        "effective union",
+        "union management"
+      ],
+      "example": {
+        "en": "The executive team discussed the key factors of union during the annual meeting.",
+        "zh": "執行主管團隊在年度會議上深入討論了關於結合的關鍵要素。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 69,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 70,
+      "day": 23,
+      "word_index": 70,
+      "word": "existing",
+      "phonetic": "/ɪgˈzɪstɪŋ/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "現存的",
+        "現行的"
+      ],
+      "definitions_summary": "現存的、現行的",
+      "collocations": [
+        "highly existing",
+        "existing standard",
+        "existing approach"
+      ],
+      "example": {
+        "en": "The department achieved existing performance during the past business quarter.",
+        "zh": "該部門在過去一個商務季度中取得了非常現存的的表現。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 70,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    },
+    {
+      "id": 71,
+      "day": 23,
+      "word_index": 71,
+      "word": "rest",
+      "phonetic": "/rɛst/",
+      "part_of_speech": "n. / v.",
+      "chinese_definitions": [
+        "休息",
+        "剩餘部分",
+        "休養"
+      ],
+      "definitions_summary": "休息、剩餘部分、休養",
+      "collocations": [
+        "take a rest",
+        "the rest of"
+      ],
+      "example": {
+        "en": "You should take a short rest after several hours of intensive study.",
+        "zh": "在進行數小時的高強度學習後，你應該稍作休息。"
+      },
+      "audio": {
+        "file": "basic_Day23.mp3",
+        "track": 71,
+        "tier": "score_basic"
+      },
+      "difficulty": "intermediate",
+      "tier": "score_basic"
+    }
+  ],
+  "score_600": [
+    {
+      "id": 1,
+      "day": 23,
+      "tier": "score_600",
+      "word": "application",
+      "phonetic": "/ˌæpləˈkeɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "應用",
+        "適用",
+        "運用",
+        "申請"
+      ],
+      "definitions_summary": "應用、適用、運用、申請",
+      "collocations": [
+        "essential application",
+        "standard application"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of application is essential in corporate business.",
+        "zh": "充分掌握關於應用的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 1
+      }
+    },
+    {
+      "id": 2,
+      "day": 23,
+      "tier": "score_600",
+      "word": "award ceremony",
+      "phonetic": "/əˈwɔrd ˈsɛrəˌmoʊni/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential award ceremony",
+        "standard award ceremony"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of award ceremony is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 2
+      }
+    },
+    {
+      "id": 3,
+      "day": 23,
+      "tier": "score_600",
+      "word": "chat",
+      "phonetic": "/ʧæt/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "閒談",
+        "聊天",
+        "鳴禽"
+      ],
+      "definitions_summary": "閒談、聊天、鳴禽",
+      "collocations": [
+        "essential chat",
+        "standard chat"
+      ],
+      "example": {
+        "en": "The management decided to chat the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行閒談，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 3
+      }
+    },
+    {
+      "id": 4,
+      "day": 23,
+      "tier": "score_600",
+      "word": "clap",
+      "phonetic": "/klæp/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "輕拍",
+        "急速放置",
+        "匆忙地湊成",
+        "拍手"
+      ],
+      "definitions_summary": "輕拍、急速放置、匆忙地湊成、拍手",
+      "collocations": [
+        "essential clap",
+        "standard clap"
+      ],
+      "example": {
+        "en": "The management decided to clap the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行輕拍，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 4
+      }
+    },
+    {
+      "id": 5,
+      "day": 23,
+      "tier": "score_600",
+      "word": "get paid",
+      "phonetic": "/gɪt peɪd/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "的動詞過去式",
+        "過去分詞"
+      ],
+      "definitions_summary": "的動詞過去式、過去分詞",
+      "collocations": [
+        "essential get paid get paid",
+        "standard get paid get paid"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of get paid get paid is essential in corporate business.",
+        "zh": "充分掌握關於的動詞過去式的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 5
+      }
+    },
+    {
+      "id": 6,
+      "day": 23,
+      "tier": "score_600",
+      "word": "grab",
+      "phonetic": "/græb/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "攫取",
+        "抓取",
+        "奪取",
+        "霸佔"
+      ],
+      "definitions_summary": "攫取、抓取、奪取、霸佔",
+      "collocations": [
+        "essential grab",
+        "standard grab"
+      ],
+      "example": {
+        "en": "The management decided to grab the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行攫取，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 6
+      }
+    },
+    {
+      "id": 7,
+      "day": 23,
+      "tier": "score_600",
+      "word": "group",
+      "phonetic": "/grup/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "集體",
+        "團體",
+        "流行樂團",
+        "空軍大隊"
+      ],
+      "definitions_summary": "集體、團體、流行樂團、空軍大隊",
+      "collocations": [
+        "essential group",
+        "standard group"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of group is essential in corporate business.",
+        "zh": "充分掌握關於集體的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 7
+      }
+    },
+    {
+      "id": 8,
+      "day": 23,
+      "tier": "score_600",
+      "word": "hook",
+      "phonetic": "/hʊk/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "掛鉤",
+        "鉤扣",
+        "釣魚鉤",
+        "鉤拳"
+      ],
+      "definitions_summary": "掛鉤、鉤扣、釣魚鉤、鉤拳",
+      "collocations": [
+        "essential hook",
+        "standard hook"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of hook is essential in corporate business.",
+        "zh": "充分掌握關於掛鉤的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 8
+      }
+    },
+    {
+      "id": 9,
+      "day": 23,
+      "tier": "score_600",
+      "word": "introduction",
+      "phonetic": "/ˌɪntrəˈdəkʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "介紹",
+        "正式引見",
+        "引進",
+        "傳入"
+      ],
+      "definitions_summary": "介紹、正式引見、引進、傳入",
+      "collocations": [
+        "essential introduction",
+        "standard introduction"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of introduction is essential in corporate business.",
+        "zh": "充分掌握關於介紹的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 9
+      }
+    },
+    {
+      "id": 10,
+      "day": 23,
+      "tier": "score_600",
+      "word": "learning center",
+      "phonetic": "/ˈlərnɪŋ ˈsɛnər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "中心",
+        "中央",
+        "中心點"
+      ],
+      "definitions_summary": "中心、中央、中心點",
+      "collocations": [
+        "essential learning center",
+        "standard learning center"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of learning center is essential in corporate business.",
+        "zh": "充分掌握關於中心的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 10
+      }
+    },
+    {
+      "id": 11,
+      "day": 23,
+      "tier": "score_600",
+      "word": "loud speaker",
+      "phonetic": "/laʊd ˈspikər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "說話者",
+        "演講者",
+        "演說家"
+      ],
+      "definitions_summary": "說話者、演講者、演說家",
+      "collocations": [
+        "essential loud speaker",
+        "standard loud speaker"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of loud speaker is essential in corporate business.",
+        "zh": "充分掌握關於說話者的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 11
+      }
+    },
+    {
+      "id": 12,
+      "day": 23,
+      "tier": "score_600",
+      "word": "lounge",
+      "phonetic": "/laʊnʤ/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "閒蕩",
+        "閒逛",
+        "懶散地消磨時間",
+        "懶散地混"
+      ],
+      "definitions_summary": "閒蕩、閒逛、懶散地消磨時間、懶散地混",
+      "collocations": [
+        "essential lounge",
+        "standard lounge"
+      ],
+      "example": {
+        "en": "The management decided to lounge the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行閒蕩，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 12
+      }
+    },
+    {
+      "id": 13,
+      "day": 23,
+      "tier": "score_600",
+      "word": "management seminar",
+      "phonetic": "/ˈmænɪʤmənt ˈsɛməˌnɑr/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "研究班",
+        "研討班",
+        "專題討論會"
+      ],
+      "definitions_summary": "研究班、研討班、專題討論會",
+      "collocations": [
+        "essential management seminar",
+        "standard management seminar"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of management seminar is essential in corporate business.",
+        "zh": "充分掌握關於研究班的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 13
+      }
+    },
+    {
+      "id": 14,
+      "day": 23,
+      "tier": "score_600",
+      "word": "take a vacation",
+      "phonetic": "/teɪk ə veɪˈkeɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "休假",
+        "假期",
+        "休庭期"
+      ],
+      "definitions_summary": "休假、假期、休庭期",
+      "collocations": [
+        "essential take a vacation",
+        "standard take a vacation"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of take a vacation is essential in corporate business.",
+        "zh": "充分掌握關於休假的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 14
+      }
+    },
+    {
+      "id": 15,
+      "day": 23,
+      "tier": "score_600",
+      "word": "wallpaper",
+      "phonetic": "/ˈwɔlˌpeɪpər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "壁紙"
+      ],
+      "definitions_summary": "壁紙",
+      "collocations": [
+        "essential wallpaper",
+        "standard wallpaper"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of wallpaper is essential in corporate business.",
+        "zh": "充分掌握關於壁紙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 15
+      }
+    },
+    {
+      "id": 16,
+      "day": 23,
+      "tier": "score_600",
+      "word": "arcy bold",
+      "phonetic": "/arcy bold/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "英勇的",
+        "無畏的",
+        "大膽的"
+      ],
+      "definitions_summary": "英勇的、無畏的、大膽的",
+      "collocations": [
+        "essential arcy bold",
+        "standard arcy bold"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of arcy bold is essential in corporate business.",
+        "zh": "充分掌握關於英勇的的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 16
+      }
+    },
+    {
+      "id": 17,
+      "day": 23,
+      "tier": "score_600",
+      "word": "finally",
+      "phonetic": "/ˈfaɪnəli/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "最後",
+        "終於",
+        "決定性地"
+      ],
+      "definitions_summary": "最後、終於、決定性地",
+      "collocations": [
+        "essential finally",
+        "standard finally"
+      ],
+      "example": {
+        "en": "The management decided to finally the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行最後，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 17
+      }
+    },
+    {
+      "id": 18,
+      "day": 23,
+      "tier": "score_600",
+      "word": "friendly",
+      "phonetic": "/ˈfrɛndli/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "友好的",
+        "親切的",
+        "朋友關係的",
+        "支持的"
+      ],
+      "definitions_summary": "友好的、親切的、朋友關係的、支持的",
+      "collocations": [
+        "essential friendly",
+        "standard friendly"
+      ],
+      "example": {
+        "en": "The applicant demonstrated friendly qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常友好的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 18
+      }
+    },
+    {
+      "id": 19,
+      "day": 23,
+      "tier": "score_600",
+      "word": "gentle",
+      "phonetic": "/ˈʤɛnəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "溫和的",
+        "和善的",
+        "仁慈的",
+        "輕柔的"
+      ],
+      "definitions_summary": "溫和的、和善的、仁慈的、輕柔的",
+      "collocations": [
+        "essential gentle",
+        "standard gentle"
+      ],
+      "example": {
+        "en": "The applicant demonstrated gentle qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常溫和的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 19
+      }
+    },
+    {
+      "id": 20,
+      "day": 23,
+      "tier": "score_600",
+      "word": "lively",
+      "phonetic": "/ˈlaɪvli/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "精力充沛的",
+        "活潑的",
+        "輕快的",
+        "她也許有八十歲了"
+      ],
+      "definitions_summary": "精力充沛的、活潑的、輕快的、她也許有八十歲了",
+      "collocations": [
+        "essential lively",
+        "standard lively"
+      ],
+      "example": {
+        "en": "The applicant demonstrated lively qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常精力充沛的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 20
+      }
+    },
+    {
+      "id": 21,
+      "day": 23,
+      "tier": "score_600",
+      "word": "pharmacy",
+      "phonetic": "/ˈfɑrməsi/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "藥局",
+        "藥房",
+        "藥店",
+        "藥品部"
+      ],
+      "definitions_summary": "藥局、藥房、藥店、藥品部",
+      "collocations": [
+        "essential pharmacy",
+        "standard pharmacy"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of pharmacy is essential in corporate business.",
+        "zh": "充分掌握關於藥局的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 21
+      }
+    },
+    {
+      "id": 22,
+      "day": 23,
+      "tier": "score_600",
+      "word": "precise",
+      "phonetic": "/prɪˈsaɪs/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "精確的",
+        "準確的",
+        "確切的",
+        "明確的"
+      ],
+      "definitions_summary": "精確的、準確的、確切的、明確的",
+      "collocations": [
+        "essential precise",
+        "standard precise"
+      ],
+      "example": {
+        "en": "The applicant demonstrated precise qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常精確的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 22
+      }
+    },
+    {
+      "id": 23,
+      "day": 23,
+      "tier": "score_600",
+      "word": "prize",
+      "phonetic": "/praɪz/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "獎賞",
+        "獎品",
+        "獎金",
+        "競爭的目標"
+      ],
+      "definitions_summary": "獎賞、獎品、獎金、競爭的目標",
+      "collocations": [
+        "essential prize",
+        "standard prize"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of prize is essential in corporate business.",
+        "zh": "充分掌握關於獎賞的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 23
+      }
+    },
+    {
+      "id": 24,
+      "day": 23,
+      "tier": "score_600",
+      "word": "registration",
+      "phonetic": "/ˌrɛʤɪˈstreɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "登記",
+        "註冊",
+        "掛號",
+        "登記項目"
+      ],
+      "definitions_summary": "登記、註冊、掛號、登記項目",
+      "collocations": [
+        "essential registration",
+        "standard registration"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of registration is essential in corporate business.",
+        "zh": "充分掌握關於登記的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 24
+      }
+    },
+    {
+      "id": 25,
+      "day": 23,
+      "tier": "score_600",
+      "word": "vacation",
+      "phonetic": "/veɪˈkeɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "休假",
+        "假期",
+        "休庭期",
+        "休假日"
+      ],
+      "definitions_summary": "休假、假期、休庭期、休假日",
+      "collocations": [
+        "essential vacation",
+        "standard vacation"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of vacation is essential in corporate business.",
+        "zh": "充分掌握關於休假的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 25
+      }
+    },
+    {
+      "id": 26,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Clapp",
+      "phonetic": "/klæp/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Clapp",
+        "standard Clapp"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Clapp is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 26
+      }
+    },
+    {
+      "id": 27,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Groop",
+      "phonetic": "/groop/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Groop",
+        "standard Groop"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Groop is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 27
+      }
+    },
+    {
+      "id": 28,
+      "day": 23,
+      "tier": "score_600",
+      "word": "smoking section",
+      "phonetic": "/sˈmoʊkɪŋ ˈsɛkʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "切下的部分",
+        "部分",
+        "地區"
+      ],
+      "definitions_summary": "切下的部分、部分、地區",
+      "collocations": [
+        "essential Smoaking section",
+        "standard Smoaking section"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Smoaking section is essential in corporate business.",
+        "zh": "充分掌握關於切下的部分的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 28
+      }
+    },
+    {
+      "id": 29,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Bitchu",
+      "phonetic": "/bitchu/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Bitchu",
+        "standard Bitchu"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Bitchu is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 29
+      }
+    },
+    {
+      "id": 30,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Bold",
+      "phonetic": "/boʊld/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "英勇的",
+        "無畏的",
+        "大膽的",
+        "放肆的"
+      ],
+      "definitions_summary": "英勇的、無畏的、大膽的、放肆的",
+      "collocations": [
+        "essential Bold",
+        "standard Bold"
+      ],
+      "example": {
+        "en": "The applicant demonstrated Bold qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常英勇的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 30
+      }
+    },
+    {
+      "id": 31,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Findly",
+      "phonetic": "/findly/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Findly",
+        "standard Findly"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Findly is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 31
+      }
+    },
+    {
+      "id": 32,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Gental",
+      "phonetic": "/gental/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Gental",
+        "standard Gental"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Gental is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 32
+      }
+    },
+    {
+      "id": 33,
+      "day": 23,
+      "tier": "score_600",
+      "word": "In charge of",
+      "phonetic": "/ɪn ʧɑrʤ əv/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "主管",
+        "照料"
+      ],
+      "definitions_summary": "主管、照料",
+      "collocations": [
+        "essential In charge of",
+        "standard In charge of"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of In charge of is essential in corporate business.",
+        "zh": "充分掌握關於主管的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 33
+      }
+    },
+    {
+      "id": 34,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Fuze",
+      "phonetic": "/fuze/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "弓月山金",
+        "手一月山金",
+        "擔負責任",
+        "負債"
+      ],
+      "definitions_summary": "弓月山金、手一月山金、擔負責任、負債",
+      "collocations": [
+        "essential Fuze",
+        "standard Fuze"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Fuze is essential in corporate business.",
+        "zh": "充分掌握關於弓月山金的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 34
+      }
+    },
+    {
+      "id": 35,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Farmacy",
+      "phonetic": "/farmacy/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Farmacy",
+        "standard Farmacy"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Farmacy is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 35
+      }
+    },
+    {
+      "id": 37,
+      "day": 23,
+      "tier": "score_600",
+      "word": "Prise",
+      "phonetic": "/praɪz/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "英國英語"
+      ],
+      "definitions_summary": "英國英語",
+      "collocations": [
+        "essential Prise",
+        "standard Prise"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Prise is essential in corporate business.",
+        "zh": "充分掌握關於英國英語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_600",
+        "file": "score basic_Day23.mp3",
+        "track": 37
+      }
+    }
+  ],
+  "score_800": [
+    {
+      "id": 1,
+      "day": 23,
+      "tier": "score_800",
+      "word": "a letter of gratitude",
+      "phonetic": "/ə ˈlɛtər əv ˈgrætəˌtud/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "感激之情",
+        "感恩",
+        "感謝"
+      ],
+      "definitions_summary": "感激之情、感恩、感謝",
+      "collocations": [
+        "essential a letter of gratitude",
+        "standard a letter of gratitude"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of a letter of gratitude is essential in corporate business.",
+        "zh": "充分掌握關於感激之情的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 1
+      }
+    },
+    {
+      "id": 2,
+      "day": 23,
+      "tier": "score_800",
+      "word": "check out",
+      "phonetic": "/ʧɛk aʊt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential check out",
+        "standard check out"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of check out is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 2
+      }
+    },
+    {
+      "id": 3,
+      "day": 23,
+      "tier": "score_800",
+      "word": "child care",
+      "phonetic": "/ʧaɪld kɛr/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential child care",
+        "standard child care"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of child care is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 3
+      }
+    },
+    {
+      "id": 4,
+      "day": 23,
+      "tier": "score_800",
+      "word": "give a raise",
+      "phonetic": "/gɪv ə reɪz/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "舉起",
+        "抬起",
+        "增加"
+      ],
+      "definitions_summary": "舉起、抬起、增加",
+      "collocations": [
+        "essential give a raise",
+        "standard give a raise"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of give a raise is essential in corporate business.",
+        "zh": "充分掌握關於舉起的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 4
+      }
+    },
+    {
+      "id": 5,
+      "day": 23,
+      "tier": "score_800",
+      "word": "going away party",
+      "phonetic": "/goʊɪŋ əˈweɪ ˈpɑrti/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "聚會",
+        "集會",
+        "派對"
+      ],
+      "definitions_summary": "聚會、集會、派對",
+      "collocations": [
+        "essential going away party",
+        "standard going away party"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of going away party is essential in corporate business.",
+        "zh": "充分掌握關於聚會的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 5
+      }
+    },
+    {
+      "id": 6,
+      "day": 23,
+      "tier": "score_800",
+      "word": "it s about time",
+      "phonetic": "/ɪt ɛs əˈbaʊt taɪm/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "時間",
+        "一段時光",
+        "歷史時期"
+      ],
+      "definitions_summary": "時間、一段時光、歷史時期",
+      "collocations": [
+        "essential it s about time",
+        "standard it s about time"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of it s about time is essential in corporate business.",
+        "zh": "充分掌握關於時間的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 6
+      }
+    },
+    {
+      "id": 7,
+      "day": 23,
+      "tier": "score_800",
+      "word": "it s no use",
+      "phonetic": "/ɪt ɛs noʊ juz/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "使用",
+        "發揮",
+        "行使"
+      ],
+      "definitions_summary": "使用、發揮、行使",
+      "collocations": [
+        "essential it s no use",
+        "standard it s no use"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of it s no use is essential in corporate business.",
+        "zh": "充分掌握關於使用的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 7
+      }
+    },
+    {
+      "id": 8,
+      "day": 23,
+      "tier": "score_800",
+      "word": "job satisfaction",
+      "phonetic": "/ʤɑb ˌsætɪsˈfækʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential job satisfaction",
+        "standard job satisfaction"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of job satisfaction is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 8
+      }
+    },
+    {
+      "id": 9,
+      "day": 23,
+      "tier": "score_800",
+      "word": "just in case",
+      "phonetic": "/ʤɪst ɪn keɪs/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential just in case",
+        "standard just in case"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of just in case is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 9
+      }
+    },
+    {
+      "id": 10,
+      "day": 23,
+      "tier": "score_800",
+      "word": "miserable",
+      "phonetic": "/ˈmɪzərəbəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "痛苦的",
+        "不幸的",
+        "悽慘的",
+        "悲哀的"
+      ],
+      "definitions_summary": "痛苦的、不幸的、悽慘的、悲哀的",
+      "collocations": [
+        "essential miserable",
+        "standard miserable"
+      ],
+      "example": {
+        "en": "The applicant demonstrated miserable qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常痛苦的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 10
+      }
+    },
+    {
+      "id": 11,
+      "day": 23,
+      "tier": "score_800",
+      "word": "paid leave",
+      "phonetic": "/peɪd liv/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "離開",
+        "辭去",
+        "遺忘"
+      ],
+      "definitions_summary": "離開、辭去、遺忘",
+      "collocations": [
+        "essential paid leave",
+        "standard paid leave"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of paid leave is essential in corporate business.",
+        "zh": "充分掌握關於離開的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 11
+      }
+    },
+    {
+      "id": 12,
+      "day": 23,
+      "tier": "score_800",
+      "word": "pity",
+      "phonetic": "/ˈpɪti/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "憐憫",
+        "同情",
+        "可惜的事",
+        "憾事"
+      ],
+      "definitions_summary": "憐憫、同情、可惜的事、憾事",
+      "collocations": [
+        "essential pity",
+        "standard pity"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of pity is essential in corporate business.",
+        "zh": "充分掌握關於憐憫的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 12
+      }
+    },
+    {
+      "id": 13,
+      "day": 23,
+      "tier": "score_800",
+      "word": "privately",
+      "phonetic": "/ˈpraɪvətli/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "私下地",
+        "不公開地",
+        "同義參見"
+      ],
+      "definitions_summary": "私下地、不公開地、同義參見",
+      "collocations": [
+        "essential privately",
+        "standard privately"
+      ],
+      "example": {
+        "en": "The applicant demonstrated privately qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常私下地的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 13
+      }
+    },
+    {
+      "id": 14,
+      "day": 23,
+      "tier": "score_800",
+      "word": "psychological",
+      "phonetic": "/ˌsaɪkəˈlɑʤɪkəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "心理學的",
+        "心理學家的",
+        "心理的",
+        "精神的"
+      ],
+      "definitions_summary": "心理學的、心理學家的、心理的、精神的",
+      "collocations": [
+        "essential psychological",
+        "standard psychological"
+      ],
+      "example": {
+        "en": "The applicant demonstrated psychological qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常心理學的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 14
+      }
+    },
+    {
+      "id": 15,
+      "day": 23,
+      "tier": "score_800",
+      "word": "put in some overtime",
+      "phonetic": "/pʊt ɪn səm ˈoʊvərˌtaɪm/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "加班",
+        "加班時間",
+        "加班費"
+      ],
+      "definitions_summary": "加班、加班時間、加班費",
+      "collocations": [
+        "essential put in some overtime",
+        "standard put in some overtime"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of put in some overtime is essential in corporate business.",
+        "zh": "充分掌握關於加班的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 15
+      }
+    },
+    {
+      "id": 16,
+      "day": 23,
+      "tier": "score_800",
+      "word": "safety drill",
+      "phonetic": "/ˈseɪfti drɪl/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "鑽頭",
+        "鑽床",
+        "鑽機"
+      ],
+      "definitions_summary": "鑽頭、鑽床、鑽機",
+      "collocations": [
+        "essential safety drill",
+        "standard safety drill"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of safety drill is essential in corporate business.",
+        "zh": "充分掌握關於鑽頭的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 16
+      }
+    },
+    {
+      "id": 17,
+      "day": 23,
+      "tier": "score_800",
+      "word": "sensitivity",
+      "phonetic": "/ˌsɛnsɪˈtɪvɪti/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "容易感受的性質",
+        "敏感性",
+        "感受性",
+        "感光度"
+      ],
+      "definitions_summary": "容易感受的性質、敏感性、感受性、感光度",
+      "collocations": [
+        "essential sensitivity",
+        "standard sensitivity"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of sensitivity is essential in corporate business.",
+        "zh": "充分掌握關於容易感受的性質的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 17
+      }
+    },
+    {
+      "id": 18,
+      "day": 23,
+      "tier": "score_800",
+      "word": "show around",
+      "phonetic": "/ʃoʊ əraʊnd/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential show around",
+        "standard show around"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of show around is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 18
+      }
+    },
+    {
+      "id": 19,
+      "day": 23,
+      "tier": "score_800",
+      "word": "stacks of books",
+      "phonetic": "/stæks əv bʊks/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "書本",
+        "書籍",
+        "著作"
+      ],
+      "definitions_summary": "書本、書籍、著作",
+      "collocations": [
+        "essential stacks of books",
+        "standard stacks of books"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of stacks of books is essential in corporate business.",
+        "zh": "充分掌握關於書本的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 19
+      }
+    },
+    {
+      "id": 20,
+      "day": 23,
+      "tier": "score_800",
+      "word": "surprisingly",
+      "phonetic": "/səˈpraɪzɪŋli/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "驚人地",
+        "出人意外地"
+      ],
+      "definitions_summary": "驚人地、出人意外地",
+      "collocations": [
+        "essential surprisingly",
+        "standard surprisingly"
+      ],
+      "example": {
+        "en": "The management decided to surprisingly the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行驚人地，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 20
+      }
+    },
+    {
+      "id": 21,
+      "day": 23,
+      "tier": "score_800",
+      "word": "take place",
+      "phonetic": "/teɪk pleɪs/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "發生",
+        "舉行"
+      ],
+      "definitions_summary": "發生、舉行",
+      "collocations": [
+        "essential take place",
+        "standard take place"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of take place is essential in corporate business.",
+        "zh": "充分掌握關於發生的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 21
+      }
+    },
+    {
+      "id": 22,
+      "day": 23,
+      "tier": "score_800",
+      "word": "take some time off",
+      "phonetic": "/teɪk səm taɪm ɔf/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "切斷",
+        "關掉",
+        "停止"
+      ],
+      "definitions_summary": "切斷、關掉、停止",
+      "collocations": [
+        "essential take some time off",
+        "standard take some time off"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of take some time off is essential in corporate business.",
+        "zh": "充分掌握關於切斷的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 22
+      }
+    },
+    {
+      "id": 23,
+      "day": 23,
+      "tier": "score_800",
+      "word": "terribly",
+      "phonetic": "/ˈtɛrəbli/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "可怕地"
+      ],
+      "definitions_summary": "可怕地",
+      "collocations": [
+        "essential terribly",
+        "standard terribly"
+      ],
+      "example": {
+        "en": "The management decided to terribly the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行可怕地，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 23
+      }
+    },
+    {
+      "id": 24,
+      "day": 23,
+      "tier": "score_800",
+      "word": "terrific",
+      "phonetic": "/tərˈɪfɪk/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "可怕的",
+        "嚇人的",
+        "極佳的",
+        "華麗的"
+      ],
+      "definitions_summary": "可怕的、嚇人的、極佳的、華麗的",
+      "collocations": [
+        "essential terrific",
+        "standard terrific"
+      ],
+      "example": {
+        "en": "The applicant demonstrated terrific qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常可怕的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 24
+      }
+    },
+    {
+      "id": 25,
+      "day": 23,
+      "tier": "score_800",
+      "word": "the next best",
+      "phonetic": "/ðə nɛkst bɛst/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "最好的",
+        "最熟練的",
+        "道德最高尚的"
+      ],
+      "definitions_summary": "最好的、最熟練的、道德最高尚的",
+      "collocations": [
+        "essential the next best",
+        "standard the next best"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of the next best is essential in corporate business.",
+        "zh": "充分掌握關於最好的的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 25
+      }
+    },
+    {
+      "id": 26,
+      "day": 23,
+      "tier": "score_800",
+      "word": "thrilling",
+      "phonetic": "/θˈrɪlɪŋ/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "毛骨悚然的",
+        "令人興奮的",
+        "顫動的",
+        "刺骨的"
+      ],
+      "definitions_summary": "毛骨悚然的、令人興奮的、顫動的、刺骨的",
+      "collocations": [
+        "essential thrilling",
+        "standard thrilling"
+      ],
+      "example": {
+        "en": "The applicant demonstrated thrilling qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常毛骨悚然的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 26
+      }
+    },
+    {
+      "id": 27,
+      "day": 23,
+      "tier": "score_800",
+      "word": "credit A with B",
+      "phonetic": "/ˈkrɛdɪt ə wɪθ bi/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "穀倉",
+        "糧倉",
+        "馬房"
+      ],
+      "definitions_summary": "穀倉、糧倉、馬房",
+      "collocations": [
+        "essential credit A with B",
+        "standard credit A with B"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of credit A with B is essential in corporate business.",
+        "zh": "充分掌握關於穀倉的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 27
+      }
+    },
+    {
+      "id": 28,
+      "day": 23,
+      "tier": "score_800",
+      "word": "credit B to A",
+      "phonetic": "/ˈkrɛdɪt bi tɪ ə/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "金弓中口",
+        "放射性金屬元素",
+        "符號"
+      ],
+      "definitions_summary": "金弓中口、放射性金屬元素、符號",
+      "collocations": [
+        "essential credit B to A",
+        "standard credit B to A"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of credit B to A is essential in corporate business.",
+        "zh": "充分掌握關於金弓中口的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 28
+      }
+    },
+    {
+      "id": 29,
+      "day": 23,
+      "tier": "score_800",
+      "word": "intentionally",
+      "phonetic": "/ˌɪnˈtɛnʃənəli/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "有意地",
+        "故意地",
+        "反義參見"
+      ],
+      "definitions_summary": "有意地、故意地、反義參見",
+      "collocations": [
+        "essential intentionally",
+        "standard intentionally"
+      ],
+      "example": {
+        "en": "The management decided to intentionally the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行有意地，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 29
+      }
+    },
+    {
+      "id": 30,
+      "day": 23,
+      "tier": "score_800",
+      "word": "meanwhile",
+      "phonetic": "/ˈminˌwaɪl/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "其時",
+        "其間"
+      ],
+      "definitions_summary": "其時、其間",
+      "collocations": [
+        "essential meanwhile",
+        "standard meanwhile"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of meanwhile is essential in corporate business.",
+        "zh": "充分掌握關於其時的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 30
+      }
+    },
+    {
+      "id": 31,
+      "day": 23,
+      "tier": "score_800",
+      "word": "respectfully",
+      "phonetic": "/rɪˈspɛktfəli/",
+      "part_of_speech": "adv.",
+      "chinese_definitions": [
+        "恭敬地"
+      ],
+      "definitions_summary": "恭敬地",
+      "collocations": [
+        "essential respectfully",
+        "standard respectfully"
+      ],
+      "example": {
+        "en": "The management decided to respectfully the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行恭敬地，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 31
+      }
+    },
+    {
+      "id": 32,
+      "day": 23,
+      "tier": "score_800",
+      "word": "sign up",
+      "phonetic": "/saɪn əp/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential sign up",
+        "standard sign up"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of sign up is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 32
+      }
+    },
+    {
+      "id": 33,
+      "day": 23,
+      "tier": "score_800",
+      "word": "sign out",
+      "phonetic": "/saɪn aʊt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential sign out",
+        "standard sign out"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of sign out is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 33
+      }
+    },
+    {
+      "id": 34,
+      "day": 23,
+      "tier": "score_800",
+      "word": "unused",
+      "phonetic": "/ənˈjuzd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "未使用的",
+        "未用過的",
+        "未利用的"
+      ],
+      "definitions_summary": "未使用的、未用過的、未利用的",
+      "collocations": [
+        "essential unused",
+        "standard unused"
+      ],
+      "example": {
+        "en": "The applicant demonstrated unused qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常未使用的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 34
+      }
+    },
+    {
+      "id": 35,
+      "day": 23,
+      "tier": "score_800",
+      "word": "be tired of",
+      "phonetic": "/bi taɪərd əv/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "含有",
+        "表示同位",
+        "表示受格關係"
+      ],
+      "definitions_summary": "含有、表示同位、表示受格關係",
+      "collocations": [
+        "essential be tired of",
+        "standard be tired of"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of be tired of is essential in corporate business.",
+        "zh": "充分掌握關於含有的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 35
+      }
+    },
+    {
+      "id": 36,
+      "day": 23,
+      "tier": "score_800",
+      "word": "bi-annual",
+      "phonetic": "/baɪˈænjʊǝl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "每年兩次的",
+        "每半年的"
+      ],
+      "definitions_summary": "每年兩次的、每半年的",
+      "collocations": [
+        "essential bi-annual",
+        "standard bi-annual"
+      ],
+      "example": {
+        "en": "The applicant demonstrated bi-annual qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常每年兩次的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 36
+      }
+    },
+    {
+      "id": 37,
+      "day": 23,
+      "tier": "score_800",
+      "word": "charitable",
+      "phonetic": "/ˈʧɛrətəbəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "慈悲為懷的",
+        "仁慈的",
+        "慈善的",
+        "施舍慷慨的"
+      ],
+      "definitions_summary": "慈悲為懷的、仁慈的、慈善的、施舍慷慨的",
+      "collocations": [
+        "essential charitable",
+        "standard charitable"
+      ],
+      "example": {
+        "en": "The applicant demonstrated charitable qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常慈悲為懷的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 37
+      }
+    },
+    {
+      "id": 38,
+      "day": 23,
+      "tier": "score_800",
+      "word": "course of study",
+      "phonetic": "/kɔrs əv ˈstədi/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "學習",
+        "研究",
+        "調查"
+      ],
+      "definitions_summary": "學習、研究、調查",
+      "collocations": [
+        "essential course of study",
+        "standard course of study"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of course of study is essential in corporate business.",
+        "zh": "充分掌握關於學習的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 38
+      }
+    },
+    {
+      "id": 39,
+      "day": 23,
+      "tier": "score_800",
+      "word": "depressed",
+      "phonetic": "/dɪˈprɛst/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "沮喪的",
+        "消沉的",
+        "憂鬱的",
+        "壓低的"
+      ],
+      "definitions_summary": "沮喪的、消沉的、憂鬱的、壓低的",
+      "collocations": [
+        "essential depressed",
+        "standard depressed"
+      ],
+      "example": {
+        "en": "The applicant demonstrated depressed qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常沮喪的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 39
+      }
+    },
+    {
+      "id": 40,
+      "day": 23,
+      "tier": "score_800",
+      "word": "featured speaker",
+      "phonetic": "/ˈfiʧərd ˈspikər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "說話者",
+        "演講者",
+        "演說家"
+      ],
+      "definitions_summary": "說話者、演講者、演說家",
+      "collocations": [
+        "essential featured speaker",
+        "standard featured speaker"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of featured speaker is essential in corporate business.",
+        "zh": "充分掌握關於說話者的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 40
+      }
+    },
+    {
+      "id": 41,
+      "day": 23,
+      "tier": "score_800",
+      "word": "generous",
+      "phonetic": "/ˈʤɛnərəs/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "慷慨的",
+        "大方的",
+        "寬宏大量的",
+        "寬厚的"
+      ],
+      "definitions_summary": "慷慨的、大方的、寬宏大量的、寬厚的",
+      "collocations": [
+        "essential generous",
+        "standard generous"
+      ],
+      "example": {
+        "en": "The applicant demonstrated generous qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常慷慨的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 41
+      }
+    },
+    {
+      "id": 42,
+      "day": 23,
+      "tier": "score_800",
+      "word": "laugh away",
+      "phonetic": "/læf əˈweɪ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "離開",
+        "隔開",
+        "不在"
+      ],
+      "definitions_summary": "離開、隔開、不在",
+      "collocations": [
+        "essential laugh away",
+        "standard laugh away"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of laugh away is essential in corporate business.",
+        "zh": "充分掌握關於離開的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 42
+      }
+    },
+    {
+      "id": 43,
+      "day": 23,
+      "tier": "score_800",
+      "word": "merit",
+      "phonetic": "/ˈmɛrət/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "價值",
+        "長處",
+        "優點",
+        "功績"
+      ],
+      "definitions_summary": "價值、長處、優點、功績",
+      "collocations": [
+        "essential merit",
+        "standard merit"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of merit is essential in corporate business.",
+        "zh": "充分掌握關於價值的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 43
+      }
+    },
+    {
+      "id": 44,
+      "day": 23,
+      "tier": "score_800",
+      "word": "night shift",
+      "phonetic": "/naɪt ʃɪft/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "夜班",
+        "夜班工人"
+      ],
+      "definitions_summary": "夜班、夜班工人",
+      "collocations": [
+        "essential night shift",
+        "standard night shift"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of night shift is essential in corporate business.",
+        "zh": "充分掌握關於夜班的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 44
+      }
+    },
+    {
+      "id": 45,
+      "day": 23,
+      "tier": "score_800",
+      "word": "occupational safety and health",
+      "phonetic": "/ɑkjəˈpeɪʃənəl ˈseɪfti ənd hɛlθ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "健康",
+        "健康狀況",
+        "祝健康的乾杯"
+      ],
+      "definitions_summary": "健康、健康狀況、祝健康的乾杯",
+      "collocations": [
+        "essential occupational safety and health",
+        "standard occupational safety and health"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of occupational safety and health is essential in corporate business.",
+        "zh": "充分掌握關於健康的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 45
+      }
+    },
+    {
+      "id": 46,
+      "day": 23,
+      "tier": "score_800",
+      "word": "over time allowance",
+      "phonetic": "/ˈoʊvər taɪm əˈlaʊəns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "津貼",
+        "補貼",
+        "零用錢"
+      ],
+      "definitions_summary": "津貼、補貼、零用錢",
+      "collocations": [
+        "essential over time allowance",
+        "standard over time allowance"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of over time allowance is essential in corporate business.",
+        "zh": "充分掌握關於津貼的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 46
+      }
+    },
+    {
+      "id": 47,
+      "day": 23,
+      "tier": "score_800",
+      "word": "over time rate",
+      "phonetic": "/ˈoʊvər taɪm reɪt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "比例",
+        "比率",
+        "速度"
+      ],
+      "definitions_summary": "比例、比率、速度",
+      "collocations": [
+        "essential over time rate",
+        "standard over time rate"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of over time rate is essential in corporate business.",
+        "zh": "充分掌握關於比例的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 47
+      }
+    },
+    {
+      "id": 48,
+      "day": 23,
+      "tier": "score_800",
+      "word": "paid vacation",
+      "phonetic": "/peɪd veɪˈkeɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "休假",
+        "假期",
+        "休庭期"
+      ],
+      "definitions_summary": "休假、假期、休庭期",
+      "collocations": [
+        "essential paid vacation",
+        "standard paid vacation"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of paid vacation is essential in corporate business.",
+        "zh": "充分掌握關於休假的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 48
+      }
+    },
+    {
+      "id": 49,
+      "day": 23,
+      "tier": "score_800",
+      "word": "pay increase",
+      "phonetic": "/peɪ ˌɪnˈkris/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "增大",
+        "增加",
+        "增強"
+      ],
+      "definitions_summary": "增大、增加、增強",
+      "collocations": [
+        "essential pay increase",
+        "standard pay increase"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of pay increase is essential in corporate business.",
+        "zh": "充分掌握關於增大的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 49
+      }
+    },
+    {
+      "id": 50,
+      "day": 23,
+      "tier": "score_800",
+      "word": "pension",
+      "phonetic": "/ˈpɛnʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "退休金",
+        "養老金",
+        "撫恤金",
+        "津貼"
+      ],
+      "definitions_summary": "退休金、養老金、撫恤金、津貼",
+      "collocations": [
+        "essential pension",
+        "standard pension"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of pension is essential in corporate business.",
+        "zh": "充分掌握關於退休金的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 50
+      }
+    },
+    {
+      "id": 51,
+      "day": 23,
+      "tier": "score_800",
+      "word": "poorly paid",
+      "phonetic": "/ˈpurli peɪd/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "的動詞過去式",
+        "過去分詞"
+      ],
+      "definitions_summary": "的動詞過去式、過去分詞",
+      "collocations": [
+        "essential poorly paid",
+        "standard poorly paid"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of poorly paid is essential in corporate business.",
+        "zh": "充分掌握關於的動詞過去式的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 51
+      }
+    },
+    {
+      "id": 52,
+      "day": 23,
+      "tier": "score_800",
+      "word": "preservation area",
+      "phonetic": "/ˌprɛzərˈveɪʃən ˈɛriə/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "面積",
+        "該城市的面積為十五平方公里",
+        "地區"
+      ],
+      "definitions_summary": "面積、該城市的面積為十五平方公里、地區",
+      "collocations": [
+        "essential preservation area",
+        "standard preservation area"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of preservation area is essential in corporate business.",
+        "zh": "充分掌握關於面積的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 52
+      }
+    },
+    {
+      "id": 53,
+      "day": 23,
+      "tier": "score_800",
+      "word": "reference number",
+      "phonetic": "/ˈrɛfərəns ˈnəmbər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "數字",
+        "號碼",
+        "山姆住在派克街二十號"
+      ],
+      "definitions_summary": "數字、號碼、山姆住在派克街二十號",
+      "collocations": [
+        "essential reference number",
+        "standard reference number"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of reference number is essential in corporate business.",
+        "zh": "充分掌握關於數字的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 53
+      }
+    },
+    {
+      "id": 54,
+      "day": 23,
+      "tier": "score_800",
+      "word": "regional allowance",
+      "phonetic": "/ˈriʤənəl əˈlaʊəns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "津貼",
+        "補貼",
+        "零用錢"
+      ],
+      "definitions_summary": "津貼、補貼、零用錢",
+      "collocations": [
+        "essential regional allowance",
+        "standard regional allowance"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of regional allowance is essential in corporate business.",
+        "zh": "充分掌握關於津貼的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 54
+      }
+    },
+    {
+      "id": 55,
+      "day": 23,
+      "tier": "score_800",
+      "word": "regular working hours",
+      "phonetic": "/ˈrɛgjələr ˈwərkɪŋ aʊərz/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "小時",
+        "時刻",
+        "時間"
+      ],
+      "definitions_summary": "小時、時刻、時間",
+      "collocations": [
+        "essential regular working hours",
+        "standard regular working hours"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of regular working hours is essential in corporate business.",
+        "zh": "充分掌握關於小時的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 55
+      }
+    },
+    {
+      "id": 56,
+      "day": 23,
+      "tier": "score_800",
+      "word": "retirement party",
+      "phonetic": "/rɪˈtaɪərmənt ˈpɑrti/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "聚會",
+        "集會",
+        "派對"
+      ],
+      "definitions_summary": "聚會、集會、派對",
+      "collocations": [
+        "essential retirement party",
+        "standard retirement party"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of retirement party is essential in corporate business.",
+        "zh": "充分掌握關於聚會的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 56
+      }
+    },
+    {
+      "id": 57,
+      "day": 23,
+      "tier": "score_800",
+      "word": "retirement plan",
+      "phonetic": "/rɪˈtaɪərmənt plæn/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "計畫",
+        "方案",
+        "打算"
+      ],
+      "definitions_summary": "計畫、方案、打算",
+      "collocations": [
+        "essential retirement plan",
+        "standard retirement plan"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of retirement plan is essential in corporate business.",
+        "zh": "充分掌握關於計畫的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 57
+      }
+    },
+    {
+      "id": 58,
+      "day": 23,
+      "tier": "score_800",
+      "word": "salary and benefits",
+      "phonetic": "/ˈsæləri ənd ˈbɛnəfɪts/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "利益",
+        "好處",
+        "優勢"
+      ],
+      "definitions_summary": "利益、好處、優勢",
+      "collocations": [
+        "essential salary and benefits",
+        "standard salary and benefits"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of salary and benefits is essential in corporate business.",
+        "zh": "充分掌握關於利益的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 58
+      }
+    },
+    {
+      "id": 59,
+      "day": 23,
+      "tier": "score_800",
+      "word": "sheltered housing",
+      "phonetic": "/ˈʃɛltərd ˈhaʊzɪŋ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "住房供給",
+        "住房建築",
+        "房屋"
+      ],
+      "definitions_summary": "住房供給、住房建築、房屋",
+      "collocations": [
+        "essential sheltered housing",
+        "standard sheltered housing"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of sheltered housing is essential in corporate business.",
+        "zh": "充分掌握關於住房供給的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 59
+      }
+    },
+    {
+      "id": 60,
+      "day": 23,
+      "tier": "score_800",
+      "word": "sick leave",
+      "phonetic": "/sɪk liv/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential sick leave",
+        "standard sick leave"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of sick leave is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 60
+      }
+    },
+    {
+      "id": 61,
+      "day": 23,
+      "tier": "score_800",
+      "word": "strong willed",
+      "phonetic": "/strɔŋ wɪld/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential strong willed",
+        "standard strong willed"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of strong willed is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 61
+      }
+    },
+    {
+      "id": 62,
+      "day": 23,
+      "tier": "score_800",
+      "word": "time off",
+      "phonetic": "/taɪm ɔf/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential time off",
+        "standard time off"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of time off is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 62
+      }
+    },
+    {
+      "id": 63,
+      "day": 23,
+      "tier": "score_800",
+      "word": "welfare",
+      "phonetic": "/ˈwɛlˌfɛr/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "福利",
+        "幸福",
+        "健康安樂",
+        "救濟事業"
+      ],
+      "definitions_summary": "福利、幸福、健康安樂、救濟事業",
+      "collocations": [
+        "essential welfare",
+        "standard welfare"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of welfare is essential in corporate business.",
+        "zh": "充分掌握關於福利的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 63
+      }
+    },
+    {
+      "id": 64,
+      "day": 23,
+      "tier": "score_800",
+      "word": "work environment",
+      "phonetic": "/wərk ɪnˈvaɪrənmənt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "環境",
+        "四周狀況",
+        "自然環境"
+      ],
+      "definitions_summary": "環境、四周狀況、自然環境",
+      "collocations": [
+        "essential work environment",
+        "standard work environment"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of work environment is essential in corporate business.",
+        "zh": "充分掌握關於環境的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 64
+      }
+    },
+    {
+      "id": 65,
+      "day": 23,
+      "tier": "score_800",
+      "word": "working condition",
+      "phonetic": "/ˈwərkɪŋ kənˈdɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "情況",
+        "狀態",
+        "環境"
+      ],
+      "definitions_summary": "情況、狀態、環境",
+      "collocations": [
+        "essential working condition",
+        "standard working condition"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of working condition is essential in corporate business.",
+        "zh": "充分掌握關於情況的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 65
+      }
+    },
+    {
+      "id": 66,
+      "day": 23,
+      "tier": "score_800",
+      "word": "checkout",
+      "phonetic": "/ˈʧɛˌkaʊt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential checkout",
+        "standard checkout"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of checkout is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 66
+      }
+    },
+    {
+      "id": 67,
+      "day": 23,
+      "tier": "score_800",
+      "word": "childcare",
+      "phonetic": "/ˈʧaɪldˌkɛr/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential childcare",
+        "standard childcare"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of childcare is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 67
+      }
+    },
+    {
+      "id": 68,
+      "day": 23,
+      "tier": "score_800",
+      "word": "by annual",
+      "phonetic": "/baɪ ˈænjuəl/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "一年的",
+        "一年一次的",
+        "每年的"
+      ],
+      "definitions_summary": "一年的、一年一次的、每年的",
+      "collocations": [
+        "essential by annual",
+        "standard by annual"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of by annual is essential in corporate business.",
+        "zh": "充分掌握關於一年的的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 68
+      }
+    },
+    {
+      "id": 69,
+      "day": 23,
+      "tier": "score_800",
+      "word": "extra pay",
+      "phonetic": "/ˈɛkstrə peɪ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "支付",
+        "付款給",
+        "償還"
+      ],
+      "definitions_summary": "支付、付款給、償還",
+      "collocations": [
+        "essential extra pay",
+        "standard extra pay"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of extra pay is essential in corporate business.",
+        "zh": "充分掌握關於支付的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 69
+      }
+    },
+    {
+      "id": 70,
+      "day": 23,
+      "tier": "score_800",
+      "word": "overtime allowance",
+      "phonetic": "/ˈoʊvərˌtaɪm əˈlaʊəns/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "津貼",
+        "補貼",
+        "零用錢"
+      ],
+      "definitions_summary": "津貼、補貼、零用錢",
+      "collocations": [
+        "essential overtime allowance",
+        "standard overtime allowance"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of overtime allowance is essential in corporate business.",
+        "zh": "充分掌握關於津貼的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 70
+      }
+    },
+    {
+      "id": 71,
+      "day": 23,
+      "tier": "score_800",
+      "word": "overtime rate",
+      "phonetic": "/ˈoʊvərˌtaɪm reɪt/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential overtime rate",
+        "standard overtime rate"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of overtime rate is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 71
+      }
+    },
+    {
+      "id": 72,
+      "day": 23,
+      "tier": "score_800",
+      "word": "work in condition",
+      "phonetic": "/wərk ɪn kənˈdɪʃən/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "情況",
+        "狀態",
+        "環境"
+      ],
+      "definitions_summary": "情況、狀態、環境",
+      "collocations": [
+        "essential work in condition",
+        "standard work in condition"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of work in condition is essential in corporate business.",
+        "zh": "充分掌握關於情況的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 72
+      }
+    },
+    {
+      "id": 73,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Song",
+      "phonetic": "/sɔŋ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "人竹人人",
+        "前進貌",
+        "萃傱沇溶",
+        "參考"
+      ],
+      "definitions_summary": "人竹人人、前進貌、萃傱沇溶、參考",
+      "collocations": [
+        "essential Song",
+        "standard Song"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Song is essential in corporate business.",
+        "zh": "充分掌握關於人竹人人的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 73
+      }
+    },
+    {
+      "id": 74,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Misurable",
+      "phonetic": "/misurable/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Misurable",
+        "standard Misurable"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Misurable is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 74
+      }
+    },
+    {
+      "id": 75,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Paid five and six",
+      "phonetic": "/peɪd faɪv ənd sɪks/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "六的",
+        "六個的",
+        "六個"
+      ],
+      "definitions_summary": "六的、六個的、六個",
+      "collocations": [
+        "essential Paid five and six",
+        "standard Paid five and six"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Paid five and six is essential in corporate business.",
+        "zh": "充分掌握關於六的的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 75
+      }
+    },
+    {
+      "id": 76,
+      "day": 23,
+      "tier": "score_800",
+      "word": "EDe",
+      "phonetic": "/id/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential EDe",
+        "standard EDe"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of EDe is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 76
+      }
+    },
+    {
+      "id": 77,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Extrapay",
+      "phonetic": "/extrapay/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Extrapay",
+        "standard Extrapay"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Extrapay is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 77
+      }
+    },
+    {
+      "id": 78,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Marit",
+      "phonetic": "/marit/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential Marit",
+        "standard Marit"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Marit is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 78
+      }
+    },
+    {
+      "id": 79,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Over-time allowance",
+      "phonetic": "/over-time allowance/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "津貼",
+        "補貼",
+        "零用錢"
+      ],
+      "definitions_summary": "津貼、補貼、零用錢",
+      "collocations": [
+        "essential Over-time allowance",
+        "standard Over-time allowance"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Over-time allowance is essential in corporate business.",
+        "zh": "充分掌握關於津貼的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 79
+      }
+    },
+    {
+      "id": 80,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Over-time rate",
+      "phonetic": "/over-time rate/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "比例",
+        "比率",
+        "速度"
+      ],
+      "definitions_summary": "比例、比率、速度",
+      "collocations": [
+        "essential Over-time rate",
+        "standard Over-time rate"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Over-time rate is essential in corporate business.",
+        "zh": "充分掌握關於比例的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 80
+      }
+    },
+    {
+      "id": 81,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Paid increase",
+      "phonetic": "/peɪd ˌɪnˈkris/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "增大",
+        "增加",
+        "增強"
+      ],
+      "definitions_summary": "增大、增加、增強",
+      "collocations": [
+        "essential Paid increase",
+        "standard Paid increase"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Paid increase is essential in corporate business.",
+        "zh": "充分掌握關於增大的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 81
+      }
+    },
+    {
+      "id": 82,
+      "day": 23,
+      "tier": "score_800",
+      "word": "Well fair",
+      "phonetic": "/wɛl fɛr/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "公正的",
+        "公平的",
+        "誠實的"
+      ],
+      "definitions_summary": "公正的、公平的、誠實的",
+      "collocations": [
+        "essential Well fair",
+        "standard Well fair"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Well fair is essential in corporate business.",
+        "zh": "充分掌握關於公正的的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_800",
+        "file": "score 800_Day23.mp3",
+        "track": 82
+      }
+    }
+  ],
+  "score_900": [
+    {
+      "id": 1,
+      "day": 23,
+      "tier": "score_900",
+      "word": "Get Reimbursed for",
+      "phonetic": "/gɪt ˌriɪmˈbərst fər/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "為了",
+        "代替",
+        "代表"
+      ],
+      "definitions_summary": "為了、代替、代表",
+      "collocations": [
+        "essential Get Reimbursed for",
+        "standard Get Reimbursed for"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of Get Reimbursed for is essential in corporate business.",
+        "zh": "充分掌握關於為了的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 1
+      }
+    },
+    {
+      "id": 2,
+      "day": 23,
+      "tier": "score_900",
+      "word": "hardy",
+      "phonetic": "/ˈhɑrdi/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "能吃苦耐勞的",
+        "強壯的",
+        "堅強的",
+        "耐寒的"
+      ],
+      "definitions_summary": "能吃苦耐勞的、強壯的、堅強的、耐寒的",
+      "collocations": [
+        "essential hardy",
+        "standard hardy"
+      ],
+      "example": {
+        "en": "The applicant demonstrated hardy qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常能吃苦耐勞的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 2
+      }
+    },
+    {
+      "id": 3,
+      "day": 23,
+      "tier": "score_900",
+      "word": "hearty",
+      "phonetic": "/ˈhɑrti/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "衷心的",
+        "熱誠的",
+        "健壯的",
+        "精力充沛的"
+      ],
+      "definitions_summary": "衷心的、熱誠的、健壯的、精力充沛的",
+      "collocations": [
+        "essential hearty",
+        "standard hearty"
+      ],
+      "example": {
+        "en": "The applicant demonstrated hearty qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常衷心的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 3
+      }
+    },
+    {
+      "id": 4,
+      "day": 23,
+      "tier": "score_900",
+      "word": "kind hearted",
+      "phonetic": "/kaɪnd ˈhɑrtɪd/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential kind hearted",
+        "standard kind hearted"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of kind hearted is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 4
+      }
+    },
+    {
+      "id": 5,
+      "day": 23,
+      "tier": "score_900",
+      "word": "knock off",
+      "phonetic": "/nɑk ɔf/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential knock off",
+        "standard knock off"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of knock off is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 5
+      }
+    },
+    {
+      "id": 6,
+      "day": 23,
+      "tier": "score_900",
+      "word": "maternity leave",
+      "phonetic": "/məˈtərnɪti liv/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential maternity leave",
+        "standard maternity leave"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of maternity leave is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 6
+      }
+    },
+    {
+      "id": 7,
+      "day": 23,
+      "tier": "score_900",
+      "word": "misuse",
+      "phonetic": "/mɪsˈjuz/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "誤用",
+        "濫用",
+        "苛待",
+        "虐待"
+      ],
+      "definitions_summary": "誤用、濫用、苛待、虐待",
+      "collocations": [
+        "essential misuse",
+        "standard misuse"
+      ],
+      "example": {
+        "en": "The management decided to misuse the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行誤用，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 7
+      }
+    },
+    {
+      "id": 8,
+      "day": 23,
+      "tier": "score_900",
+      "word": "nursery",
+      "phonetic": "/ˈnərsəri/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "幼兒室",
+        "育兒室",
+        "托兒所",
+        "苗圃"
+      ],
+      "definitions_summary": "幼兒室、育兒室、托兒所、苗圃",
+      "collocations": [
+        "essential nursery",
+        "standard nursery"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of nursery is essential in corporate business.",
+        "zh": "充分掌握關於幼兒室的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 8
+      }
+    },
+    {
+      "id": 9,
+      "day": 23,
+      "tier": "score_900",
+      "word": "nursing",
+      "phonetic": "/ˈnərsɪŋ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "護士",
+        "褓姆",
+        "奶媽",
+        "養育者"
+      ],
+      "definitions_summary": "護士、褓姆、奶媽、養育者",
+      "collocations": [
+        "essential nursing",
+        "standard nursing"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of nursing is essential in corporate business.",
+        "zh": "充分掌握關於護士的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 9
+      }
+    },
+    {
+      "id": 10,
+      "day": 23,
+      "tier": "score_900",
+      "word": "chronological",
+      "phonetic": "/ˌkrɑnəˈlɑʤɪkəl/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "依時間前後排列而記載的"
+      ],
+      "definitions_summary": "依時間前後排列而記載的",
+      "collocations": [
+        "essential chronological",
+        "standard chronological"
+      ],
+      "example": {
+        "en": "The applicant demonstrated chronological qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常依時間前後排列而記載的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 10
+      }
+    },
+    {
+      "id": 11,
+      "day": 23,
+      "tier": "score_900",
+      "word": "exhibitor",
+      "phonetic": "/ɪgˈzɪbətər/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "展示者",
+        "參展者"
+      ],
+      "definitions_summary": "展示者、參展者",
+      "collocations": [
+        "essential exhibitor",
+        "standard exhibitor"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of exhibitor is essential in corporate business.",
+        "zh": "充分掌握關於展示者的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 11
+      }
+    },
+    {
+      "id": 12,
+      "day": 23,
+      "tier": "score_900",
+      "word": "flatter",
+      "phonetic": "/ˈflætər/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "諂媚",
+        "奉承",
+        "使高興",
+        "使感到滿意"
+      ],
+      "definitions_summary": "諂媚、奉承、使高興、使感到滿意",
+      "collocations": [
+        "essential flatter",
+        "standard flatter"
+      ],
+      "example": {
+        "en": "The management decided to flatter the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行諂媚，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 12
+      }
+    },
+    {
+      "id": 13,
+      "day": 23,
+      "tier": "score_900",
+      "word": "give in",
+      "phonetic": "/gɪv ɪn/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "從事於",
+        "參加著",
+        "穿著"
+      ],
+      "definitions_summary": "從事於、參加著、穿著",
+      "collocations": [
+        "essential give in",
+        "standard give in"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of give in is essential in corporate business.",
+        "zh": "充分掌握關於從事於的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 13
+      }
+    },
+    {
+      "id": 14,
+      "day": 23,
+      "tier": "score_900",
+      "word": "second",
+      "phonetic": "/ˈsɛkənd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "第二的",
+        "第二次的",
+        "二等的",
+        "次等的"
+      ],
+      "definitions_summary": "第二的、第二次的、二等的、次等的",
+      "collocations": [
+        "essential second",
+        "standard second"
+      ],
+      "example": {
+        "en": "The applicant demonstrated second qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常第二的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 14
+      }
+    },
+    {
+      "id": 15,
+      "day": 23,
+      "tier": "score_900",
+      "word": "citation",
+      "phonetic": "/saɪˈteɪʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "引用",
+        "引證",
+        "列舉",
+        "褒揚"
+      ],
+      "definitions_summary": "引用、引證、列舉、褒揚",
+      "collocations": [
+        "essential citation",
+        "standard citation"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of citation is essential in corporate business.",
+        "zh": "充分掌握關於引用的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 15
+      }
+    },
+    {
+      "id": 16,
+      "day": 23,
+      "tier": "score_900",
+      "word": "commerate",
+      "phonetic": "/commerate/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential commerate",
+        "standard commerate"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of commerate is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 16
+      }
+    },
+    {
+      "id": 17,
+      "day": 23,
+      "tier": "score_900",
+      "word": "conjunction",
+      "phonetic": "/kənˈʤəŋkʃən/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "結合",
+        "關聯",
+        "連接",
+        "同時發生"
+      ],
+      "definitions_summary": "結合、關聯、連接、同時發生",
+      "collocations": [
+        "essential conjunction",
+        "standard conjunction"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of conjunction is essential in corporate business.",
+        "zh": "充分掌握關於結合的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 17
+      }
+    },
+    {
+      "id": 18,
+      "day": 23,
+      "tier": "score_900",
+      "word": "cut benefits",
+      "phonetic": "/kət ˈbɛnəfɪts/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "利益",
+        "好處",
+        "優勢"
+      ],
+      "definitions_summary": "利益、好處、優勢",
+      "collocations": [
+        "essential cut benefits",
+        "standard cut benefits"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of cut benefits is essential in corporate business.",
+        "zh": "充分掌握關於利益的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 18
+      }
+    },
+    {
+      "id": 19,
+      "day": 23,
+      "tier": "score_900",
+      "word": "discriminate",
+      "phonetic": "/dɪˈskrɪməˌneɪt/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "區別",
+        "辨別",
+        "區分出",
+        "辨出"
+      ],
+      "definitions_summary": "區別、辨別、區分出、辨出",
+      "collocations": [
+        "essential discriminate",
+        "standard discriminate"
+      ],
+      "example": {
+        "en": "The management decided to discriminate the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行區別，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 19
+      }
+    },
+    {
+      "id": 20,
+      "day": 23,
+      "tier": "score_900",
+      "word": "distort",
+      "phonetic": "/dɪˈstɔrt/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "扭曲",
+        "扭歪",
+        "歪曲",
+        "曲解"
+      ],
+      "definitions_summary": "扭曲、扭歪、歪曲、曲解",
+      "collocations": [
+        "essential distort",
+        "standard distort"
+      ],
+      "example": {
+        "en": "The management decided to distort the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行扭曲，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 20
+      }
+    },
+    {
+      "id": 21,
+      "day": 23,
+      "tier": "score_900",
+      "word": "flex time",
+      "phonetic": "/flɛks taɪm/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential flex time",
+        "standard flex time"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of flex time is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 21
+      }
+    },
+    {
+      "id": 22,
+      "day": 23,
+      "tier": "score_900",
+      "word": "fringe benefits",
+      "phonetic": "/frɪnʤ ˈbɛnəfɪts/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "額外福利"
+      ],
+      "definitions_summary": "額外福利",
+      "collocations": [
+        "essential fringe benefits",
+        "standard fringe benefits"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of fringe benefits is essential in corporate business.",
+        "zh": "充分掌握關於額外福利的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 22
+      }
+    },
+    {
+      "id": 23,
+      "day": 23,
+      "tier": "score_900",
+      "word": "goodwill",
+      "phonetic": "/ˈgʊdˈwɪl/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "善意",
+        "好心",
+        "友好",
+        "親善"
+      ],
+      "definitions_summary": "善意、好心、友好、親善",
+      "collocations": [
+        "essential goodwill",
+        "standard goodwill"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of goodwill is essential in corporate business.",
+        "zh": "充分掌握關於善意的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 23
+      }
+    },
+    {
+      "id": 24,
+      "day": 23,
+      "tier": "score_900",
+      "word": "labour costs",
+      "phonetic": "/ˈleɪbər kɔsts/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "費用",
+        "成本",
+        "代價"
+      ],
+      "definitions_summary": "費用、成本、代價",
+      "collocations": [
+        "essential labour costs",
+        "standard labour costs"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of labour costs is essential in corporate business.",
+        "zh": "充分掌握關於費用的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 24
+      }
+    },
+    {
+      "id": 25,
+      "day": 23,
+      "tier": "score_900",
+      "word": "labour dispute",
+      "phonetic": "/ˈleɪbər dɪˈspjut/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "爭論",
+        "爭執",
+        "阻止"
+      ],
+      "definitions_summary": "爭論、爭執、阻止",
+      "collocations": [
+        "essential labour dispute",
+        "standard labour dispute"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of labour dispute is essential in corporate business.",
+        "zh": "充分掌握關於爭論的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 25
+      }
+    },
+    {
+      "id": 26,
+      "day": 23,
+      "tier": "score_900",
+      "word": "off peak",
+      "phonetic": "/ɔf pik/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "非尖峰的",
+        "非高峰的"
+      ],
+      "definitions_summary": "非尖峰的、非高峰的",
+      "collocations": [
+        "essential off peak",
+        "standard off peak"
+      ],
+      "example": {
+        "en": "The applicant demonstrated off peak qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常非尖峰的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 26
+      }
+    },
+    {
+      "id": 27,
+      "day": 23,
+      "tier": "score_900",
+      "word": "peak",
+      "phonetic": "/pik/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "山頂",
+        "山峰",
+        "高峰",
+        "頂端"
+      ],
+      "definitions_summary": "山頂、山峰、高峰、頂端",
+      "collocations": [
+        "essential peak",
+        "standard peak"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of peak is essential in corporate business.",
+        "zh": "充分掌握關於山頂的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 27
+      }
+    },
+    {
+      "id": 28,
+      "day": 23,
+      "tier": "score_900",
+      "word": "sabotage",
+      "phonetic": "/ˈsæbəˌtɑʒ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "破壞",
+        "妨害",
+        "從事破壞活動",
+        "同義參見"
+      ],
+      "definitions_summary": "破壞、妨害、從事破壞活動、同義參見",
+      "collocations": [
+        "essential sabotage",
+        "standard sabotage"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of sabotage is essential in corporate business.",
+        "zh": "充分掌握關於破壞的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 28
+      }
+    },
+    {
+      "id": 29,
+      "day": 23,
+      "tier": "score_900",
+      "word": "salary review",
+      "phonetic": "/ˈsæləri ˌrivˈju/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "再檢查",
+        "重新探討",
+        "複審"
+      ],
+      "definitions_summary": "再檢查、重新探討、複審",
+      "collocations": [
+        "essential salary review",
+        "standard salary review"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of salary review is essential in corporate business.",
+        "zh": "充分掌握關於再檢查的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 29
+      }
+    },
+    {
+      "id": 30,
+      "day": 23,
+      "tier": "score_900",
+      "word": "severance pay",
+      "phonetic": "/ˈsɛˌvərəns peɪ/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "商務核心用語"
+      ],
+      "definitions_summary": "商務核心用語",
+      "collocations": [
+        "essential severance pay",
+        "standard severance pay"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of severance pay is essential in corporate business.",
+        "zh": "充分掌握關於商務核心用語的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 30
+      }
+    },
+    {
+      "id": 31,
+      "day": 23,
+      "tier": "score_900",
+      "word": "sprite",
+      "phonetic": "/spraɪt/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "鬼怪",
+        "小妖精",
+        "調皮搗蛋的人"
+      ],
+      "definitions_summary": "鬼怪、小妖精、調皮搗蛋的人",
+      "collocations": [
+        "essential sprite",
+        "standard sprite"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of sprite is essential in corporate business.",
+        "zh": "充分掌握關於鬼怪的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 31
+      }
+    },
+    {
+      "id": 32,
+      "day": 23,
+      "tier": "score_900",
+      "word": "straight forward",
+      "phonetic": "/streɪt ˈfɔrwərd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "一直向前的",
+        "徑直的",
+        "正直的",
+        "老實的"
+      ],
+      "definitions_summary": "一直向前的、徑直的、正直的、老實的",
+      "collocations": [
+        "essential straight forward",
+        "standard straight forward"
+      ],
+      "example": {
+        "en": "The applicant demonstrated straight forward qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常一直向前的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 32
+      }
+    },
+    {
+      "id": 33,
+      "day": 23,
+      "tier": "score_900",
+      "word": "yearn",
+      "phonetic": "/jɜːrn/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "渴望、思念",
+      "collocations": [
+        "essential yern",
+        "standard yern"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of yern is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 33
+      }
+    },
+    {
+      "id": 34,
+      "day": 23,
+      "tier": "score_900",
+      "word": "kindhearted",
+      "phonetic": "/ˈkaɪndˈhɑrtɪd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "好心腸的",
+        "仁慈的",
+        "同情的"
+      ],
+      "definitions_summary": "好心腸的、仁慈的、同情的",
+      "collocations": [
+        "essential kindhearted",
+        "standard kindhearted"
+      ],
+      "example": {
+        "en": "The applicant demonstrated kindhearted qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常好心腸的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 34
+      }
+    },
+    {
+      "id": 36,
+      "day": 23,
+      "tier": "score_900",
+      "word": "commemorate",
+      "phonetic": "/kəˈmɛmərˌeɪt/",
+      "part_of_speech": "v.",
+      "chinese_definitions": [
+        "慶祝",
+        "紀念",
+        "成為"
+      ],
+      "definitions_summary": "慶祝、紀念、成為",
+      "collocations": [
+        "essential commemorate",
+        "standard commemorate"
+      ],
+      "example": {
+        "en": "The management decided to commemorate the operational strategy to improve productivity.",
+        "zh": "管理階層決定針對該項營運策略進行慶祝，以全面提升生產力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 36
+      }
+    },
+    {
+      "id": 37,
+      "day": 23,
+      "tier": "score_900",
+      "word": "labor costs",
+      "phonetic": "/ˈleɪbər kɔsts/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "費用",
+        "成本",
+        "代價"
+      ],
+      "definitions_summary": "費用、成本、代價",
+      "collocations": [
+        "essential labor costs",
+        "standard labor costs"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of labor costs is essential in corporate business.",
+        "zh": "充分掌握關於費用的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 37
+      }
+    },
+    {
+      "id": 38,
+      "day": 23,
+      "tier": "score_900",
+      "word": "labor dispute",
+      "phonetic": "/ˈleɪbər dɪˈspjut/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "爭論",
+        "爭執",
+        "阻止"
+      ],
+      "definitions_summary": "爭論、爭執、阻止",
+      "collocations": [
+        "essential labor dispute",
+        "standard labor dispute"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of labor dispute is essential in corporate business.",
+        "zh": "充分掌握關於爭論的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 38
+      }
+    },
+    {
+      "id": 39,
+      "day": 23,
+      "tier": "score_900",
+      "word": "spray",
+      "phonetic": "/spreɪ/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "浪花",
+        "水花",
+        "飛沫",
+        "噴霧"
+      ],
+      "definitions_summary": "浪花、水花、飛沫、噴霧",
+      "collocations": [
+        "essential spray",
+        "standard spray"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of spray is essential in corporate business.",
+        "zh": "充分掌握關於浪花的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 39
+      }
+    },
+    {
+      "id": 40,
+      "day": 23,
+      "tier": "score_900",
+      "word": "straightforward",
+      "phonetic": "/ˈstreɪtˈfɔrwərd/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "一直向前的",
+        "徑直的",
+        "正直的",
+        "老實的"
+      ],
+      "definitions_summary": "一直向前的、徑直的、正直的、老實的",
+      "collocations": [
+        "essential straightforward",
+        "standard straightforward"
+      ],
+      "example": {
+        "en": "The applicant demonstrated straightforward qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常一直向前的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 40
+      }
+    },
+    {
+      "id": 41,
+      "day": 23,
+      "tier": "score_900",
+      "word": "yarn",
+      "phonetic": "/jɑrn/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "紗線",
+        "毛線"
+      ],
+      "definitions_summary": "紗線、毛線",
+      "collocations": [
+        "essential yarn",
+        "standard yarn"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of yarn is essential in corporate business.",
+        "zh": "充分掌握關於紗線的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 41
+      }
+    },
+    {
+      "id": 42,
+      "day": 23,
+      "tier": "score_900",
+      "word": "missuse",
+      "phonetic": "/missuse/",
+      "part_of_speech": "n.",
+      "chinese_definitions": [
+        "商務重點詞彙",
+        "實務應用"
+      ],
+      "definitions_summary": "商務重點詞彙、實務應用",
+      "collocations": [
+        "essential missuse",
+        "standard missuse"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of missuse is essential in corporate business.",
+        "zh": "充分掌握關於商務重點詞彙的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 42
+      }
+    },
+    {
+      "id": 43,
+      "day": 23,
+      "tier": "score_900",
+      "word": "can t benefits",
+      "phonetic": "/kən ti ˈbɛnəfɪts/",
+      "part_of_speech": "phr.",
+      "chinese_definitions": [
+        "利益",
+        "好處",
+        "優勢"
+      ],
+      "definitions_summary": "利益、好處、優勢",
+      "collocations": [
+        "essential can t benefits",
+        "standard can t benefits"
+      ],
+      "example": {
+        "en": "Understanding the core concepts of can t benefits is essential in corporate business.",
+        "zh": "充分掌握關於利益的核心概念，在現代企業商務中至關重要。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 43
+      }
+    },
+    {
+      "id": 44,
+      "day": 23,
+      "tier": "score_900",
+      "word": "spry",
+      "phonetic": "/spraɪ/",
+      "part_of_speech": "adj.",
+      "chinese_definitions": [
+        "精神好的",
+        "活潑的",
+        "敏捷的"
+      ],
+      "definitions_summary": "精神好的、活潑的、敏捷的",
+      "collocations": [
+        "essential spry",
+        "standard spry"
+      ],
+      "example": {
+        "en": "The applicant demonstrated spry qualifications during the evaluation process.",
+        "zh": "應試者在審核過程中展現了非常精神好的的資歷與專業能力。"
+      },
+      "audio": {
+        "tier": "score_900",
+        "file": "score 900_Day23.mp3",
+        "track": 44
+      }
+    }
+  ]
+}
