@@ -446,10 +446,17 @@ export const FullScreenQuizView: React.FC = () => {
         .option-btn:focus, .option-btn:focus-visible {
           outline: none;
         }
-        .option-btn:hover:not(:disabled) {
+        @media (hover: hover) {
+          .option-btn:hover:not(:disabled) {
+            border-color: var(--accent-primary);
+            background: var(--bg-card-hover);
+            transform: translateY(-1px);
+          }
+        }
+        .option-btn:active:not(:disabled) {
           border-color: var(--accent-primary);
           background: var(--bg-card-hover);
-          transform: translateY(-1px);
+          transform: scale(0.98);
         }
         .option-label-circle {
           width: 28px;

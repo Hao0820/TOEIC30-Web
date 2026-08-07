@@ -431,15 +431,17 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
               <div className="card-top-actions">
                 <button
                   className={`master-btn ${isWordMastered ? 'mastered' : ''}`}
-                  onClick={() => toggleMastered(currentWord)}
-                  title="標記為已背熟 (C)"
+                  onClick={(e) => {
+                    (e.currentTarget as HTMLElement)?.blur();
+                    toggleMastered(currentWord);
+                  }}
+                  title={isWordMastered ? '已背熟' : '標記為已背熟 (C)'}
                 >
                   <CheckCircle2
-                    size={20}
+                    size={28}
                     fill={isWordMastered ? 'var(--accent-success)' : 'transparent'}
                     color={isWordMastered ? 'white' : 'var(--text-muted)'}
                   />
-                  <span className="master-btn-label">{isWordMastered ? '已背熟' : '背好了'}</span>
                 </button>
 
                 <button
@@ -464,10 +466,13 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
                 {/* Main Speaker Play Button */}
                 <button
                   className={`speaker-btn ${isWordSpeaking ? 'speaking' : ''}`}
-                  onClick={handleSpeakWord}
+                  onClick={(e) => {
+                    (e.currentTarget as HTMLElement)?.blur();
+                    handleSpeakWord();
+                  }}
                   title="播放發音 (空白鍵)"
                 >
-                  {isWordSpeaking ? <Volume2 size={24} className="anim-speaking" /> : <Volume2 size={24} />}
+                  <Volume2 size={24} />
                 </button>
               </div>
 
@@ -800,27 +805,17 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           gap: 12px;
         }
         .master-btn {
+          background: transparent;
+          border: none;
+          cursor: pointer;
           display: flex;
           align-items: center;
-          gap: 6px;
-          padding: 5px 12px;
-          border-radius: 9999px;
-          border: 1px solid var(--border-color);
-          background: var(--bg-secondary);
-          color: var(--text-muted);
-          font-size: 12px;
-          font-weight: 700;
-          cursor: pointer;
-          transition: all 0.2s;
+          justify-content: center;
+          padding: 4px;
+          transition: transform 0.2s;
         }
         .master-btn:hover {
-          border-color: var(--accent-success);
-          color: var(--text-primary);
-        }
-        .master-btn.mastered {
-          background: rgba(16, 185, 129, 0.15);
-          border-color: var(--accent-success);
-          color: var(--accent-success);
+          transform: scale(1.15);
         }
         .star-btn {
           background: transparent;
@@ -880,7 +875,14 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
         .speaker-btn.speaking {
           background: var(--accent-primary);
           color: white;
-          box-shadow: 0 0 16px rgba(37, 99, 235, 0.5);
+          border-color: var(--accent-primary);
+          box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7);
+          animation: pulseSpeaking 1.5s infinite;
+        }
+        @keyframes pulseSpeaking {
+          0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); transform: scale(1); }
+          50% { box-shadow: 0 0 0 12px rgba(37, 99, 235, 0); transform: scale(1.1); }
+          100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); transform: scale(1); }
         }
         .phonetic-row {
           display: flex;
