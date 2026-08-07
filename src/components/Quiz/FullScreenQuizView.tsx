@@ -507,6 +507,11 @@ export const FullScreenQuizView: React.FC = () => {
           font-size: 12px;
           color: var(--text-muted);
         }
+        @media (max-width: 768px) {
+          .quiz-keyboard-hint {
+            display: none;
+          }
+        }
       `}</style>
     </div>
   );
