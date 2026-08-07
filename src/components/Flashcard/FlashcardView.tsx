@@ -7,8 +7,6 @@ import type { VoiceAccent } from '../../types';
 import {
   Volume2,
   Star,
-  ChevronLeft,
-  ChevronRight,
   List,
   VolumeX,
   CheckCircle2,
@@ -335,7 +333,19 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
       {/* 2. Unit Title & Actions Row */}
       <div className="unit-header-bar">
         <div>
-          <h2 className="unit-main-title">{getUnitTitle()}</h2>
+          <div className="unit-title-row">
+            <h2 className="unit-main-title">{getUnitTitle()}</h2>
+            {words.length > 0 && (
+              <button
+                className="nav-quiz-btn-small"
+                onClick={() => setActiveTab('quiz')}
+                title="一鍵前往測驗本單元"
+              >
+                <CheckCircle2 size={16} />
+                <span>測驗單元</span>
+              </button>
+            )}
+          </div>
           <p className="unit-sub-info">
             {words.length > 0 ? `共收錄 ${words.length} 筆精選單字 · 已背熟 ${masteredWords.length} 字` : '目前無符合篩選條件的單字'}
           </p>
@@ -589,36 +599,6 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
             <span>👈 左右滑動切換單字 👉</span>
           </div>
 
-          {/* Navigation Controls with "測驗本單元" button */}
-          <div className="card-nav-controls">
-            <button
-              className="nav-arrow-btn circle-btn"
-              disabled={currentIndex === 0}
-              onClick={prevWord}
-              title="上一個單字 (←)"
-            >
-              <ChevronLeft size={22} />
-            </button>
-
-            <button
-              className="nav-quiz-btn"
-              onClick={() => setActiveTab('quiz')}
-              title="一鍵前往測驗本單元"
-            >
-              <CheckCircle2 size={18} />
-              <span>測驗本單元</span>
-            </button>
-
-            <button
-              className="nav-arrow-btn circle-btn"
-              disabled={currentIndex === words.length - 1}
-              onClick={nextWord}
-              title="下一個單字 (→)"
-            >
-              <ChevronRight size={22} />
-            </button>
-          </div>
-
           {/* Keyboard Shortcuts Bar (Hidden on Mobile) */}
           <div className="keyboard-hints">
             <span className="hint-pill"><b>Space</b> 發音</span>
@@ -653,11 +633,37 @@ export const FlashcardView: React.FC<{ onOpenWordList: () => void }> = ({ onOpen
           gap: 12px;
           flex-wrap: wrap;
         }
+        .unit-title-row {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
         .unit-main-title {
           font-family: var(--font-display);
           font-size: 22px;
           font-weight: 800;
           color: var(--text-primary);
+        }
+        .nav-quiz-btn-small {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 5px 12px;
+          border-radius: 9999px;
+          background: rgba(16, 185, 129, 0.12);
+          border: 1px solid rgba(16, 185, 129, 0.3);
+          color: var(--accent-success);
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .nav-quiz-btn-small:hover {
+          background: var(--accent-success);
+          color: white;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
         }
         .unit-sub-info {
           font-size: 13px;
